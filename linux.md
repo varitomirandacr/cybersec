@@ -6,3 +6,8 @@
 ```bash
 sudo nc -nlvp <PORT>
 ```
+
+### Grep
+```bash
+find . | grep "<<>>"
+```
