@@ -916,34 +916,18 @@
             <div class="app-body-navigation">
                 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
                 <script>
-                    async function chooseFile() {
-                        const url = document.querySelector('.navigation a').dataset.url; // Example: Get the first link's data-url
-                        const file = await fetchFile(url);
-                        if (file) {
-                            setFileInput(file);
-                            readFileContent(file);
-                        }
-                    }
                     document.addEventListener('DOMContentLoaded', function () {
-                        debugger;
-                        const input = document.querySelector('#fileInput');
-                        input.addEventListener('change', (event) => {
-                            console.log(event.target.value);
-                        });
-
                         const links = document.querySelectorAll('.navigation a');
                         const contentFrame = document.getElementById('contentFrame');
             
                         links.forEach(link => {
                             link.addEventListener('click', function (event) {
                                 event.preventDefault();
-                                debugger;
                                 const url = this.dataset.url;
-                                input.value = url;
-                                debugger;
                                 fetch(url, {
                                     method: 'GET',
-                                    credentials: 'include'
+                                    mode: 'no-cors',
+                                    Access-Control-Allow-Origin: http://localhost:3000
                                 })
                                 .then(response => response.text())
                                 .then(markdown => {

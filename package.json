@@ -1,0 +1,22 @@
+{
+  "name": "cybersec",
+  "version": "1.0.0",
+  "description": "cybersec tools cheat sheet",
+  "main": "cybersec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/varitomirandacr/cybersec.git"
+  },
+  "author": "Alvaro A. Miranda M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varitomirandacr/cybersec/issues"
+  },
+  "homepage": "https://github.com/varitomirandacr/cybersec#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
