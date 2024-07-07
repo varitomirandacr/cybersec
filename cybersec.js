@@ -1,4 +1,5 @@
 const express = require('express');
+const request = require('request');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const axios = require('axios');
@@ -27,10 +28,23 @@ app.get('/', (req, res) => {
 
 app.use('/', express.static(__dirname + '/'));
 
+app.get('/proxy', (req, res) => {
+  const url = req.query.url;
+  if (!url) {
+    return res.status(400).send('URL is required');
+  }
+  request(url).pipe(res);
+});
+
 // Define an API route
 app.get('/api/callrss', (req, res) => {
   console.log('API /api/callrss called');
-  fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", ) 
+  fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
+        method: 'GET',
+        headers: {
+            'mode': 'no-cors'
+        }
+    }) 
     .then(response => response.text())
     .then(xmlString => { 
       const jsonItems = [];

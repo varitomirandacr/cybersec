@@ -7,10 +7,10 @@
             document.addEventListener('DOMContentLoaded', function () {
                            
                 debugger;
-                fetch('https://feeds.feedburner.com/TheHackersNews?format=xml', {
+                fetch('https://varitomirandacr.github.io/cybersec/proxy?url=https://feeds.feedburner.com/TheHackersNews?format=xml', {
                     method: 'GET',
                     headers: {
-                        'mode': 'no-cors'
+                        mode: 'no-cors'
                     }
                 })
                 .then(response => response.json())
