@@ -1,0 +1,46 @@
+[
+    {
+        "category": "(✱) Latest_News",
+        "path": "./content/navs/latest-news/rss.html",
+        "tabs": [
+            { "category": "RSS:TheHackerNews", "path": "https://feeds.feedburner.com/TheHackersNews?format=xml" },
+            { "category": "RSS2", "path": "./content/navs/latest-news/rss.html" },
+            { "category": "RSS3", "path": "./content/navs/latest-news/rss.html" }
+        ]
+    },
+    {
+        "category": "CTF's",
+        "path": "",
+        "tabs": []
+    },
+    {
+        "category": "Cloud",
+        "path": "",
+        "tabs": []
+    },
+    {
+        "category": "Ethical_Hacking",
+        "path": "",
+        "tabs": []
+    },
+    {
+        "category": "Learning",
+        "path": "",
+        "tabs": []
+    },
+    {
+        "category": "Magazines",
+        "path": "./content/navs/magazines/magazines.md",
+        "tabs": []
+    },
+    {
+        "category": "Tools",
+        "path": "",
+        "tabs": []
+    },
+    {
+        "category": "Troubleshooting",
+        "path": "./content/navs/troubleshooting/linux.md",
+        "tabs": []
+    }    
+]

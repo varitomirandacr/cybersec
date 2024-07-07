@@ -2,866 +2,109 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        <link href="./resources/site.css" rel="stylesheet"/>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                                
+                fetch("./data/data.json")
+                    .then(response => response.text())
+                    .then(data => {
+                        const parsed = JSON.parse(data);
+                        let navs = [];
+                        parsed.forEach(item => {
+                            const nav = `<a href="#" data-url="${item.path}" data-target="${item.category}">
+                                            <i class="ph-browsers"></i>
+                                            <span>${item.category.replace("_", " ")}</span>
+                                        </a>`;
+                            navs.push(nav);
 
-            :root {
-                --c-gray-900: #000000;
-                --c-gray-800: #1f1f1f;
-                --c-gray-700: #2e2e2e;
-                --c-gray-600: #313131;
-                --c-gray-500: #969593;
-                --c-gray-400: #a6a6a6;
-                --c-gray-300: #bdbbb7;
-                --c-gray-200: #f1f1f1;
-                --c-gray-100: #ffffff;
+                            let tabs = [];
+                            item.tabs.forEach(t => {
+                                const tab = `<a href="#" data-parent="${item.category}" data-url="${t.path}" class="hidden">${t.category}</a>`;
+                                tabs.push(tab);
+                            });
+                            document.getElementById("horizontal-tabs").innerHTML += tabs.join('');
+                            document.querySelectorAll('.tabs a').forEach(tab => {
+                                tab.addEventListener('click', function (event) {
+                                    event.preventDefault();
+                                    fetchRss(event.target.dataset.url, contentPage);
+                                });
+                            });
+                            document.getElementById("sidebar-nav").innerHTML = navs.join('');
+                        
+                            document.querySelectorAll('.navigation a').forEach(link => {
+                                link.addEventListener('click', function (event) {
+                                    event.preventDefault();
+                                    const target = event.target;
+                                    const url = this.dataset.url;
+                                    fetch(url, { cors:'no-cors'})
+                                    .then(response => response.text())
+                                    .then(content => {
+                                        debugger;
+                                        if (url.includes(".html")) {                                                    
+                                            showHide("page").innerHTML = content;
+                                        }
+                                        else {
+                                            showHide("frame").innerHTML = marked.parse(content);
+                                        }
+                                    })
+                                    .catch(error => console.error('Error loading Markdown file:', error));   
+                                    
+                                    document.querySelectorAll('.tabs a').forEach(tab => {
+                                        let current = target.parentNode.dataset.target;
+                                        if(tab.dataset.parent == current)
+                                            tab.className.replace("hidden", "show");
+                                        else
+                                            tab.className.replace("show", "hidden");
+                                    });
+                                });
+                            });                                    
+                        })
+                    })
+                    .catch(error => console.error('Error loading Markdown file:', error));
+            });
 
-                --c-green-500: #45ffbc;
-                --c-olive-500: #e3ffa8;
+            function fetchRss(rssUrl, componentId) {
+                /*await fetch('http://localhost:3000/api/data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name })
+                });*/
 
-                --c-white: var(--c-gray-100);
-
-                --c-text-primary: var(--c-gray-100);
-                --c-text-secondary: var(--c-gray-200);
-                --c-text-tertiary: var(--c-gray-500);
+                fetch('/api/callrss')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('contentPage').innerHTML = data.content;
+                    //showHide("page");
+                })
+                .catch(error => {
+                    console.error('Error fetching message:', error);
+                });
             }
 
-            body {
-                line-height: 1.5;
-                min-height: 100vh;
-                font-family: "Be Vietnam Pro", sans-serif;
-                background-color: var(--c-gray-900);
-                color: var(--c-text-primary);
-                display: flex;
-                padding-top: 3vw;
-                padding-bottom: 3vw;
-                justify-content: center;
-            }
-
-            *,
-            *:before,
-            *:after {
-                box-sizing: border-box;
-            }
-
-            img {
-                display: block;
-                max-width: 100%;
-            }
-
-            button,
-            select,
-            input,
-            textarea {
-                font: inherit;
-            }
-
-            a {
-                color: inherit;
-            }
-
-            .responsive-wrapper {
-                width: 90%;
-                max-width: 1600px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .app {
-                min-height: 80vh;
-                width: 99%;
-                max-width: 1600px;
-                /* background-color: var(--c-gray-800); */
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .app-header {
-                display: grid;
-                grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(
-                        max-content,
-                        400px
-                    );
-                column-gap: 4rem;
-                align-items: flex-end;
-                @media (max-width: 1200px) {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    border-bottom: 1px solid var(--c-gray-600);
+            function showHide(component) {
+                const contentPage = document.getElementById('contentPage');
+                const contentFrame = document.getElementById('contentFrame');
+                if (component == "page") {
+                    contentFrame.style.display = "none";
+                    contentPage.style.display = "flex";
+                    return contentPage;
+                } else {
+                    contentFrame.style.display = "block";
+                    contentPage.style.display = "none";
+                    return contentFrame;
                 }
             }
-
-            .app-header-navigation {
-                @media (max-width: 1200px) {
-                    display: none;
-                }
-            }
-
-            .app-header-actions {
-                display: flex;
-                align-items: center;
-                @media (max-width: 1200px) {
-                    display: none;
-                }
-            }
-
-            .app-header-actions-buttons {
-                display: flex;
-                border-left: 1px solid var(--c-gray-600);
-                margin-left: 2rem;
-                padding-left: 2rem;
-
-                & > * + * {
-                    margin-left: 1rem;
-                }
-            }
-
-            .app-header-mobile {
-                display: none;
-                @media (max-width: 1200px) {
-                    display: flex;
-                }
-            }
-
-            .app-body {
-                height: 100%;
-                display: block; 
-                grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(
-                        min-content,
-                        400px
-                    );
-
-                column-gap: 4rem;
-                padding-top: 2.5rem;
-
-                @media (max-width: 1200px) {
-                    grid-template-columns: 1fr;
-                    & > * {
-                        margin-bottom: 3.5rem;
-                    }
-                }
-            }
-
-            .app-body-navigation {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                @media (max-width: 1200px) {
-                    display: none;
-                }
-            }
-
-            .app-body-sidebar {
-            }
-
-            .footer {
-                margin-top: auto;
-                h1 {
-                    font-size: 1.5rem;
-                    line-height: 1.125;
-                    display: flex;
-                    align-items: flex-start;
-                    small {
-                        font-size: 0.5em;
-                        margin-left: 0.25em;
-                    }
-                }
-
-                div {
-                    border-top: 1px solid var(--c-gray-600);
-                    margin-top: 1.5rem;
-                    padding-top: 1rem;
-                    font-size: 0.75rem;
-                    color: var(--c-text-tertiary);
-                }
-            }
-
-            .logo {
-                display: flex;
-                align-items: center;
-                padding-bottom: 1rem;
-                padding-top: 1rem;
-                border-bottom: 1px solid var(--c-gray-600);
-                @media (max-width: 1200px) {
-                    border-bottom: 0;
-                }
-            }
-
-            .logo-icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 32px;
-                height: 32px;
-            }
-
-            .logo-title {
-                display: flex;
-                flex-direction: column;
-                line-height: 1.25;
-                margin-left: 0.75rem;
-                span:first-child {
-                    color: var(--c-text-primary);
-                }
-                span:last-child {
-                    color: var(--c-text-tertiary);
-                }
-            }
-
-            .navigation {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                color: var(--c-text-tertiary);
-                a {
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    transition: 0.25s ease;
-
-                    * {
-                        transition: 0.25s ease;
-                    }
-
-                    i {
-                        margin-right: 0.75rem;
-                        font-size: 1.25em;
-                        flex-shrink: 0;
-                    }
-
-                    & + a {
-                        margin-top: 1.25rem;
-                    }
-
-                    &:hover,
-                    &:focus {
-                        transform: translateX(4px);
-                        color: var(--c-text-primary);
-                    }
-                }
-            }
-
-            .tabs {
-                display: flex;
-                justify-content: space-between;
-                color: var(--c-text-tertiary);
-                border-bottom: 1px solid var(--c-gray-600);
-
-                a {
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                    text-decoration: none;
-                    border-top: 2px solid transparent;
-                    display: inline-flex;
-                    transition: 0.25s ease;
-                    &.active,
-                    &:hover,
-                    &:focus {
-                        color: var(--c-text-primary);
-                        border-color: var(--c-text-primary);
-                    }
-                }
-            }
-
-            .user-profile {
-                display: flex;
-                align-items: center;
-                border: 0;
-                background: transparent;
-                cursor: pointer;
-                color: var(--c-text-tertiary);
-                transition: 0.25s ease;
-
-                &:hover,
-                &:focus {
-                    color: var(--c-text-primary);
-                    span:last-child {
-                        box-shadow: 0 0 0 4px var(--c-gray-800), 0 0 0 5px var(--c-text-tertiary);
-                    }
-                }
-
-                span:first-child {
-                    display: flex;
-                    font-size: 1.125rem;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                    border-bottom: 1px solid var(--c-gray-600);
-                    font-weight: 300;
-                }
-
-                span:last-child {
-                    transition: 0.25s ease;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 42px;
-                    height: 42px;
-                    border-radius: 50%;
-                    overflow: hidden;
-                    margin-left: 1.5rem;
-                    flex-shrink: 0;
-                }
-            }
-
-            .icon-button {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 0;
-                background-color: transparent;
-                border: 1px solid var(--c-gray-500);
-                color: var(--c-text-primary);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                transition: 0.25s ease;
-                flex-shrink: 0;
-                &.large {
-                    width: 42px;
-                    height: 42px;
-                    font-size: 1.25em;
-                }
-
-                i {
-                    transition: 0.25s ease;
-                }
-
-                &:hover,
-                &:focus {
-                    background-color: var(--c-gray-600);
-                    box-shadow: 0 0 0 4px var(--c-gray-800), 0 0 0 5px var(--c-text-tertiary);
-                }
-            }
-
-            .tiles {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                column-gap: 1rem;
-                row-gap: 1rem;
-                margin-top: 1.25rem;
-                @media (max-width: 700px) {
-                    grid-template-columns: repeat(1, 1fr);
-                }
-            }
-
-            .tile {
-                padding: 1rem;
-                border-radius: 8px;
-                background-color: var(--c-olive-500);
-                color: var(--c-gray-900);
-                min-height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: relative;
-                transition: 0.25s ease;
-
-                &:hover {
-                    transform: translateY(-5px);
-                }
-
-                &:focus-within {
-                    box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-olive-500);
-                }
-
-                &:nth-child(2) {
-                    background-color: var(--c-green-500);
-                    &:focus-within {
-                        box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-green-500);
-                    }
-                }
-                &:nth-child(3) {
-                    background-color: var(--c-gray-300);
-                    &:focus-within {
-                        box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
-                    }
-                }
-
-                a {
-                    text-decoration: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    font-weight: 600;
-
-                    .icon-button {
-                        color: inherit;
-                        border-color: inherit;
-                        &:hover,
-                        &:focus {
-                            background-color: transparent;
-                            i {
-                                transform: none;
-                            }
-                        }
-                    }
-
-                    &:focus {
-                        box-shadow: none;
-                    }
-
-                    &:after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                    }
-                }
-            }
-
-            .tile-header {
-                display: flex;
-                align-items: center;
-                i {
-                    font-size: 2.5em;
-                }
-
-                h3 {
-                    display: flex;
-                    flex-direction: column;
-                    line-height: 1.375;
-                    margin-left: 0.5rem;
-                    span:first-child {
-                        font-weight: 600;
-                    }
-
-                    span:last-child {
-                        font-size: 0.825em;
-                        font-weight: 200;
-                    }
-                }
-            }
-
-            .service-section {
-                & > h2 {
-                    font-size: 1.5rem;
-                    margin-bottom: 1.25rem;
-                }
-            }
-
-            .service-section-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                & > * + * {
-                    margin-left: 1.25rem;
-                }
-
-                @media (max-width: 1000px) {
-                    display: none;
-                }
-            }
-
-            .service-section-footer {
-                color: var(--c-text-tertiary);
-                margin-top: 1rem;
-            }
-
-            .search-field {
-                display: flex;
-                flex-grow: 1;
-                position: relative;
-                input {
-                    width: 100%;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    border: 0;
-                    border-bottom: 1px solid var(--c-gray-600);
-                    background-color: transparent;
-                    padding-left: 1.5rem;
-                }
-
-                i {
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-
-            .dropdown-field {
-                display: flex;
-                flex-grow: 1;
-                position: relative;
-                select {
-                    width: 100%;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    border: 0;
-                    border-bottom: 1px solid var(--c-gray-600);
-                    background-color: transparent;
-                    padding-right: 1.5rem;
-                    appearance: none;
-                    color: var(--c-text-tertiary);
-                    width: 100%;
-                }
-
-                i {
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-
-            .flat-button {
-                border-radius: 6px;
-                background-color: var(--c-gray-700);
-                padding: 0.5em 1.5em;
-                border: 0;
-                color: var(--c-text-secondary);
-                transition: 0.25s ease;
-                cursor: pointer;
-                &:hover,
-                &:focus {
-                    background-color: var(--c-gray-600);
-                }
-            }
-
-            .mobile-only {
-                display: none;
-                @media (max-width: 1000px) {
-                    display: inline-flex;
-                }
-            }
-
-            .transfer-section {
-                margin-top: 2.5rem;
-            }
-
-            .transfer-section-header {
-                display: flex;
-                align-items: center;
-                width: 100%;
-                padding-bottom: 0.75rem;
-                border-bottom: 1px solid var(--c-gray-600);
-                h2 {
-                    font-size: 1.5rem;
-                }
-            }
-
-            .payments {
-                display: flex;
-                flex-direction: column;
-                margin-top: 1.5rem;
-            }
-
-            .payment {
-                display: flex;
-                align-items: center;
-                & + * {
-                    margin-top: 1rem;
-                }
-            }
-
-            .card {
-                width: 125px;
-                padding: 0.375rem;
-                aspect-ratio: 3 / 2;
-                flex-shrink: 0;
-                border-radius: 6px;
-                color: var(--c-gray-800);
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                font-size: 0.75rem;
-                font-weight: 600;
-                &.green {
-                    background-color: var(--c-green-500);
-                }
-
-                &.olive {
-                    background-color: var(--c-olive-500);
-                }
-
-                &.gray {
-                    background-color: var(--c-gray-300);
-                }
-
-                span:last-child {
-                    align-self: flex-end;
-                }
-            }
-
-            .payment-details {
-                display: flex;
-                width: 100%;
-                flex-direction: column;
-                margin-left: 1.5rem;
-                h3 {
-                    font-size: 1rem;
-                    color: var(--c-text-tertiary);
-                }
-
-                div {
-                    margin-top: 0.75rem;
-                    padding-top: 0.75rem;
-                    padding-bottom: 0.75rem;
-                    border-top: 1px solid var(--c-gray-600);
-                    border-bottom: 1px solid var(--c-gray-600);
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    flex: 1;
-
-                    span {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-
-            .filter-options {
-                margin-left: 1.25rem;
-                padding-left: 1.25rem;
-                border-left: 1px solid var(--c-gray-600);
-                display: flex;
-                align-items: center;
-                flex: 1 1 auto;
-
-                p {
-                    & + * {
-                        margin-left: auto;
-                        margin-right: 0.75rem;
-                    }
-                    color: var(--c-text-tertiary);
-                    font-size: 0.875rem;
-                    @media (max-width: 1000px) {
-                        display: none;
-                    }
-                }
-            }
-
-            .transfers {
-                display: flex;
-                flex-direction: column;
-                margin-top: 1.5rem;
-            }
-
-            .transfer {
-                display: flex;
-                align-items: center;
-                width: 100%;
-                font-size: 0.875rem;
-                @media (max-width: 1000px) {
-                    align-items: flex-start;
-                    flex-direction: column;
-                }
-                & + * {
-                    margin-top: 2rem;
-                }
-            }
-
-            .transfer-logo {
-                background-color: var(--c-gray-200);
-                border-radius: 4px;
-                width: 42px;
-                height: 42px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img {
-                    width: 45%;
-                }
-            }
-
-            .transfer-details {
-                margin-left: 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex: 1;
-                @media (max-width: 1000px) {
-                    flex-wrap: wrap;
-                    margin-left: 0;
-                    margin-top: 1rem;
-                }
-                div {
-                    width: calc(100% / 3 - 1rem);
-                    @media (max-width: 1000px) {
-                        width: 100%;
-                    }
-                    & + div {
-                        margin-left: 1rem;
-                        @media (max-width: 1000px) {
-                            margin-left: 0;
-                            margin-top: 1rem;
-                        }
-                    }
-                }
-
-                dd {
-                    color: var(--c-text-tertiary);
-                    margin-top: 2px;
-                }
-            }
-
-            .transfer-number {
-                margin-left: 2rem;
-                font-size: 1.125rem;
-                flex-shrink: 0;
-                width: 15%;
-                display: flex;
-                justify-content: flex-end;
-                @media (max-width: 1000px) {
-                    margin-left: 0;
-                    margin-top: 1.25rem;
-                    width: 100%;
-                    justify-content: flex-start;
-                }
-            }
-
-            .payment-section {
-                & > h2 {
-                    font-size: 1.5rem;
-                }
-            }
-
-            .payment-section-header {
-                display: flex;
-                align-items: center;
-                margin-top: 1rem;
-                p {
-                    color: var(--c-text-tertiary);
-                    font-size: 0.875rem;
-                }
-
-                div {
-                    padding-left: 1rem;
-                    margin-left: auto;
-                    display: flex;
-                    align-items: center;
-                    & > * + * {
-                        margin-left: 0.5rem;
-                    }
-                }
-            }
-
-            .card-button {
-                display: flex;
-                width: 50px;
-                height: 34px;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-                background-color: transparent;
-                transition: 0.25s ease;
-                border-radius: 4px;
-                border: 2px solid var(--c-gray-600);
-                color: var(--c-text-primary);
-                cursor: pointer;
-                &.mastercard svg {
-                    max-height: 15px;
-                }
-
-                &:focus,
-                &:hover,
-                &.active {
-                    color: var(--c-gray-800);
-                    background-color: var(--c-white);
-                    border-color: var(--c-white);
-                }
-            }
-
-            .faq {
-                margin-top: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                p {
-                    color: var(--c-text-tertiary);
-                    font-size: 0.875rem;
-                }
-
-                div {
-                    margin-top: 0.75rem;
-                    padding-top: 0.75rem;
-                    padding-bottom: 0.75rem;
-                    border-top: 1px solid var(--c-gray-600);
-                    border-bottom: 1px solid var(--c-gray-600);
-                    font-size: 0.875rem;
-                    display: flex;
-                    align-items: center;
-
-                    label {
-                        padding-right: 1rem;
-                        margin-right: 1rem;
-                        border-right: 1px solid var(--c-gray-600);
-                    }
-
-                    input {
-                        border: 0;
-                        background-color: transparent;
-                        padding: 0.25em 0;
-                        width: 100%;
-                    }
-                }
-            }
-
-            .payment-section-footer {
-                display: flex;
-                align-items: center;
-                margin-top: 1.5rem;
-            }
-
-            .save-button {
-                border: 1px solid currentColor;
-                color: var(--c-text-tertiary);
-                border-radius: 6px;
-                padding: 0.75em 2.5em;
-                background-color: transparent;
-                transition: 0.25s ease;
-                cursor: pointer;
-                &:focus,
-                &:hover {
-                    color: var(--c-white);
-                }
-            }
-
-            .settings-button {
-                display: flex;
-                align-items: center;
-                color: var(--c-text-tertiary);
-                background-color: transparent;
-                border: 0;
-                padding: 0;
-                margin-left: 1.5rem;
-                cursor: pointer;
-                transition: 0.25s ease;
-                i {
-                    margin-right: 0.5rem;
-                }
-                &:focus,
-                &:hover {
-                    color: var(--c-white);
-                }
-            }
-
-            input,
-            select,
-            a,
-            textarea,
-            button {
-                &:focus {
-                    outline: 0;
-                    box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
-                }
-            }
-
-        </style>
+        
+        </script>
     </head>
 <body>
     <div class="app">
         <header class="app-header">
             <div class="app-header-logo">
                 <div class="logo">
-                    <span class="logo-icon">
-                        <span>&#9767;</span>
-                    </span>
                     <h1 class="logo-title">
                         <span>Cybersec</span>
                         <span>wiki</span>
@@ -869,40 +112,26 @@
                 </div>
             </div>
             <div class="app-header-navigation">
-                <div class="tabs">
-                    <a href="#">
-                        Overview
-                    </a>
-                    <a href="#" class="">
-                        Payments
-                    </a>
-                    <a href="#">
-                        Cards
-                    </a>
-                    <a href="#">
-                        Account
-                    </a>
-                    <a href="#">
-                        System
-                    </a>
-                    <a href="#">
-                        Business
-                    </a>
+                <div id="horizontal-tabs" class="tabs">                    
                 </div>
             </div>
             <div class="app-header-actions">
                 <button class="user-profile">
-                    <span>Matheo Peterson</span>
+                    <span>Alvaro A. Miranda</span>
                     <span>
-                        <img src="https://assets.codepen.io/285131/almeria-avatar.jpeg" />
+                        <img src="https://media.licdn.com/dms/image/C4E03AQFOW_zrePKGdw/profile-displayphoto-shrink_400_400/0/1632924793298?e=1726099200&v=beta&t=8qvP-5z0Cvhc4eQTiRpWwaV5LRXgs7sd32WcfhWT_W0" />
                     </span>
                 </button>
                 <div class="app-header-actions-buttons">
-                    <button class="icon-button large">
-                        <i class="ph-magnifying-glass"></i>
+                    <button class="icon-button large" onclick="window.open('https://www.linkedin.com/in/varitomiranda/', '_blank')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
                     </button>
-                    <button class="icon-button large">
-                        <i class="ph-bell"></i>
+                    <button class="icon-button large" onclick="window.open('https://www.linkedin.com/in/varitomiranda/', '_blank')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>
                     </button>
                 </div>
             </div>
@@ -915,29 +144,8 @@
         <div class="app-body">
             <div class="row">
                 <div class="col-md-2">
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const links = document.querySelectorAll('.navigation a');
-                            const contentFrame = document.getElementById('contentFrame');
-                
-                            links.forEach(link => {
-                                link.addEventListener('click', function (event) {
-                                    event.preventDefault();
-                                    const url = this.dataset.url;
-                                    fetch(url)
-                                    .then(response => response.text())
-                                    .then(markdown => {
-                                        debugger;
-                                        const html = marked.parse(markdown);
-                                        contentFrame.innerHTML = html;
-                                    })
-                                    .catch(error => console.error('Error loading Markdown file:', error));
-                                });
-                            });
-                        });
-                    </script>
-                    <nav class="navigation">
-                        <a href="#" data-url="./data/linux.md">
+                    <nav class="navigation" id="sidebar-nav">
+                        <!--<a href="#" data-url="./content/linux.md">
                             <i class="ph-browsers"></i>
                             <span>Latest News</span>
                         </a>
@@ -961,6 +169,10 @@
                             <i class="ph-globe"></i>
                             <span>Ethickal Hacking</span>
                         </a>
+                        <a href="#">
+                            <i class="ph-globe"></i>
+                            <span>Cloud</span>
+                        </a>-->
                     </nav>
                     <footer class="footer">
                         <h1>Almeria<small>©</small></h1>
@@ -970,8 +182,12 @@
                         </div>
                     </footer>
                 </div>
-                <div class="col-md-8">                    
-                    <object id="contentFrame" data="" width="100%" height="100hv"></object>
+                <div class="col-md-8 custom-scroll">   
+                    <div id="mainPage">
+                        <div id="contentPage" class="row">
+                        </div>
+                    </div>                 
+                    <object id="contentFrame" data=""></object>
                     <!--
                     <section class="service-section">
                         <h2>Service</h2>
