@@ -31,10 +31,7 @@ app.use('/', express.static(__dirname + '/'));
 app.get('/api/callrss', (req, res) => {
   console.log('API /api/callrss called');
   fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
-        method: 'GET',
-        headers: {
-            'mode': 'no-cors'
-        }
+        method: 'GET'
     }) 
     .then(response => response.text())
     .then(xmlString => { 
