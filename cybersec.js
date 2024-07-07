@@ -39,6 +39,57 @@ app.get('/proxy', (req, res) => {
 // Define an API route
 app.get('/api/callrss', (req, res) => {
   console.log('API /api/callrss called');
+  let config = {
+    method: 'get',
+    maxBodyLength: Infinity,
+    url: 'https://feeds.feedburner.com/TheHackersNews?format=xml',
+    headers: { }
+  };
+  
+  axios.request(config)
+  .then(response => response.text())
+    .then(xmlString => { 
+      const jsonItems = [];
+      xml2js.parseString(xmlString, (err, result) => {
+        const items = result.rss.channel[0].item;
+        
+        items.forEach(item => {
+          const title = item.title[0];
+          const description = item.description[0];
+          const link = item.link[0];
+          const pubDate = item.pubDate[0];
+
+          jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
+        });
+      });
+      
+      return jsonItems; 
+    })
+    .then(items => {   
+      let parsed = [];     
+      items.forEach(el => {
+        parsed.push(`
+          <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
+            <div class="cyan-card">
+              <div>
+                <h5 class="card-title cyan-title">${el.title}</h5>
+                <p class="card-text">
+                  ${el.description}
+                </p>
+                <a href="${el.link}" class="card-link">Read more</a>
+              </div>
+              <div class="card-footer text-muted">
+                ${el.pubDate}
+              </div>
+            </div>
+          </div>`);
+      }); 
+      res.json({ content: parsed.join('') });     
+    })
+  .catch((error) => {
+    console.log(error);
+  });
+
   fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
         method: 'GET',
         headers: {
