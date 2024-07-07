@@ -1,7 +1,7 @@
 ## Cybersecurity & Ethical Hacking Magazines
 
 ```bash
-This is a collection of the top and most cyber security online magazines. 
+This is a collection of the top and most prestiged cyber security online magazines. 
 
 ```
 

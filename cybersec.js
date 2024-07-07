@@ -30,9 +30,7 @@ app.use('/', express.static(__dirname + '/'));
 // Define an API route
 app.get('/api/callrss', (req, res) => {
   console.log('API /api/callrss called');
-  fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
-        method: 'GET'
-    }) 
+  fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", ) 
     .then(response => response.text())
     .then(xmlString => { 
       const jsonItems = [];

@@ -1,9 +1,9 @@
 [
     {
-        "category": "(✱) Latest_News",
+        "category": "(✱) RSS Feeds",
         "path": "./content/navs/latest-news/rss.html",
         "tabs": [
-            { "category": "RSS:TheHackerNews", "path": "https://feeds.feedburner.com/TheHackersNews?format=xml" },
+            { "category": "RSS Feeds", "path": "./content/navs/rssfeeds.md" },
             { "category": "RSS2", "path": "./content/navs/latest-news/rss.html" },
             { "category": "RSS3", "path": "./content/navs/latest-news/rss.html" }
         ]
