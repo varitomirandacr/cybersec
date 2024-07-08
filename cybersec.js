@@ -27,7 +27,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/', 'index.html'));
 });
 
-
 app.get('/proxy', (req, res) => {
   const url = req.query.url;
   if (!url) {
