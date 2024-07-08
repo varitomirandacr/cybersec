@@ -15,8 +15,8 @@
                 .then(data => {
                     debugger;
                     const jsonItems = [];
-                    xml2js.parseString(xmlString.data, (err, result) => {
-                        console.log("XML STRING: "+JSON.stringify(xmlString.data));
+                    xml2js.parseString(data, (err, result) => {
+                        console.log("XML STRING: "+JSON.stringify(data));
                         const items = result.rss.channel[0].item;
                         
                         items.forEach(item => {
