@@ -15,6 +15,17 @@
                     }
                 })
                 .then(response => {
+                    const clone = response.clone();
+                    return Promise.all([response.json(), clone.text()]);
+                })
+                .then(([data, text]) => {
+                    console.log('JSON:', data);
+                    console.log('Text:', text);
+                })
+                .catch(error => { console.error('Error fetching message:', error); });
+
+                /*
+                .then(response => {
                     console.log(response.text()) ;
                     //console.log(response.json());
                     return response.text();
@@ -23,10 +34,8 @@
                     document.getElementById('contentPage').innerHTML = data.content;
                     //showHide("page");
                 })
-                .catch(error => {
-                    console.error('Error fetching message:', error);
-                });
-
+                    */
+                   
                 fetch("./data/data.json")
                     .then(response => response.text())
                     .then(data => {
