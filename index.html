@@ -15,8 +15,7 @@
                     }
                 })
                 .then(response => {
-                    const clone = response.clone();
-                    return Promise.all([response.json(), clone.text()]);
+                    return response;
                 })
                 .then(([data, text]) => {
                     console.log('JSON:', data);
@@ -35,7 +34,7 @@
                     //showHide("page");
                 })
                     */
-                   
+
                 fetch("./data/data.json")
                     .then(response => response.text())
                     .then(data => {
