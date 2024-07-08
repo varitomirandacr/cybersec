@@ -28,11 +28,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/proxy', (req, res) => {
-  const url = req.query.url;
-  if (!url) {
-    return res.status(400).send('URL is required');
-  }
-  request(url).pipe(res);
+  request('https://feeds.feedburner.com/TheHackersNews?format=xml').pipe(res);
 });
 
 // Define an API route
