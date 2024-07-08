@@ -12,7 +12,7 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs');
-app.use(cors());
+app.use(cors({origin: 'https://varitomirandacr.github.io/cybersec/'}));
 
 // Serve static files from the "public" directory
 //app.use(express.static(path.join(__dirname, '/')));
