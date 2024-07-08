@@ -89,7 +89,7 @@
                     body: JSON.stringify({ name })
                 });*/
 
-                fetch('https://feeds.feedburner.com/TheHackersNews?format=xml')
+                fetch('/api/calrss')
                 .then(response => response.json())
                 .then(data => {
                     debugger;
