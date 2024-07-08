@@ -9,7 +9,7 @@ const fs = require('fs');
 const xml2js = require('xml2js');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.set('view engine', 'ejs');
 app.use(cors({origin: 'https://varitomirandacr.github.io/cybersec/'}));
@@ -18,7 +18,8 @@ app.use(cors({origin: 'https://varitomirandacr.github.io/cybersec/'}));
 //app.use(express.static(path.join(__dirname, '/')));
 
 /* Middlewares */
-app.use(express.static('/'));
+//app.use(express.static('/'));
+app.use('/', express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 /* Routes */
@@ -26,7 +27,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/', 'index.html'));
 });
 
-app.use('/', express.static(__dirname + '/'));
 
 app.get('/proxy', (req, res) => {
   const url = req.query.url;
@@ -47,10 +47,15 @@ app.get('/api/callrss', (req, res) => {
   };
   
   axios.request(config)
-  .then(response => response.text())
+    .then(response => {
+      //console.log(response);
+      //console.log(response.text());
+      return response;
+    })
     .then(xmlString => { 
       const jsonItems = [];
-      xml2js.parseString(xmlString, (err, result) => {
+      xml2js.parseString(xmlString.data, (err, result) => {
+        console.log("XML STRING: "+JSON.stringify(xmlString.data));
         const items = result.rss.channel[0].item;
         
         items.forEach(item => {
@@ -143,6 +148,6 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
 });
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || port, function() {
   console.log('Example app listening on port 3000!');
 });
