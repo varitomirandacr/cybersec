@@ -4,6 +4,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/xml2js@0.6.2/lib/browser/xml2js.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fast-xml-parser@4.0.12/dist/parser.min.js"></script>
+
         <link href="./resources/site.css" rel="stylesheet"/>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -15,19 +17,21 @@
                 .then(data => {
                     debugger;
                     const jsonItems = [];
-                    xml2js.parseString(data, (err, result) => {
-                        console.log("XML STRING: "+JSON.stringify(data));
-                        const items = result.rss.channel[0].item;
-                        
+                    const options = { ignoreAttributes: false };                    
+                    const parser = new fastxmlparser.XMLParser(options);
+                    const jsonObj = parser.parse(xmlData);
+                    /*xml2js.parseString(data, (err, result) => {
+                        console.log("XML STRING: "+JSON.stringify(data));*/
+                        //const items = result.rss.channel[0].item;
+                        const items = jsonObj.rss.channel[0].item;                        
                         items.forEach(item => {
-                        const title = item.title[0];
-                        const description = item.description[0];
-                        const link = item.link[0];
-                        const pubDate = item.pubDate[0];
-
-                        jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
+                            const title = item.title[0];
+                            const description = item.description[0];
+                            const link = item.link[0];
+                            const pubDate = item.pubDate[0];
+                            jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
                         });
-                    });
+                    //});
                     let parsed = [];     
                     jsonItems.forEach(el => {
                         parsed.push(`
