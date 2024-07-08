@@ -95,7 +95,7 @@ app.get('/api/callrss', (req, res) => {
     console.log(error);
   });
 
-  fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
+  /*fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
         method: 'GET',
         headers: {
             'mode': 'no-cors'
@@ -140,7 +140,7 @@ app.get('/api/callrss', (req, res) => {
       }); 
       res.json({ content: parsed.join('') });     
     })
-    .catch(error => console.log('Error fetching the RSS feed:', error));
+    .catch(error => console.log('Error fetching the RSS feed:', error));*/
 });
 
 app.get('/api/test', (req, res) => {
