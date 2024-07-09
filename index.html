@@ -154,8 +154,8 @@
                 };
 
                 //https://api.allorigins.win/raw?url=
-                
-                fetch('https://feeds.feedburner.com/TheHackersNews?format=xml', options)
+
+                fetch('https://hnrss.org/newest', options)
                 .then(response => response.text())
                 .then(data => {
                     debugger;
