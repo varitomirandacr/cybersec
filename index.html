@@ -10,8 +10,8 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                  
-                debugger;
-                console.log("called from onload");
+                //debugger;
+                /*console.log("called from onload");
                 fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
                 .then(response => response.text())
                 .then(data => {
@@ -23,16 +23,16 @@
                     /*xml2js.parseString(data, (err, result) => {
                         console.log("XML STRING: "+JSON.stringify(data));*/
                         //const items = result.rss.channel[0].item;
-                        const items = jsonObj.rss.channel[0].item;                        
+                        /*const items = jsonObj.rss.channel[0].item;                        
                         items.forEach(item => {
                             const title = item.title[0];
                             const description = item.description[0];
                             const link = item.link[0];
                             const pubDate = item.pubDate[0];
                             jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
-                        });
+                        });*/
                     //});
-                    let parsed = [];     
+                    /*let parsed = [];     
                     jsonItems.forEach(el => {
                         parsed.push(`
                         <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
@@ -53,7 +53,7 @@
                     document.getElementById('contentPage').innerHTML = parsed.join(''); 
                     console.log(data)
                 })
-                .catch(error => { console.error('Error fetching message:', error); });
+                .catch(error => { console.error('Error fetching message:', error); });*/
 
                 /*
                 .then(response => {
@@ -139,6 +139,49 @@
                     },
                     body: JSON.stringify({ name })
                 });*/
+
+                fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
+                .then(response => response.text())
+                .then(data => {
+                    debugger;
+                    const jsonItems = [];
+                    const options = { ignoreAttributes: false };                    
+                    const parser = new fastxmlparser.XMLParser(options);
+                    const jsonObj = parser.parse(xmlData);
+                    /*xml2js.parseString(data, (err, result) => {
+                        console.log("XML STRING: "+JSON.stringify(data));*/
+                        //const items = result.rss.channel[0].item;
+                        const items = jsonObj.rss.channel[0].item;                        
+                        items.forEach(item => {
+                            const title = item.title[0];
+                            const description = item.description[0];
+                            const link = item.link[0];
+                            const pubDate = item.pubDate[0];
+                            jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
+                        });
+                    //});
+                    let parsed = [];     
+                    jsonItems.forEach(el => {
+                        parsed.push(`
+                        <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
+                            <div class="cyan-card">
+                            <div>
+                                <h5 class="card-title cyan-title">${el.title}</h5>
+                                <p class="card-text">
+                                ${el.description}
+                                </p>
+                                <a href="${el.link}" class="card-link">Read more</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                ${el.pubDate}
+                            </div>
+                            </div>
+                        </div>`);
+                    }); 
+                    document.getElementById('contentPage').innerHTML = parsed.join(''); 
+                    console.log(data)
+                })
+                .catch(error => { console.error('Error fetching message:', error); });
 
                 fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
                 .then(response => {
