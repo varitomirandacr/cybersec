@@ -140,7 +140,20 @@
                     body: JSON.stringify({ name })
                 });*/
 
-                fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
+                const options = {
+                    method: 'GET', // or any other method you need (GET, PUT, DELETE, etc.)
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Origin': 'https://varitomirandacr.github.io/cybersec/',
+                        'Access-Control-Allow-Credentials': 'true',
+                        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Content-Encoding, Accept',
+                        'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, PATCH, PUT, DELETE',
+                    },
+                    body: null,
+                    credentials: 'include' // to include cookies with the request
+                };
+
+                fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml', options)
                 .then(response => response.text())
                 .then(data => {
                     debugger;
