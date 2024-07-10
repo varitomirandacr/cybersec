@@ -13,8 +13,8 @@
                 debugger;
                 fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity')
                 .then(response => {
-                    console.log(response);
-                    console.log(response.text());
+                    //console.log(response);
+                    //console.log(response.text());
                     return response.json();
                 })
                 .then(data => console.log(data))
