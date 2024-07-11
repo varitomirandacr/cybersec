@@ -31,6 +31,21 @@ app.get('/proxy', (req, res) => {
   request('https://feeds.feedburner.com/TheHackersNews?format=xml').pipe(res);
 });
 
+get.get('/api/news', (req, res) => {
+  debugger;
+  fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity')
+  .then(response => {
+      //console.log(response);
+      //console.log(response.text());
+      return response.json();
+  })
+  .then(data => {
+    console.log(data);
+    return data.results;
+  })
+  .catch(error => { console.error('Error fetching message:', error); });
+});
+
 // Define an API route
 app.get('/api/callrss', (req, res) => {
   console.log('API /api/callrss called');
