@@ -2,6 +2,7 @@
     {
         "category": "News",
         "path": "https://varitomirandacr.github.io/cybersec/api/news",
+        "click": "",
         "tabs": [
             { "category": "RSS Feeds Sites", "path": "./content/rssfeeds.md" },
             { "category": "News Sites", "path": "./content/latest-news/rss.html" },
@@ -11,11 +12,13 @@
     {
         "category": "Cloud",
         "path": "",
+        "click": "",
         "tabs": []
     },
     {
         "category": "Ethical Hacking",
         "path": "./content/ethical/ethical.html",
+        "click": "",
         "tabs": [
             { "category": "CTF's", "path": "./content/ethical/ctfs.md" },
             { "category": "Books", "": "./content/ethical/books.md" }
@@ -24,21 +27,25 @@
     {
         "category": "Learning",
         "path": "",
+        "click": "",
         "tabs": []
     },
     {
         "category": "Magazines",
-        "path": "/api/mags",
+        "path": "./content/magazines/magazines.json",
+        "click": "fetchMags",
         "tabs": []
     },
     {
         "category": "Tools",
         "path": "",
+        "click": "",
         "tabs": []
     },
     {
         "category": "Troubleshooting",
         "path": "./content/troubleshooting/linux.md",
+        "click": "",
         "tabs": []
     }    
 ]

@@ -50,7 +50,6 @@
                 fetch("./data/data.json")
                     .then(response => response.text())
                     .then(data => {
-                        debugger;
                         const parsed = JSON.parse(data);
                         let navs = [];
                         parsed.forEach(item => {
@@ -93,11 +92,14 @@
                                     const _type = current.url.includes('.md') ? 'no-page' : 'page';
                                     const component = showHide(_type);
                                     if (_type === 'page') {
-                                        fetchHtml(current.url);
-                                        showHide(_type);
+                                        if(current.target == "Magazines") {
+                                            fetchMags(current.url);
+                                        }
+                                        else {                                            
+                                            showHide(_type) = fetchHtml(current.url);
+                                        }
                                     }
                                     else {
-                                        debugger;
                                         fetchMarkdown(current.url);
                                         showHide(_type);
                                     }
@@ -107,17 +109,47 @@
                     })
                     .catch(error => console.error('Error loading Markdown file:', error));
 
-                fetchJobs();
-            });
-
-            async function fetchJobs() {
-                    await fetchServer('/api/jobs')
-                    .then(response => {
-                        debugger;
-                        document.getElementById('search-jobs').innerHTML = response.content;
+                async function fetchJobs() {
+                    await fetchServer('./data/search_jobs.json')
+                    .then(json => {
+                        const jobs = [];
+                        json.forEach(job => {
+                        jobs.push(`<li class="list-group-item bg-dark text-white"> 
+                            <span> ${job.icon} </span>
+                            <a href="${job.url}"> ${job.site} </a>
+                            </li>`);
+                        });
+                        document.getElementById('search-jobs').innerHTML = jobs.join('');
                     })
                     .catch(error => console.error('Error loading Markdown file:', error));
                 }
+                fetchJobs();
+            });
+
+            async function fetchMags(url) {
+                await fetchServer('./content/magazines/magazines.json')
+                    .then(json => {
+                        const mags = [];
+                        const title = `<div class="container"> 
+                            <h1>${json.title}</h1>
+                            <p class="pb-3 mb-0 small lh-sm card-bottom">${json.description}</p>
+                            <p class="last-updated"> ${new Date()} </p>
+                        </div>`;
+                        json.magazines.forEach(mag => {
+                            mags.push(`<!-- ${mag.name} -->
+                                <div class="col-md-4">
+                                    <div class="d-flex text-body-secondary pt-3">
+                                        <div class="card-container">
+                                            <h4 class="card-title">${mag.name}</h4>
+                                            <p class="pb-3 mb-0 small lh-sm card-bottom">${mag.description}</p>
+                                            <a href="${mag.url}" class="card-link" target="_blank">Visit Website</a>
+                                        </div>
+                                    </div>
+                                </div>`);
+                        showHide('page').innerHTML = `${title} ${mags.join('')}`;
+                    });
+                });
+            }
 
             async function fetchServer(url) {
                     try {
@@ -213,34 +245,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <nav class="navigation" id="sidebar-nav">
-                        <!--<a href="#" data-url="./content/linux.md">
-                            <i class="ph-browsers"></i>
-                            <span>Latest News</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-check-square"></i>
-                            <span>Magazines</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-swap"></i>
-                            <span>CTFs</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-file-text"></i>
-                            <span>Tools</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-globe"></i>
-                            <span>Troubleshooting</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-globe"></i>
-                            <span>Ethickal Hacking</span>
-                        </a>
-                        <a href="#">
-                            <i class="ph-globe"></i>
-                            <span>Cloud</span>
-                        </a>-->
+                        
                     </nav>
                     <footer class="footer">
                         <div>
@@ -260,11 +265,6 @@
                     <section class="search-jobs-section">
                         <h2>Search Jobs</h2>
                         <ul class="list-group list-group-flush bg-dark text-white" id="search-jobs">
-                            <li class="list-group-item bg-dark text-white">An item</li>
-                            <li class="list-group-item bg-dark text-white">A second item</li>
-                            <li class="list-group-item bg-dark text-white">A third item</li>
-                            <li class="list-group-item bg-dark text-white">A fourth item</li>
-                            <li class="list-group-item bg-dark text-white">And a fifth one</li>
                         </ul>                          
                     </section>
                 </div>
