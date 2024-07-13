@@ -28,7 +28,7 @@
     },
     {
         "category": "Magazines",
-        "path": "https://varitomirandacr.github.io/cybersec/api/mags",
+        "path": "/api/mags",
         "tabs": []
     },
     {

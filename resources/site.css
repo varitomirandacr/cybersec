@@ -777,6 +777,24 @@
         }
     }
 
+    .card-container {
+        border: 1px solid #393939;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .card-link {
+        color: #0d6efd;
+        text-decoration: none;
+        font-size: small;
+    }
+
+    .card-bottom {
+        border-bottom: 1px solid #393939;
+        padding-top: 10px;
+        color: #999;
+    }
+
     .faq {
         margin-top: 1.5rem;
         display: flex;
@@ -882,13 +900,19 @@
         scrollbar-color: #888 #1e1e1e; /* thumb color, track color */
     }
 
+.last-updated {
+    font-style: italic;
+    color: #888;
+    font-size: xx-small;
+}
+
     /* Style the scrollbar for the div with class 'custom-scroll' */
 .custom-scroll {
     /* width: 300px; */
     /* height: 200px; */
     overflow-y: scroll;
     /* background-color: #333; */
-    padding: 10px;
+    /*padding: 10px;*/
     color: white;
 }
 
@@ -954,4 +978,8 @@
 }
 .ctable a:hover {
     text-decoration: underline;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
 }

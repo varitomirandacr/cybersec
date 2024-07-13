@@ -1,82 +1,102 @@
 {
     "title": "Cybersecurity & Ethical Hacking Magazines",
     "description": "This is a collection of the top and most cyber security online magazines.",
+    "last_updated": "",
     "magazines": [
       {
         "name": "Australian Cybersecurity Magazine",
-        "url": "https://australiancybersecuritymagazine.com.au/"
+        "url": "https://australiancybersecuritymagazine.com.au/",
+        "description": "Covers the latest in cybersecurity news, analysis, and insights from Australia and beyond, providing expert commentary and features on security trends."
       },
       {
         "name": "Brilliance Security Magazine",
-        "url": "https://brilliancesecuritymagazine.com/"
+        "url": "https://brilliancesecuritymagazine.com/",
+        "description": "Focuses on delivering timely and relevant security news, with a particular emphasis on cybersecurity, physical security, and emerging threats."
       },
       {
         "name": "Cisomag",
-        "url": "https://cisomag.com/"
+        "url": "https://cisomag.com/",
+        "description": "A comprehensive resource for CISO-level professionals, offering in-depth articles on security management, threat intelligence, and industry best practices."
       },
       {
         "name": "CPOMagazine",
-        "url": "https://www.cpomagazine.com/"
+        "url": "https://www.cpomagazine.com/",
+        "description": "Provides insights and analysis on data privacy, cybersecurity, and the latest regulatory updates affecting security professionals worldwide."
       },
       {
         "name": "CyberDefense",
-        "url": "https://www.cyberdefensemagazine.com/"
+        "url": "https://www.cyberdefensemagazine.com/",
+        "description": "An industry leader in providing fresh perspectives on security news, technology, and solutions to enhance cybersecurity defenses."
       },
       {
         "name": "CyberMagazine",
-        "url": "https://cybermagazine.com/"
+        "url": "https://cybermagazine.com/",
+        "description": "Focuses on delivering the latest cybersecurity news, expert analysis, and features on innovative technologies and industry trends."
       },
       {
         "name": "CyberProtection-Magazine",
-        "url": "https://cyberprotection-magazine.com/"
+        "url": "https://cyberprotection-magazine.com/",
+        "description": "Dedicated to exploring advanced cybersecurity protection methods, risk management, and the latest in cyber defense strategies."
       },
       {
         "name": "CyberSecurity Ventures",
-        "url": "https://cybersecurityventures.com/"
+        "url": "https://cybersecurityventures.com/",
+        "description": "Provides market research, cybersecurity reports, and expert insights into the evolving landscape of cyber threats and defenses."
       },
       {
         "name": "CyberSecurityMag",
-        "url": "https://cybersecuritymag.com/"
+        "url": "https://cybersecuritymag.com/",
+        "description": "Offers a blend of news, expert opinions, and features on the latest cybersecurity challenges and innovations."
       },
       {
         "name": "CyberSecurity-Magazine",
-        "url": "https://cybersecurity-magazine.com/"
+        "url": "https://cybersecurity-magazine.com/",
+        "description": "Focuses on delivering up-to-date information on cybersecurity trends, technological advancements, and strategic insights."
       },
       {
         "name": "FranklineTech",
-        "url": "https://franklinetech.com/"
+        "url": "https://franklinetech.com/",
+        "description": "Provides a variety of cybersecurity news, reviews, and analysis on the latest in technology and security innovations."
       },
       {
         "name": "InsightMagazineUK",
-        "url": "https://insight.scmagazineuk.com/"
+        "url": "https://insight.scmagazineuk.com/",
+        "description": "Delivers critical insights and analysis on cybersecurity issues, regulatory changes, and industry developments in the UK."
       },
       {
         "name": "InfoSecurity Magazine",
-        "url": "https://www.infosecurity-magazine.com/"
+        "url": "https://www.infosecurity-magazine.com/",
+        "description": "A leading source of cybersecurity news and analysis, offering expert commentary, research reports, and in-depth features."
       },
       {
         "name": "Security Magazine",
-        "url": "https://www.securitymagazine.com/"
+        "url": "https://www.securitymagazine.com/",
+        "description": "Covers a broad range of security topics, including cybersecurity, physical security, risk management, and business continuity."
       },
       {
         "name": "SC Magazine",
-        "url": "https://www.scmagazine.com/"
+        "url": "https://www.scmagazine.com/",
+        "description": "A trusted source for cybersecurity professionals, offering news, analysis, and expert commentary on security threats and solutions."
       },
       {
         "name": "CyberSecurity Springer Open",
-        "url": "https://cybersecurity.springeropen.com/"
+        "url": "https://cybersecurity.springeropen.com/",
+        "description": "An open-access journal publishing high-quality research on all aspects of cybersecurity, from theoretical studies to practical applications."
       },
       {
         "name": "ThreatTechnology",
-        "url": "https://threat.technology/"
+        "url": "https://threat.technology/",
+        "description": "Focuses on the latest developments in threat intelligence, cybersecurity strategies, and emerging security technologies."
       },
       {
         "name": "The CyberExpress",
-        "url": "https://thecyberexpress.com/cybersecurity-magazine/"
+        "url": "https://thecyberexpress.com/cybersecurity-magazine/",
+        "description": "Delivers news, analysis, and features on cybersecurity trends, threats, and innovative solutions for security professionals."
       },
       {
         "name": "US Cybersecurity",
-        "url": "https://www.uscybersecurity.net/"
+        "url": "https://www.uscybersecurity.net/",
+        "description": "Provides comprehensive coverage of cybersecurity news, events, and industry developments in the United States."
       }
     ]
   }

@@ -36,26 +36,53 @@ app.get('/api/news', async (req, res) => {
 
 app.get('/api/mags', async (req, res) => {
   try {
-    const response = await axios.get('./content/magazines/magazines.json');
-    const json = response.json();
+    const data = fs.readFileSync('./content/magazines/magazines.json', 'utf8');
+    const json = JSON.parse(data);
     const mags = [];
+
+    const title = `<div class="container"> 
+        <h1>${json.title}</h1>
+        <p class="pb-3 mb-0 small lh-sm card-bottom">${json.description}</p>
+        <p class="last-updated"> ${new Date()} </p>
+      </div>`;
     json.magazines.forEach(mag => {
       mags.push(`<!-- ${mag.name} -->
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">${mag.name}</h5>
-                        <a href="${mag.url}" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-4">
+                <div class="d-flex text-body-secondary pt-3">
+                    <div class="card-container">
+                        <h4 class="card-title">${mag.name}</h4>
+                        <p class="pb-3 mb-0 small lh-sm card-bottom">${mag.description}</p>
+                        <a href="${mag.url}" class="card-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
             </div>`);
     });
-    res.json({ content: mags.join('') });
+    res.json({ content: `${title} ${mags.join('')}` });
   } catch (error) {
     console.error('Error fetching data:', error);
     res.status(500).send('Error fetching data');
   }
 });
+
+app.get('/api/jobs', async (req, res) => {
+  try {
+    const data = fs.readFileSync('./data/search_jobs.json', 'utf8');
+    const json = JSON.parse(data);
+    const jobs = [];
+
+    json.forEach(job => {
+      jobs.push(`<li class="list-group-item bg-dark text-white"> 
+          <span> ${job.icon} </span>
+          <a href="${job.url}"> ${job.site} </a>
+        </li>`);
+    });
+    res.json({ content: `${jobs.join('')}` });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    res.status(500).send('Error fetching data');
+  }
+});
+
 
 
 app.listen(process.env.PORT || port, function() {
