@@ -14,9 +14,6 @@ const port = 4000;
 app.set('view engine', 'ejs');
 app.use(cors({origin: 'https://varitomirandacr.github.io/cybersec/'}));
 
-// Serve static files from the "public" directory
-//app.use(express.static(path.join(__dirname, '/')));
-
 /* Middlewares */
 //app.use(express.static('/'));
 app.use('/', express.static(__dirname + '/'));
@@ -27,137 +24,40 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/', 'index.html'));
 });
 
-app.get('/proxy', (req, res) => {
-  request('https://feeds.feedburner.com/TheHackersNews?format=xml').pipe(res);
+app.get('/api/news', async (req, res) => {
+  try {
+    const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity');
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    res.status(500).send('Error fetching data');
+  }
 });
 
-get.get('/api/news', (req, res) => {
-  debugger;
-  fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity')
-  .then(response => {
-      //console.log(response);
-      //console.log(response.text());
-      return response.json();
-  })
-  .then(data => {
-    console.log(data);
-    return data.results;
-  })
-  .catch(error => { console.error('Error fetching message:', error); });
+app.get('/api/mags', async (req, res) => {
+  try {
+    const response = await axios.get('./content/magazines/magazines.json');
+    const json = response.json();
+    const mags = [];
+    json.magazines.forEach(mag => {
+      mags.push(`<!-- ${mag.name} -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">${mag.name}</h5>
+                        <a href="${mag.url}" class="btn btn-primary">Visit Website</a>
+                    </div>
+                </div>
+            </div>`);
+    });
+    res.json({ content: mags.join('') });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    res.status(500).send('Error fetching data');
+  }
 });
 
-// Define an API route
-app.get('/api/callrss', (req, res) => {
-  console.log('API /api/callrss called');
-  let config = {
-    method: 'get',
-    maxBodyLength: Infinity,
-    url: 'https://feeds.feedburner.com/TheHackersNews?format=xml',
-    headers: { }
-  };
-  
-  axios.request(config)
-    .then(response => {
-      //console.log(response);
-      //console.log(response.text());
-      return response;
-    })
-    .then(xmlString => { 
-      const jsonItems = [];
-      xml2js.parseString(xmlString.data, (err, result) => {
-        console.log("XML STRING: "+JSON.stringify(xmlString.data));
-        const items = result.rss.channel[0].item;
-        
-        items.forEach(item => {
-          const title = item.title[0];
-          const description = item.description[0];
-          const link = item.link[0];
-          const pubDate = item.pubDate[0];
-
-          jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
-        });
-      });
-      
-      return jsonItems; 
-    })
-    .then(items => {   
-      let parsed = [];     
-      items.forEach(el => {
-        parsed.push(`
-          <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
-            <div class="cyan-card">
-              <div>
-                <h5 class="card-title cyan-title">${el.title}</h5>
-                <p class="card-text">
-                  ${el.description}
-                </p>
-                <a href="${el.link}" class="card-link">Read more</a>
-              </div>
-              <div class="card-footer text-muted">
-                ${el.pubDate}
-              </div>
-            </div>
-          </div>`);
-      }); 
-      res.json({ content: parsed.join('') });     
-    })
-  .catch((error) => {
-    console.log(error);
-  });
-
-  /*fetch("https://feeds.feedburner.com/TheHackersNews?format=xml", {
-        method: 'GET',
-        headers: {
-            'mode': 'no-cors'
-        }
-    }) 
-    .then(response => response.text())
-    .then(xmlString => { 
-      const jsonItems = [];
-      xml2js.parseString(xmlString, (err, result) => {
-        const items = result.rss.channel[0].item;
-        
-        items.forEach(item => {
-          const title = item.title[0];
-          const description = item.description[0];
-          const link = item.link[0];
-          const pubDate = item.pubDate[0];
-
-          jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
-        });
-      });
-      
-      return jsonItems; 
-    })
-    .then(items => {   
-      let parsed = [];     
-      items.forEach(el => {
-        parsed.push(`
-          <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
-            <div class="cyan-card">
-              <div>
-                <h5 class="card-title cyan-title">${el.title}</h5>
-                <p class="card-text">
-                  ${el.description}
-                </p>
-                <a href="${el.link}" class="card-link">Read more</a>
-              </div>
-              <div class="card-footer text-muted">
-                ${el.pubDate}
-              </div>
-            </div>
-          </div>`);
-      }); 
-      res.json({ content: parsed.join('') });     
-    })
-    .catch(error => console.log('Error fetching the RSS feed:', error));*/
-});
-
-app.get('/api/test', (req, res) => {
-  console.log('API /api/data called');
-  res.json({ message: 'Hello from the backend!' });
-});
 
 app.listen(process.env.PORT || port, function() {
-  console.log('Example app listening on port 3000!');
+  console.log(`App listening on port ${process.env.PORT || port}!`);
 });

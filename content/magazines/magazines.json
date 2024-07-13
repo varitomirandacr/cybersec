@@ -1,0 +1,83 @@
+{
+    "title": "Cybersecurity & Ethical Hacking Magazines",
+    "description": "This is a collection of the top and most cyber security online magazines.",
+    "magazines": [
+      {
+        "name": "Australian Cybersecurity Magazine",
+        "url": "https://australiancybersecuritymagazine.com.au/"
+      },
+      {
+        "name": "Brilliance Security Magazine",
+        "url": "https://brilliancesecuritymagazine.com/"
+      },
+      {
+        "name": "Cisomag",
+        "url": "https://cisomag.com/"
+      },
+      {
+        "name": "CPOMagazine",
+        "url": "https://www.cpomagazine.com/"
+      },
+      {
+        "name": "CyberDefense",
+        "url": "https://www.cyberdefensemagazine.com/"
+      },
+      {
+        "name": "CyberMagazine",
+        "url": "https://cybermagazine.com/"
+      },
+      {
+        "name": "CyberProtection-Magazine",
+        "url": "https://cyberprotection-magazine.com/"
+      },
+      {
+        "name": "CyberSecurity Ventures",
+        "url": "https://cybersecurityventures.com/"
+      },
+      {
+        "name": "CyberSecurityMag",
+        "url": "https://cybersecuritymag.com/"
+      },
+      {
+        "name": "CyberSecurity-Magazine",
+        "url": "https://cybersecurity-magazine.com/"
+      },
+      {
+        "name": "FranklineTech",
+        "url": "https://franklinetech.com/"
+      },
+      {
+        "name": "InsightMagazineUK",
+        "url": "https://insight.scmagazineuk.com/"
+      },
+      {
+        "name": "InfoSecurity Magazine",
+        "url": "https://www.infosecurity-magazine.com/"
+      },
+      {
+        "name": "Security Magazine",
+        "url": "https://www.securitymagazine.com/"
+      },
+      {
+        "name": "SC Magazine",
+        "url": "https://www.scmagazine.com/"
+      },
+      {
+        "name": "CyberSecurity Springer Open",
+        "url": "https://cybersecurity.springeropen.com/"
+      },
+      {
+        "name": "ThreatTechnology",
+        "url": "https://threat.technology/"
+      },
+      {
+        "name": "The CyberExpress",
+        "url": "https://thecyberexpress.com/cybersecurity-magazine/"
+      },
+      {
+        "name": "US Cybersecurity",
+        "url": "https://www.uscybersecurity.net/"
+      }
+    ]
+  }
+  

@@ -10,78 +10,51 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                  
-                debugger;
-                fetch('/api/news')
-                .then(response => {
-                    //console.log(response);
-                    //console.log(response.text());
-                    return response.json();
-                })
-                .then(data => console.log(data))
-                .catch(error => { console.error('Error fetching message:', error); });
-                //debugger;
-                /*console.log("called from onload");
-                fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
-                .then(response => response.text())
-                .then(data => {
-                    debugger;
-                    const jsonItems = [];
-                    const options = { ignoreAttributes: false };                    
-                    const parser = new fastxmlparser.XMLParser(options);
-                    const jsonObj = parser.parse(xmlData);
-                    /*xml2js.parseString(data, (err, result) => {
-                        console.log("XML STRING: "+JSON.stringify(data));*/
-                        //const items = result.rss.channel[0].item;
-                        /*const items = jsonObj.rss.channel[0].item;                        
-                        items.forEach(item => {
-                            const title = item.title[0];
-                            const description = item.description[0];
-                            const link = item.link[0];
-                            const pubDate = item.pubDate[0];
-                            jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
-                        });*/
-                    //});
-                    /*let parsed = [];     
-                    jsonItems.forEach(el => {
-                        parsed.push(`
-                        <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
-                            <div class="cyan-card">
-                            <div>
-                                <h5 class="card-title cyan-title">${el.title}</h5>
-                                <p class="card-text">
-                                ${el.description}
-                                </p>
-                                <a href="${el.link}" class="card-link">Read more</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                ${el.pubDate}
-                            </div>
-                            </div>
-                        </div>`);
-                    }); 
-                    document.getElementById('contentPage').innerHTML = parsed.join(''); 
-                    console.log(data)
-                })
-                .catch(error => { console.error('Error fetching message:', error); });*/
+                async function fetchNews() {
+                    try {
+                        const response = await fetch('/api/news');
+                        if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        const data = await response.json();
+                        displayNews(data.results);
+                    } catch (error) {
+                        console.error('Error fetching news:', error);
+                        document.getElementById('news-container').innerText = 'Error fetching news';
+                    }
+                }
 
-                /*
-                .then(response => {
-                    console.log(response.text()) ;
-                    //console.log(response.json());
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('contentPage').innerHTML = data.content;
-                    //showHide("page");
-                })
-                    */
+                function displayNews(articles) {
+                    let news = [];
+                    articles.forEach(el => {
+                        news.push(`
+                            <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
+                                <div class="cyan-card">
+                                <div>
+                                    <h5 class="card-title cyan-title">${el.title}</h5>
+                                    <p class="card-text cut-text">
+                                    ${el.description}
+                                    </p>
+                                    <a href="${el.link}" class="card-link">Read more</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    ${el.pubDate}
+                                </div>
+                                </div>
+                            </div>`);
+                    });
+                    showHide("page").innerHTML = news.join('');
+                }
 
+                // 
                 fetch("./data/data.json")
                     .then(response => response.text())
                     .then(data => {
+                        debugger;
                         const parsed = JSON.parse(data);
                         let navs = [];
                         parsed.forEach(item => {
+                            // Side Navigator
                             const nav = `<a href="#" data-url="${item.path}" data-target="${item.category}">
                                             <i class="ph-browsers"></i>
                                             <span>${item.category.replace("_", " ")}</span>
@@ -97,134 +70,69 @@
                             document.querySelectorAll('.tabs a').forEach(tab => {
                                 tab.addEventListener('click', function (event) {
                                     event.preventDefault();
-                                    fetchRss(event.target.dataset.url, contentPage);
+                                    fetchNews();
                                 });
                             });
                             document.getElementById("sidebar-nav").innerHTML = navs.join('');
                         
                             document.querySelectorAll('.navigation a').forEach(link => {
+                                
                                 link.addEventListener('click', function (event) {
+                                    let current = '';
                                     event.preventDefault();
-                                    console.log("called from listener");
-                                    const target = event.target;
-                                    const url = this.dataset.url;
-                                    fetch(url, {
-                                        method: 'GET',
-                                        headers: {
-                                            mode: 'no-cors'
-                                        }
-                                    })
-                                    .then(response => response.text())
-                                    .then(content => {
-                                        debugger;
-                                        if (url.includes(".html")) {                                                    
-                                            showHide("page").innerHTML = content;
-                                        }
-                                        else {
-                                            showHide("frame").innerHTML = marked.parse(content);
-                                        }
-                                    })
-                                    .catch(error => console.error('Error loading Markdown file:', error));   
-                                    
+                                    const target = event.target;                                    
                                     document.querySelectorAll('.tabs a').forEach(tab => {
-                                        let current = target.parentNode.dataset.target;
-                                        if(tab.dataset.parent == current)
-                                            tab.className.replace("hidden", "show");
+                                        current = target.parentNode.dataset;
+                                        if(tab.dataset.parent == current.target)
+                                            tab.classList.replace("hidden", "show");
                                         else
-                                            tab.className.replace("show", "hidden");
+                                            tab.classList.replace("show", "hidden");
                                     });
-                                });
+
+                                    debugger;
+                                    const _type = current.url.includes('.md') ? 'no-page' : 'page';
+                                    const component = showHide(_type);
+                                    if (_type === 'page') {
+                                        fetchHtml(current.url);
+                                        showHide(_type);
+                                    }
+                                    else {
+                                        debugger;
+                                        fetchMarkdown(current.url);
+                                        showHide(_type);
+                                    }
+                                });                                
                             });                                    
                         })
                     })
                     .catch(error => console.error('Error loading Markdown file:', error));
             });
 
-            function fetchRss(rssUrl, componentId) {
-                /*await fetch('http://localhost:3000/api/data', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ name })
-                });*/
+            function fetchMarkdown(url) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(markdown => {
+                        debugger;
+                        const html = marked.parse(markdown);
+                        showHide('no-page').innerHTML = html;
+                    })
+                    .catch(error => console.error('Error loading Markdown file:', error));
+            }
 
-                const options = {
-                    method: 'GET', // or any other method you need (GET, PUT, DELETE, etc.)
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Origin': 'https://varitomirandacr.github.io/cybersec/',
-                        'Access-Control-Allow-Credentials': 'true',
-                        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Content-Encoding, Accept',
-                        'Access-Control-Allow-Methods': 'OPTIONS, GET, POST, PATCH, PUT, DELETE',
-                    },
-                    body: null,
-                    credentials: 'include' // to include cookies with the request
-                };
-
-                //https://api.allorigins.win/raw?url=
-
-                fetch('https://news.ycombinator.com/')
-                .then(response => response.text())
-                .then(data => {
-                    debugger;
-                    const jsonItems = [];
-                    const options = { ignoreAttributes: false };                    
-                    const parser = new fastxmlparser.XMLParser(options);
-                    const jsonObj = parser.parse(xmlData);
-                    /*xml2js.parseString(data, (err, result) => {
-                        console.log("XML STRING: "+JSON.stringify(data));*/
-                        //const items = result.rss.channel[0].item;
-                        const items = jsonObj.rss.channel[0].item;                        
-                        items.forEach(item => {
-                            const title = item.title[0];
-                            const description = item.description[0];
-                            const link = item.link[0];
-                            const pubDate = item.pubDate[0];
-                            jsonItems.push({title: title, description: description, link: link, pubDate: pubDate });
-                        });
-                    //});
-                    let parsed = [];     
-                    jsonItems.forEach(el => {
-                        parsed.push(`
-                        <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
-                            <div class="cyan-card">
-                            <div>
-                                <h5 class="card-title cyan-title">${el.title}</h5>
-                                <p class="card-text">
-                                ${el.description}
-                                </p>
-                                <a href="${el.link}" class="card-link">Read more</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                ${el.pubDate}
-                            </div>
-                            </div>
-                        </div>`);
-                    }); 
-                    document.getElementById('contentPage').innerHTML = parsed.join(''); 
-                    console.log(data)
-                })
-                .catch(error => { console.error('Error fetching message:', error); });
-
-                /*fetch('https://api.allorigins.win/raw?url=https://feeds.feedburner.com/TheHackersNews?format=xml')
-                .then(response => {
-                    console.log(response.text());
-                    return response.text();
-                })
-                .then(data => {
-                    debugger;
-                    document.getElementById('contentPage').innerHTML = data.content;                    
-                })
-                .catch(error => {
-                    console.error('Error fetching message:', error);
-                });*/
+            function fetchHtml(url) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(html => {
+                        debugger;
+                        showHide('page').innerHTML = html;
+                    })
+                    .catch(error => console.error('Error loading Markdown file:', error));
             }
 
             function showHide(component) {
                 const contentPage = document.getElementById('contentPage');
                 const contentFrame = document.getElementById('contentFrame');
-                if (component == "page") {
+                if (component === "page") {
                     contentFrame.style.display = "none";
                     contentPage.style.display = "flex";
                     return contentPage;
@@ -312,10 +220,9 @@
                         </a>-->
                     </nav>
                     <footer class="footer">
-                        <h1>Almeria<small>©</small></h1>
                         <div>
-                            Almeria ©<br />
-                            All Rights Reserved 2021
+                            AAMM ©<br />
+                            CyberWiki 2024
                         </div>
                     </footer>
                 </div>
@@ -572,7 +479,7 @@
                             </div>
                         </div>
                         <div class="payment-section-footer">
-                            <button class="save-button" onclick="test()">
+                            <button class="save-button" >
                                 Save
                             </button>
                             <button class="settings-button">

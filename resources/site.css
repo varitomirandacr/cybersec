@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
     .hidden {
-        display:none;
+        display:none !important;
     }
     .show {
-        display:block;
+        display:block !important;
+    }
+
+    .cut-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     :root {
@@ -35,7 +42,7 @@
         background-color: var(--c-gray-900);
         color: var(--c-text-primary);
         display: flex;
-        padding-top: 3vw;
+        /*padding-top: 3vw;*/
         padding-bottom: 3vw;
         justify-content: center;
     }
@@ -183,8 +190,8 @@
     .logo {
         display: flex;
         align-items: center;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        /*padding-bottom: 1rem;
+        padding-top: 1rem;*/
         border-bottom: 1px solid var(--c-gray-600);
         @media (max-width: 1200px) {
             border-bottom: 0;
@@ -247,7 +254,7 @@
 
     .tabs {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         color: var(--c-text-tertiary);
         border-bottom: 1px solid var(--c-gray-600);
 

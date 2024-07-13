@@ -1,17 +1,12 @@
 [
     {
-        "category": "(✱) RSS Feeds",
-        "path": "./content/navs/latest-news/rss.html",
+        "category": "News",
+        "path": "https://varitomirandacr.github.io/cybersec/api/news",
         "tabs": [
-            { "category": "RSS Feeds", "path": "./content/navs/rssfeeds.md" },
-            { "category": "RSS2", "path": "./content/navs/latest-news/rss.html" },
-            { "category": "RSS3", "path": "./content/navs/latest-news/rss.html" }
+            { "category": "RSS Feeds Sites", "path": "./content/rssfeeds.md" },
+            { "category": "News Sites", "path": "./content/latest-news/rss.html" },
+            { "category": "RSS3", "path": "./content/latest-news/rss.html" }
         ]
-    },
-    {
-        "category": "CTF's",
-        "path": "",
-        "tabs": []
     },
     {
         "category": "Cloud",
@@ -19,9 +14,12 @@
         "tabs": []
     },
     {
-        "category": "Ethical_Hacking",
-        "path": "",
-        "tabs": []
+        "category": "Ethical Hacking",
+        "path": "./content/ethical/ethical.html",
+        "tabs": [
+            { "category": "CTF's", "path": "./content/ethical/ctfs.md" },
+            { "category": "Books", "": "./content/ethical/books.md" }
+        ]
     },
     {
         "category": "Learning",
@@ -30,7 +28,7 @@
     },
     {
         "category": "Magazines",
-        "path": "./content/navs/magazines/magazines.md",
+        "path": "https://varitomirandacr.github.io/cybersec/api/mags",
         "tabs": []
     },
     {
@@ -40,7 +38,7 @@
     },
     {
         "category": "Troubleshooting",
-        "path": "./content/navs/troubleshooting/linux.md",
+        "path": "./content/troubleshooting/linux.md",
         "tabs": []
     }    
 ]
