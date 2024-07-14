@@ -1,12 +1,10 @@
 [
     {
         "category": "News",
-        "path": "https://varitomirandacr.github.io/cybersec/api/news",
+        "path": "./content/latest-news/latestnews.md",
         "click": "",
         "tabs": [
-            { "category": "RSS Feeds Sites", "path": "./content/rssfeeds.md" },
-            { "category": "News Sites", "path": "./content/latest-news/rss.html" },
-            { "category": "RSS3", "path": "./content/latest-news/rss.html" }
+            { "category": "News Sites", "path": "./content/latest-news/rss.html" }
         ]
     },
     {
@@ -17,18 +15,41 @@
     },
     {
         "category": "Ethical Hacking",
-        "path": "./content/ethical/ethical.html",
+        "path": "./content/ethical/ethical.md",
         "click": "",
         "tabs": [
-            { "category": "CTF's", "path": "./content/ethical/ctfs.md" },
-            { "category": "Books", "": "./content/ethical/books.md" }
+            { "category": "Practice", "path": "./content/ethical/practice.json" },
+            { "category": "Tools", "path": "./content/ethical/tools.json" }
+        ]
+    },
+    {
+        "category": "Groups",
+        "path": "./content/groups/groups.md",
+        "click": "",
+        "tabs": [
+            { "category": "Organizations", "path": "./content/ethical/practice.json" },
+            { "category": "Social", "path": "./content/ethical/tools.json" },
+            { "category": "Youtube Channels", "path": "./content/ethical/tools.json" }
+        ]
+    },
+    {
+        "category": "Industry",
+        "path": "./content/industry/industry.md",
+        "click": "",
+        "tabs": [
+            { "category": "Companies", "path": "./content/ethical/practice.json" },
+            { "category": "Pathway", "path": "./content/industry/pathway.json" }
         ]
     },
     {
         "category": "Learning",
         "path": "",
         "click": "",
-        "tabs": []
+        "tabs": [
+            { "category": "Certifications", "path": "./content/ethical/practice.json" },
+            { "category": "Trainings", "path": "./content/ethical/tools.json" },
+            { "category": "Books", "path": "./content/ethical/tools.json" }
+        ]
     },
     {
         "category": "Magazines",
@@ -37,15 +58,13 @@
         "tabs": []
     },
     {
-        "category": "Tools",
-        "path": "",
-        "click": "",
-        "tabs": []
-    },
-    {
         "category": "Troubleshooting",
-        "path": "./content/troubleshooting/linux.md",
+        "path": "./content/troubleshooting/troubleshooting.md",
         "click": "",
-        "tabs": []
+        "tabs": [
+            { "category": "Linux", "path": "./content/troubleshooting/linux.md" },
+            { "category": "Networking", "path": "./content/troubleshooting/networking.md" },
+            { "category": "Coding", "path": "./content/troubleshooting/coding.md" }
+        ]
     }    
 ]
