@@ -7,73 +7,73 @@
         "name": "Cybrary",
         "url": "https://www.cybrary.it/",
         "description": "The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.",
-        "image": "../../resources/images/cybrary.png"
+        "image": "resources/images/cybrary.png"
       },
       {
         "name": "OverTheWire",
         "url": "https://overthewire.org/wargames/",
         "description": "The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.",
-        "image": "../../resources/images/overthewire.png"
+        "image": "resources/images/overthewire.png"
       },
       {
         "name": "HackTheBox",
         "url": "https://www.hackthebox.com/",
         "description": "We provide a human-first platform creating and maintaining high performing cybersecurity individuals and organizations.",
-        "image": "../../resources/images/hackthebox.png"
+        "image": "resources/images/hackthebox.png"
       },
       {
         "name": "CyberSecLabs",
         "url": "https://cyberseclabs.ai/",
         "description": "Learning cybersecurity scenarios and practice site.",
-        "image": "../../resources/images/cyberseclabs.png"
+        "image": "resources/images/cyberseclabs.png"
       },
       {
         "name": "TryHackMe",
         "url": "https://tryhackme.com/",
         "description": "Learning cyber security on TryHackMe is fun and addictive. Earn points by answering questions, taking on challenges and maintain your hacking streak through short lessons.",
-        "image": "../../resources/images/tryhackme.jpg"
+        "image": "resources/images/tryhackme.jpg"
       },
       {
         "name": "Try2Hack",
         "url": "https://try2hack.me/",
         "description": "The goal of the game is to solve various tasks in the area of computer security (hacking) while emphasizing a realistic experience.",
-        "image": "../../resources/images/try2hackme.png"
+        "image": "resources/images/try2hackme.png"
       },
       {
         "name": "VulnMachines",
         "url": "https://www.vulnmachines.com/",
         "description": "A place to learn and improve penetration testing/ethical hacking skills for FREE. The labs consist of 100+ real world scenarios to practice the latest exploits and cutting edge hacking techniques.",
-        "image": "../../resources/images/vulnmachines.png"
+        "image": "resources/images/vulnmachines.png"
       },
       {
         "name": "VulnHub",
         "url": "https://www.vulnhub.com/",
         "description": "To provide materials that allows anyone to gain practical 'hands-on' experience in digital security, computer software & network administration.",
-        "image": "../../resources/images/vulnhub.jpg"
+        "image": "resources/images/vulnhub.jpg"
       },
       {
         "name": "RangeForge",
         "url": "https://www.rangeforce.com/",
         "description": "A cloud-based cyber range to strengthen and prove defensive team readiness.",
-        "image": "../../resources/images/rangeforge.png"
+        "image": "resources/images/rangeforge.png"
       },
       {
         "name": "HackXpert",
         "url": "https://labs.hackxpert.com/",
         "description": "Designed to provide hands-on experience for those interested in cybersecurity and ethical hacking.",
-        "image": "../../resources/images/hackxpert.png"
+        "image": "resources/images/hackxpert.png"
       },
       {
         "name": "RootMe",
         "url": "https://www.root-me.org/?lang=en",
         "description": "The fast, easy, and affordable way to train your hacking skills.",
-        "image": "../../resources/images/rootme.jpg"
+        "image": "resources/images/rootme.jpg"
       },
       {
         "name": "EchoCTF",
         "url": "https://echoctf.com/",
         "description": "Over the past 15 years, we have been delivering cybersecurity projects for government agencies, military, large corporations and educational institutions.",
-        "image": "../../resources/images/echoctf.png"
+        "image": "resources/images/echoctf.png"
       }
     ]
 }

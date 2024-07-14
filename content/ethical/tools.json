@@ -7,25 +7,25 @@
         "name": "Kali Linux",
         "url": "https://www.kali.org/",
         "description": "Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.",
-        "image": "../../resources/images/kali.jpg"
+        "image": "resources/images/kali.jpg"
       },
       {
         "name": "NetHunter",
         "url": "https://www.kali.org/docs/nethunter/",
         "description": "Kali NetHunter is a free & Open-source Mobile Penetration Testing Platform for Android devices, based on Kali Linux.",
-        "image": "../../resources/images/nethunter.jpg"
+        "image": "resources/images/nethunter.jpg"
       },
       {
         "name": "Qubes",
         "url": "https://www.qubes-os.org/",
         "description": "Qubes OS is a free and open-source, security-oriented operating system for single-user desktop computing. Qubes OS leverages Xen-based virtualization to allow for the creation and management of isolated compartments called qubes.",
-        "image": "../../resources/images/qubes.png"
+        "image": "resources/images/qubes.png"
       },
       {
         "name": "TailsOS",
         "url": "https://tails.net/",
         "description": "Tails is a portable operating system that protects against surveillance and censorship.",
-        "image": "../../resources/images/tails.jpg"
+        "image": "resources/images/tails.jpg"
       }
     ]
 }
