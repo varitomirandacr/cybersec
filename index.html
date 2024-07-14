@@ -62,14 +62,25 @@
 
                             let tabs = [];
                             item.tabs.forEach(t => {
-                                const tab = `<a href="#" data-parent="${item.category}" data-url="${t.path}" class="hidden">${t.category}</a>`;
+                                const tab = `<a href="#" data-parent="${item.category}" data-path="${t.path}" data-name="${t.category}" class="hidden">${t.category}</a>`;
                                 tabs.push(tab);
                             });
                             document.getElementById("horizontal-tabs").innerHTML += tabs.join('');
                             document.querySelectorAll('.tabs a').forEach(tab => {
                                 tab.addEventListener('click', function (event) {
                                     event.preventDefault();
-                                    fetchNews();
+                                    const current = event.target;
+                                    const dataset = current.dataset;
+                                    if (dataset.parent == "News")
+                                        fetchNews();
+                                    else if (dataset.name == "Tools")
+                                        fetchTools(dataset.path);
+                                    else if (dataset.name == "Practice")
+                                        fetchPractice(dataset.path);
+                                    else if (dataset.path.includes('.md'))
+                                        fetchMarkdown(dataset.path);
+                                    else if (dataset.name == "Pathway")
+                                        fetchPathway(dataset.path);
                                 });
                             });
                             document.getElementById("sidebar-nav").innerHTML = navs.join('');
@@ -125,6 +136,68 @@
                 }
                 fetchJobs();
             });
+
+            async function fetchPathway(url) {
+                await fetchServer(url)
+                    .then(json => {
+                        const title = `<div class="container"> 
+                                            <h1>${json.title}</h1>
+                                            <p class="pb-3 mb-0 small lh-sm">${json.description}</p>
+                                            <p class="last-updated"> ${new Date()} </p>
+                                        </div><hr/>`;
+                        showHide('page').innerHTML = `${title} ${json.content}`;
+                    })
+            }
+
+            async function fetchPractice(url) {
+                await fetchServer(url)
+                    .then(json => {
+                        const tools = [];
+                        const title = `<div class="container"> 
+                                            <h1>${json.title}</h1>
+                                            <p class="pb-3 mb-0 small lh-sm">${json.description}</p>
+                                            <p class="last-updated"> ${new Date()} </p>
+                                        </div><hr/>`;
+                        json.tools.forEach(tool => {
+                            tools.push(`<article class="col-md-4 pb-3">
+                                            <div class="">
+                                                <img src="${tool.image}" />
+                                                <h3><span>${tool.name}</span></h3>                                                                                             
+                                            </div>
+                                            <div><span class="pb-3 mb-0 small lh-sm">${tool.description}</span></div>
+                                            <a class="card-link" href="${tool.url}" target="_blank">
+                                                <span>View page</span>
+                                            </a>
+                                        </article>`);
+                        });
+                        showHide('page').innerHTML = `${title} ${tools.join('')}`;
+                    })
+            }
+
+            async function fetchTools(url) {
+                await fetchServer(url)
+                    .then(json => {
+                        const tools = [];
+                        const title = `<div class="container"> 
+                                            <h1>${json.title}</h1>
+                                            <p class="pb-3 mb-0 small lh-sm">${json.description}</p>
+                                            <p class="last-updated"> ${new Date()} </p>
+                                        </div><hr/>`;
+                        json.tools.forEach(tool => {
+                            tools.push(`<article class="col-md-6 pb-3">
+                                            <div class="">
+                                                <img src="${tool.image}" />
+                                                <h3><span>${tool.name}</span></h3>                                                                                             
+                                            </div>
+                                            <div><span class="pb-3 mb-0 small lh-sm">${tool.description}</span></div>
+                                            <a class="card-link" href="${tool.url}" target="_blank">
+                                                <span>View page</span>
+                                            </a>
+                                        </article>`);
+                        });
+                        showHide('page').innerHTML = `${title} ${tools.join('')}`;
+                    })
+            }
 
             async function fetchMags(url) {
                 await fetchServer('./content/magazines/magazines.json')
@@ -205,10 +278,10 @@
         <header class="app-header">
             <div class="app-header-logo">
                 <div class="logo">
-                    <h1 class="logo-title">
+                    <h3 class="logo-title">
                         <span>Cybersec</span>
-                        <span>wiki</span>
-                    </h1>
+                        <span></span>
+                    </h3><h6><span>wiki</span></h6>
                 </div>
             </div>
             <div class="app-header-navigation">
@@ -271,7 +344,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/fast-xml-parser@4.0.12/dist/parser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.4.0/fxparser.min.js"></script>
 </body>
