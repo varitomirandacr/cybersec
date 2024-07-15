@@ -15,38 +15,35 @@
                  
                 async function fetchNews() {
                     try {
-                        const response = await fetch('/api/news');
+                        const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity');
                         if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
+                            throw new Error(`HTTP error! status: ${response.status}`);
                         }
-                        const data = await response.json();
-                        displayNews(data.results);
+                        const articles = await response.json();
+                        document.getElementById('contentPage').innerHTML = '';
+                        articles.results.forEach(el => {
+                            if (el.language == "english") {
+                                document.getElementById('contentPage').innerHTML += `
+                                    <div class="col-md-4 col-lg-6 d-flex flex-column p-5 pb-1 text-white text-shadow-1">
+                                        <div class="cyan-card">
+                                        <div>
+                                            <h5 class="card-title cyan-title">${el.title}</h5>
+                                            <p class="card-text cut-text">
+                                            ${el.description || ''}
+                                            </p>
+                                            <a href="${el.link}" class="card-link">Read more</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            ${el.pubDate}
+                                        </div>
+                                        </div>
+                                    </div>`;
+                            }
+                        });
                     } catch (error) {
                         console.error('Error fetching news:', error);
                         document.getElementById('news-container').innerText = 'Error fetching news';
                     }
-                }
-
-                function displayNews(articles) {
-                    let news = [];
-                    articles.forEach(el => {
-                        news.push(`
-                            <div class="col-md-4 col-lg-6 d-flex flex-column h-100 p-5 pb-1 text-white text-shadow-1">
-                                <div class="cyan-card">
-                                <div>
-                                    <h5 class="card-title cyan-title">${el.title}</h5>
-                                    <p class="card-text cut-text">
-                                    ${el.description}
-                                    </p>
-                                    <a href="${el.link}" class="card-link">Read more</a>
-                                </div>
-                                <div class="card-footer text-muted">
-                                    ${el.pubDate}
-                                </div>
-                                </div>
-                            </div>`);
-                    });
-                    document.getElementById('contentPage').innerHTML = news.join('');
                 }
 
                 fetch("./data/data.json")
@@ -333,11 +330,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer sticky-footer border-top" data-bs-theme="dark">
-            AAMM ©<br />
-            CyberWiki 2024
-        </div>
+    </div>
+    <div class="footer sticky-footer border-top" data-bs-theme="dark">
+        AAMM ©<br />
+        CyberWiki 2024
     </div>
     <script src="https://cdn.jsdelivr.net/npm/fast-xml-parser@4.0.12/dist/parser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.4.0/fxparser.min.js"></script>
