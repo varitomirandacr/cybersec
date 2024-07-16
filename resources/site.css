@@ -476,3 +476,7 @@ body {
 img {
     width:100%;
 }
+
+a, h1, h2, h3, h4, p {
+    color: #ccc !important;
+}
