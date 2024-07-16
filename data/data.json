@@ -1,11 +1,9 @@
-[
+[    
     {
-        "category": "News",
-        "path": "./content/latest-news/latestnews.md",
+        "category": "Core",
+        "path": "./content/core/core.md",
         "click": "",
-        "tabs": [
-            { "category": "Newsdata.io", "path": "https://varitomirandacr.github.io/cybersec/api/news" }
-        ]
+        "tabs": []
     },
     {
         "category": "Cloud",
@@ -56,6 +54,14 @@
         "path": "./content/magazines/magazines.json",
         "click": "fetchMags",
         "tabs": []
+    },
+    {
+        "category": "News",
+        "path": "./content/latest-news/latestnews.md",
+        "click": "",
+        "tabs": [
+            { "category": "Newsdata.io", "path": "https://varitomirandacr.github.io/cybersec/api/news" }
+        ]
     },
     {
         "category": "Troubleshooting",
