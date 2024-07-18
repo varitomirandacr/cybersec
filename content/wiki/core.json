@@ -1,0 +1,9 @@
+{
+    "title": "",
+    "description": "",
+    "last_updated": "",
+    "header": "<div> <input type=\"search\" class=\"form-control form-control-dark text-bg-dark\" placeholder=\"Search...\" aria-label=\"Search\" onclick=\"search()\"> </div>",
+    "content": [
+        { "":""  }
+    ]
+}

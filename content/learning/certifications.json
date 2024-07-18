@@ -1,0 +1,13 @@
+{
+    "title": "Certifications",
+    "description": "List of most valuable cybsersecurity certifications",
+    "last_updated": "",
+    "tools": [
+      {
+        "name": "CompTIA Security+",
+        "url": "https://www.cybrary.it/",
+        "description": "CompTIA Security+",
+        "image": ""
+      }
+    ]
+}

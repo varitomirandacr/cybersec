@@ -1,8 +1,8 @@
 [    
     {
-        "category": "Core",
-        "path": "./content/core/core.md",
-        "click": "",
+        "category": "Wiki",
+        "path": "./content/wiki/home.md",
+        "click": "fetchMain",
         "tabs": []
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "category": "Learning",
-        "path": "",
+        "path": "./content/learning/learning.md",
         "click": "",
         "tabs": [
             { "category": "Certifications", "path": "./content/ethical/practice.json" },

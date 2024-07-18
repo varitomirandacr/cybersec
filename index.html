@@ -121,7 +121,7 @@
                         const jobs = [];
                         json.forEach(job => {
                         jobs.push(`<li class="list-group-item bg-dark text-white"> 
-                            <span> ${job.icon} </span>
+                            <span class="p-1"> ${job.icon} </span>
                             <a href="${job.url}"> ${job.site} </a>
                             </li>`);
                         });
@@ -130,7 +130,12 @@
                     .catch(error => console.error('Error loading Markdown file:', error));
                 }
                 fetchJobs();
+                fetchMain();
             });
+
+            async function fetchMain() {
+                await fetchMarkdown('./content/wiki/home.md');
+            }
 
             async function fetchPathway(url) {
                 await fetchServer(url)
@@ -252,6 +257,18 @@
                     .catch(error => console.error('Error loading Markdown file:', error));
             }
         
+            async function search(event) {
+                const criteria = event.target;
+                await fetchServer(url)
+                    .then(json => {
+                        const title = `<div class="container"> 
+                                            <h1>${json.title}</h1>
+                                            <p class="pb-3 mb-0 small lh-sm">${json.description}</p>
+                                            <p class="last-updated"> ${new Date()} </p>
+                                        </div><hr/>`;
+                        document.getElementById('contentPage').innerHTML = `${title} ${json.content}`;
+                    })
+            }
         </script>
     </head>
 <body class="bg-dark" data-bs-theme="dark">
@@ -312,7 +329,7 @@
                 <div class="sidebar bg-dark" data-bs-theme="dark" id="sidebar-nav"></div>
             </div>
 
-            <div class="col-sm-12 col-md-8 col-lg-8 mb-3">  
+            <div class="col-sm-12 col-md-6 col-lg-8 mb-3">  
                 <div class="row">
                     <ul class="nav nav-tabs border-top" id="horizontal-tabs"></ul>
                 </div> 
@@ -322,7 +339,7 @@
                 </div>                    
             </div>
 
-            <div class="col-sm-12 col-md-2 col-lg-2">
+            <div class="col-sm-12 col-md-3 col-lg-2">
                 <h3>Search Jobs</h3>
                 <ul class="list-group list-group-flush bg-dark text-white" id="search-jobs">
                 </ul>
