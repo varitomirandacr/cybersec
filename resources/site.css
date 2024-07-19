@@ -430,6 +430,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /*border: 1px solid cyan;
     border-radius: 10px;*/
+    color: #ccc;
 }
 .ctable th, td {
     padding: 15px;
@@ -494,4 +495,20 @@ pre, cite {
 
 .list-group-item {
     display:inline-flex;
+}
+
+.ccc {
+    color: #0dcaf0;
+    font-family: monospace;
+    font-weight: bold;
+}
+.ccc:focus {
+    color: #0dcaf0;
+    font-family: monospace;
+    font-weight: bold;
+    border: 1px solid #0dcaf0;
+}
+.dropdown-menu li a:hover {
+    background-color: #0dcaf0;
+    color: #1e1e1e !important;
 }

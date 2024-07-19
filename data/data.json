@@ -3,7 +3,10 @@
         "category": "Wiki",
         "path": "./content/wiki/home.md",
         "click": "fetchMain",
-        "tabs": []
+        "tabs": [
+            { "category": "Wiki", "path": "./content/wiki/wiki.json" },
+            { "category": "Abbrvs", "path": "./content/wiki/abbreviations.json" }
+        ]
     },
     {
         "category": "Cloud",
@@ -44,7 +47,7 @@
         "path": "./content/learning/learning.md",
         "click": "",
         "tabs": [
-            { "category": "Certifications", "path": "./content/ethical/practice.json" },
+            { "category": "Certifications", "path": "./content/wiki/wiki.json" },
             { "category": "Trainings", "path": "./content/ethical/tools.json" },
             { "category": "Books", "path": "./content/ethical/tools.json" }
         ]

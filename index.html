@@ -80,12 +80,15 @@
                                         fetchMarkdown(dataset.path);
                                     else if (dataset.name == "Pathway")
                                         fetchPathway(dataset.path);
+                                    else if (dataset.name == "Wiki")
+                                        fetchWiki(dataset.path)
                                 });
                             });
                         
                             document.querySelectorAll('.sidebar a').forEach(link => {
                                 
                                 link.addEventListener('click', function (event) {
+                                    //debugger;
                                     let current = '';
                                     event.preventDefault();
                                     const target = event.target;                                    
@@ -132,6 +135,78 @@
                 fetchJobs();
                 fetchMain();
             });
+
+            async function fetchWiki(url) {
+                const container = document.getElementById('contentPage');
+                container.innerHTML = "";
+
+                const searchBox = document.createElement('div');
+                searchBox.id = "searchBox";
+                searchBox.innerHTML = `<div class=\"input-group input-group-sm mb-3 p-4\">
+                        <input type=\"text\" class=\"form-control bg-dark ccc\" aria-label=\"Text input with dropdown button\">
+                        <button class=\"btn btn-outline-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</button>
+                        <ul class=\"dropdown-menu dropdown-menu-end bg-dark\">
+                            <li><a class=\"dropdown-item\" href=\"#\">Activity</a></li>
+                            <li><a class=\"dropdown-item\" href=\"#\">Item</a></li>
+                            <li><a class=\"dropdown-item\" href=\"#\">SubItem</a></li>
+                            <li><a class=\"dropdown-item\" href=\"#\">All</a></li>
+                        </ul>
+                    </div>`;
+
+                container.appendChild(searchBox);
+
+                /*const dataContainer = document.createElement('div');
+                dataContainer.id= "data-container";
+                container.appendChild(dataContainer)
+
+                const paginationContainer = document.createElement('div');
+                paginationContainer.id= "pagination-container";
+                container.appendChild(paginationContainer)*/
+
+                let table = document.createElement("table");
+                table.classList.add('ctable');
+                table.id = "table-wiki";
+                table.innerHTML += `
+                            <thead>
+                                <tr>
+                                    <th>Activity</th>
+                                    <th>Item</th>
+                                    <th>SubItem</th>
+                                    <th>Definition</th>
+                                    <th>References</th>
+                                </tr>
+                            </thead>`;
+
+                let tbody = document.createElement("tbody");
+
+                const rows= [];
+                await fetchServer(url)
+                    .then(json => {
+                        debugger;
+                        json.forEach(item => {
+                            const tr = document.createElement('tr');
+                            tr.innerHTML = `<tr>
+                                    <td>${item.Activity}</td>
+                                    <td>${item.Item}</td>
+                                    <td>${item.SubItem}</td>
+                                    <td>${item.Definition}</td>
+                                    <td>${item.References}</td>
+                                </tr>`
+                            tbody.appendChild(tr);
+                            rows.push(tr);
+                        });
+
+                        debugger;
+                        
+                        table.appendChild(tbody);
+                        container.appendChild(table);
+                        // table.innerHTML += `</tbody>`;
+                        // container.appendChild(table)
+                    })
+                    .then(response => {
+                        //debugger;                     
+                    })
+            }
 
             async function fetchMain() {
                 await fetchMarkdown('./content/wiki/home.md');
@@ -195,7 +270,7 @@
                                             </a>
                                         </article>`);
                         });
-                        debugger;
+                        //debugger;
                         document.getElementById('contentPage').innerHTML = '';
                         document.getElementById('contentPage').innerHTML = `${title} ${tools.join('')}`;
                     })
@@ -351,6 +426,8 @@
         Alvaro A. Miranda M. ©<br />
         CyberWiki 2024
     </div>
+
+    <script src="./resources/paginate/paginate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fast-xml-parser@4.0.12/dist/parser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.4.0/fxparser.min.js"></script>
 </body>
