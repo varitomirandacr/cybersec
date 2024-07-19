@@ -1,0 +1,1774 @@
+[
+  {
+    "abbreviation": "A&A",
+    "value": "Assessment and Authorization"
+  },
+  {
+    "abbreviation": "ABA",
+    "value": "Attribute-Based Access Control"
+  },
+  {
+    "abbreviation": "AC",
+    "value": "Access Control"
+  },
+  {
+    "abbreviation": "ACL",
+    "value": "Access Control List"
+  },
+  {
+    "abbreviation": "ACSC",
+    "value": "Australian Cyber Security Centre"
+  },
+  {
+    "abbreviation": "ADP",
+    "value": "Automated Data Processing"
+  },
+  {
+    "abbreviation": "ADR",
+    "value": "Automated Detection and Response"
+  },
+  {
+    "abbreviation": "AES",
+    "value": "Advanced Encryption Standard"
+  },
+  {
+    "abbreviation": "AFC4A",
+    "value": "Air Force C4 Agency"
+  },
+  {
+    "abbreviation": "AFI",
+    "value": "Air Force Instruction"
+  },
+  {
+    "abbreviation": "AFIWC",
+    "value": "Air Force Information Warfare Center"
+  },
+  {
+    "abbreviation": "AFOSI",
+    "value": "Air Force Office of Special Investigation"
+  },
+  {
+    "abbreviation": "AFPD",
+    "value": "Air Force Policy Directive"
+  },
+  {
+    "abbreviation": "AI",
+    "value": "Artificial Intelligence"
+  },
+  {
+    "abbreviation": "AIMS",
+    "value": "Automated Infrastructure Management System"
+  },
+  {
+    "abbreviation": "AIS",
+    "value": "Automated Information Systems"
+  },
+  {
+    "abbreviation": "AMIDS",
+    "value": "Audit Monitoring and Intrusion Detection System"
+  },
+  {
+    "abbreviation": "ANSI",
+    "value": "American National Standards Institute"
+  },
+  {
+    "abbreviation": "AO",
+    "value": "Authorizing Official"
+  },
+  {
+    "abbreviation": "AODR",
+    "value": "Authorizing Official Designated Representative"
+  },
+  {
+    "abbreviation": "API",
+    "value": "Application Programming Interface"
+  },
+  {
+    "abbreviation": "APT",
+    "value": "Advanced Persistent Threat"
+  },
+  {
+    "abbreviation": "APWG",
+    "value": "Anti-Phishing Working Group"
+  },
+  {
+    "abbreviation": "ASD(C31)",
+    "value": "Assistant Secretary of Defense for Command, Control, Communication and Intelligence"
+  },
+  {
+    "abbreviation": "ASIMS",
+    "value": "Automated Security Incident Measuring System"
+  },
+  {
+    "abbreviation": "ASSIST",
+    "value": "Automated System Security Incident Support Team"
+  },
+  {
+    "abbreviation": "ASV",
+    "value": "Approved Scanning Vendor for PCI"
+  },
+  {
+    "abbreviation": "ATC",
+    "value": "Authorization to Connect"
+  },
+  {
+    "abbreviation": "ATD",
+    "value": "Authorization Termination Date"
+  },
+  {
+    "abbreviation": "ATM",
+    "value": "Asynchronous Transfer Mode"
+  },
+  {
+    "abbreviation": "ATO",
+    "value": "Authorization to Operate"
+  },
+  {
+    "abbreviation": "ATT&CK",
+    "value": "Adversarial Tactics, Techniques and Common Knowledge"
+  },
+  {
+    "abbreviation": "AUP",
+    "value": "Acceptable Use Policy"
+  },
+  {
+    "abbreviation": "AV",
+    "value": "Antivirus"
+  },
+  {
+    "abbreviation": "AVIEN",
+    "value": "Antivirus Information Exchange Network"
+  },
+  {
+    "abbreviation": "BAS",
+    "value": "Breach and Attack Simulation"
+  },
+  {
+    "abbreviation": "BBP",
+    "value": "Bug Bounty Program"
+  },
+  {
+    "abbreviation": "BIOS",
+    "value": "Basic Input and Output System"
+  },
+  {
+    "abbreviation": "BMA",
+    "value": "Business Mission Area"
+  },
+  {
+    "abbreviation": "BYOD",
+    "value": "Bring Your Own Device"
+  },
+  {
+    "abbreviation": "C2",
+    "value": "Command and Control"
+  },
+  {
+    "abbreviation": "C3PAO",
+    "value": "CMMC 3rd Party Assessment Organization"
+  },
+  {
+    "abbreviation": "CA",
+    "value": "Certification and Accreditation | Security Assessment | Certificate Authority"
+  },
+  {
+    "abbreviation": "CAD",
+    "value": "Computer Aided Design"
+  },
+  {
+    "abbreviation": "CAL",
+    "value": "Category Assurance List"
+  },
+  {
+    "abbreviation": "CAP",
+    "value": "Corrective Action Plan"
+  },
+  {
+    "abbreviation": "CAPTCHA",
+    "value": "Completely Automated Public Turing Test to Tell Computers and Humans Apart"
+  },
+  {
+    "abbreviation": "CASB",
+    "value": "Cloud Access Security Broker"
+  },
+  {
+    "abbreviation": "CCA",
+    "value": "CMMC Certified Assessor"
+  },
+  {
+    "abbreviation": "CCP",
+    "value": "CMMC Certified Professional"
+  },
+  {
+    "abbreviation": "CD",
+    "value": "Domain Controller"
+  },
+  {
+    "abbreviation": "CDE",
+    "value": "Cardholder Data Environment"
+  },
+  {
+    "abbreviation": "CDR",
+    "value": "Content Disarm and Reconstruction/Cloud detection and response"
+  },
+  {
+    "abbreviation": "CEH",
+    "value": "Certified Ethical Hacker"
+  },
+  {
+    "abbreviation": "CERT",
+    "value": "Computer Emergency Response Team/Computer Emergency Readiness Team"
+  },
+  {
+    "abbreviation": "CFP",
+    "value": "Call For Papers"
+  },
+  {
+    "abbreviation": "CHAP",
+    "value": "Challenge-Handshake Authentication Protocol"
+  },
+  {
+    "abbreviation": "CI/CD",
+    "value": "Continuous integration and continuous delivery"
+  },
+  {
+    "abbreviation": "CIA",
+    "value": "Confidentiality, Integrity, and Availability"
+  },
+  {
+    "abbreviation": "CIEM",
+    "value": "Content Disarm and Reconstruction | Cloud infrastructure entitlement management"
+  },
+  {
+    "abbreviation": "CIRT",
+    "value": "Computer Incident Response Team"
+  },
+  {
+    "abbreviation": "CIS",
+    "value": "Center for Internet Security"
+  },
+  {
+    "abbreviation": "CISA",
+    "value": "C4I Integration Support Activity | Certified Information Systems Auditor | Cybersecurity and Infrastructure Security Agency"
+  },
+  {
+    "abbreviation": "CISM",
+    "value": "Certified Information Systems Security Manager"
+  },
+  {
+    "abbreviation": "CISO",
+    "value": "Chief Information Security Officer"
+  },
+  {
+    "abbreviation": "CISSP",
+    "value": "Certified Information Systems Security Professional"
+  },
+  {
+    "abbreviation": "CLS",
+    "value": "Contractor Logistics Support"
+  },
+  {
+    "abbreviation": "CM",
+    "value": "Configuration Management"
+  },
+  {
+    "abbreviation": "CMDB",
+    "value": "Configuration Management Database"
+  },
+  {
+    "abbreviation": "CMMC",
+    "value": "Cybersecurity Maturity Model Certification"
+  },
+  {
+    "abbreviation": "CMMC-AB",
+    "value": "Cybersecurity Maturity Model Certification � Advisory Board"
+  },
+  {
+    "abbreviation": "CMVP",
+    "value": "Cryptographic Module Validation Program"
+  },
+  {
+    "abbreviation": "CNAPP",
+    "value": "Cloud-Native Application Protection Platform"
+  },
+  {
+    "abbreviation": "CNC",
+    "value": "Computer Numerical Control"
+  },
+  {
+    "abbreviation": "COBIT",
+    "value": "Control Objectives for Information and Related Technologies"
+  },
+  {
+    "abbreviation": "COTS",
+    "value": "Commercial Off The Shelf"
+  },
+  {
+    "abbreviation": "COW",
+    "value": "Copy On Write"
+  },
+  {
+    "abbreviation": "CR",
+    "value": "Change Request"
+  },
+  {
+    "abbreviation": "CRQ",
+    "value": "Change Request"
+  },
+  {
+    "abbreviation": "CSF",
+    "value": "Cybersecurity Framework"
+  },
+  {
+    "abbreviation": "CSIRT",
+    "value": "Computer Security Incident Response Team"
+  },
+  {
+    "abbreviation": "CSMA",
+    "value": "Cybersecurity Mesh Architecture"
+  },
+  {
+    "abbreviation": "CSNS",
+    "value": "Cloud Service Network Security"
+  },
+  {
+    "abbreviation": "CSO",
+    "value": "Chief Security Officer"
+  },
+  {
+    "abbreviation": "CSP",
+    "value": "Cloud Service Provider/Content Security Policy"
+  },
+  {
+    "abbreviation": "CSPM",
+    "value": "Cloud Security Posture Management"
+  },
+  {
+    "abbreviation": "CTF",
+    "value": "Capture The Flag"
+  },
+  {
+    "abbreviation": "CTI",
+    "value": "Controlled Technical Information"
+  },
+  {
+    "abbreviation": "CUI",
+    "value": "Controlled Unclassified Information"
+  },
+  {
+    "abbreviation": "CVSS",
+    "value": "Common Vulnerability Scoring System"
+  },
+  {
+    "abbreviation": "CWPP",
+    "value": "Cloud Workload Protection Platform"
+  },
+  {
+    "abbreviation": "DAM",
+    "value": "DoD 800-171 Assessment Methodology"
+  },
+  {
+    "abbreviation": "DAST",
+    "value": "Dynamic Application Security Testing"
+  },
+  {
+    "abbreviation": "DC",
+    "value": "Domain Controller"
+  },
+  {
+    "abbreviation": "DCE",
+    "value": "DoD Cyber Exchange"
+  },
+  {
+    "abbreviation": "DCID",
+    "value": "Director of Central Intelligence Directive"
+  },
+  {
+    "abbreviation": "DCMA",
+    "value": "Defense Contract Management Agency"
+  },
+  {
+    "abbreviation": "DCSA",
+    "value": "Defense Counterintelligence and Security Agency"
+  },
+  {
+    "abbreviation": "DDoS",
+    "value": "Distributed Denial of Service"
+  },
+  {
+    "abbreviation": "DES",
+    "value": "Data Encryption Standard"
+  },
+  {
+    "abbreviation": "DFARS",
+    "value": "DoD Federal Acquisition Regulation Supplement"
+  },
+  {
+    "abbreviation": "DFIR",
+    "value": "Digital Forensics and Incident Response"
+  },
+  {
+    "abbreviation": "DIACAP",
+    "value": "DoD Information Assurance Certification and Accreditation Process"
+  },
+  {
+    "abbreviation": "DIB",
+    "value": "Defense Industrial Base"
+  },
+  {
+    "abbreviation": "DIBBS",
+    "value": "Defense logisitics agency Internet Bid Board System"
+  },
+  {
+    "abbreviation": "DIBCAC",
+    "value": "DIB Cybersecurity Assessment Center"
+  },
+  {
+    "abbreviation": "DIBNET",
+    "value": "DIB Network"
+  },
+  {
+    "abbreviation": "DIDS",
+    "value": "Distributed Intrusions Detection System"
+  },
+  {
+    "abbreviation": "DIMA",
+    "value": "DoD Portion of the Intelligence Mission Area"
+  },
+  {
+    "abbreviation": "DIRNSA",
+    "value": "Director, National Security Agency"
+  },
+  {
+    "abbreviation": "DISA",
+    "value": "Defense Information Systems Agency"
+  },
+  {
+    "abbreviation": "DITPR",
+    "value": "DoD Information Technology Portfolio Repository"
+  },
+  {
+    "abbreviation": "DITSCAP",
+    "value": "DoD IT Security Certification and Accreditation Process"
+  },
+  {
+    "abbreviation": "DLA",
+    "value": "Defense Logisitics Agency"
+  },
+  {
+    "abbreviation": "DMZ",
+    "value": "Demilitarized Zone"
+  },
+  {
+    "abbreviation": "DNI",
+    "value": "Director of National Intelligence"
+  },
+  {
+    "abbreviation": "DNS",
+    "value": "Domain Name Servers | Domain Name System"
+  },
+  {
+    "abbreviation": "DoD",
+    "value": "Department of Defense"
+  },
+  {
+    "abbreviation": "DoD CIO",
+    "value": "DoD Chief Information Officer"
+  },
+  {
+    "abbreviation": "DoD ISRMC",
+    "value": "DoD Information Security Risk Management Committee"
+  },
+  {
+    "abbreviation": "DoDI",
+    "value": "DoD Instruction"
+  },
+  {
+    "abbreviation": "DoDIIS",
+    "value": "DoD Intelligence Information System"
+  },
+  {
+    "abbreviation": "DoDM",
+    "value": "DoD Manual"
+  },
+  {
+    "abbreviation": "DoS",
+    "value": "Denial of Service"
+  },
+  {
+    "abbreviation": "DOT&E",
+    "value": "Director, Operational Test and Evaluation"
+  },
+  {
+    "abbreviation": "DSC",
+    "value": "Defense Supply Chain"
+  },
+  {
+    "abbreviation": "DSR",
+    "value": "Data Subject Request"
+  },
+  {
+    "abbreviation": "E/APL",
+    "value": "Evaluated Approved Product"
+  },
+  {
+    "abbreviation": "E2EE",
+    "value": "End to End Encryption"
+  },
+  {
+    "abbreviation": "EAL",
+    "value": "Evaluation Assurance Level"
+  },
+  {
+    "abbreviation": "EAP",
+    "value": "Extensible Authentication Protocol"
+  },
+  {
+    "abbreviation": "ECA",
+    "value": "External Certificate Authority"
+  },
+  {
+    "abbreviation": "EDR",
+    "value": "Endpoint Detection and Response"
+  },
+  {
+    "abbreviation": "EFOIA",
+    "value": "Electronic Freedom of Information Act"
+  },
+  {
+    "abbreviation": "EIEMA",
+    "value": "Enterprise Information Environment Mission Area"
+  },
+  {
+    "abbreviation": "EITDR",
+    "value": "Enterprise Information Technology Database Repository"
+  },
+  {
+    "abbreviation": "eMASS",
+    "value": "Enterprise Mission Assurance Support Service"
+  },
+  {
+    "abbreviation": "EO",
+    "value": "Executive Order"
+  },
+  {
+    "abbreviation": "EOP",
+    "value": "Executive Office of the President"
+  },
+  {
+    "abbreviation": "EPP",
+    "value": "Endpoint Protection Platform"
+  },
+  {
+    "abbreviation": "ERM",
+    "value": "Enterprise Risk Management"
+  },
+  {
+    "abbreviation": "ETA",
+    "value": "Education, Training and Awareness"
+  },
+  {
+    "abbreviation": "ETAPWG",
+    "value": "Education, Training, Awareness and Professionalization Working Group"
+  },
+  {
+    "abbreviation": "FDE",
+    "value": "Full Disk Encryption"
+  },
+  {
+    "abbreviation": "FIM",
+    "value": "File Integrity Monitoring"
+  },
+  {
+    "abbreviation": "FIPS",
+    "value": "Federal Information Processing Standards"
+  },
+  {
+    "abbreviation": "FIPSPUB",
+    "value": "Federal Information Processing Standard Publication"
+  },
+  {
+    "abbreviation": "FIRST",
+    "value": "Forum of Incident Resonse and Security Teams"
+  },
+  {
+    "abbreviation": "FISMA",
+    "value": "Federal Information Security Management Act | Federal Information Security Modernization Act"
+  },
+  {
+    "abbreviation": "FIWC",
+    "value": "Fleet information Warfare Center"
+  },
+  {
+    "abbreviation": "FN",
+    "value": "Foreign National"
+  },
+  {
+    "abbreviation": "FOIA",
+    "value": "Freedom of information Act"
+  },
+  {
+    "abbreviation": "FSO",
+    "value": "Field Security Office"
+  },
+  {
+    "abbreviation": "FTP",
+    "value": "File Transfer Protocol"
+  },
+  {
+    "abbreviation": "FTS",
+    "value": "Federal Telecommunications Service"
+  },
+  {
+    "abbreviation": "FWaaS",
+    "value": "Firewall as a Service"
+  },
+  {
+    "abbreviation": "FY",
+    "value": "Fiscal Year"
+  },
+  {
+    "abbreviation": "GAO",
+    "value": "General Accounting Office"
+  },
+  {
+    "abbreviation": "GCCS",
+    "value": "Global Command and Control System"
+  },
+  {
+    "abbreviation": "GCSS",
+    "value": "Global Combat Support System"
+  },
+  {
+    "abbreviation": "GDPR",
+    "value": "General Data Privacy Regulation"
+  },
+  {
+    "abbreviation": "GIG",
+    "value": "Global Information Grid"
+  },
+  {
+    "abbreviation": "GMITS",
+    "value": "Guidelines for the Management of IT Security"
+  },
+  {
+    "abbreviation": "GOSC",
+    "value": "Global Operations and Security Center"
+  },
+  {
+    "abbreviation": "GOTS",
+    "value": "Government Off-the-Shelf"
+  },
+  {
+    "abbreviation": "GRC",
+    "value": "Governance, Risk Management, and Compliance"
+  },
+  {
+    "abbreviation": "GSA",
+    "value": "General Services Administration"
+  },
+  {
+    "abbreviation": "GSII",
+    "value": "Government Services Information Infrastructure"
+  },
+  {
+    "abbreviation": "HBSS",
+    "value": "Host Based Security System"
+  },
+  {
+    "abbreviation": "HIDS",
+    "value": "Host based Intrusion Detection System"
+  },
+  {
+    "abbreviation": "HIPAA",
+    "value": "Health Insurance Portability and Accountability Act"
+  },
+  {
+    "abbreviation": "HIPS",
+    "value": "Host based Intrusion Prevention System"
+  },
+  {
+    "abbreviation": "HITECH",
+    "value": "Health Information Technology for Economic and Clinical Health (Act)"
+  },
+  {
+    "abbreviation": "HUMINT",
+    "value": "Human Intelligence"
+  },
+  {
+    "abbreviation": "I&W",
+    "value": "Indications and Warning"
+  },
+  {
+    "abbreviation": "IA",
+    "value": "Information Assurance | Idenification and Authentication"
+  },
+  {
+    "abbreviation": "IAD",
+    "value": "Information Assurance Document"
+  },
+  {
+    "abbreviation": "IAG",
+    "value": "information Assurance Group"
+  },
+  {
+    "abbreviation": "IAM",
+    "value": "Information Assurance Manager | Identity and Access Management"
+  },
+  {
+    "abbreviation": "IAO",
+    "value": "Information Assurance Officer"
+  },
+  {
+    "abbreviation": "IAPWG",
+    "value": "Information Assurance Policy Working Group"
+  },
+  {
+    "abbreviation": "IASE",
+    "value": "Information Assurance Support Environment"
+  },
+  {
+    "abbreviation": "IATAC",
+    "value": "Information Assurance Technology Analysis Center"
+  },
+  {
+    "abbreviation": "IATC",
+    "value": "Interim Authority to Connect"
+  },
+  {
+    "abbreviation": "IATO",
+    "value": "Intermin Authority to Operate"
+  },
+  {
+    "abbreviation": "IATT",
+    "value": "Intermin Authority to Test"
+  },
+  {
+    "abbreviation": "IAVA",
+    "value": "Information Assurance Vulnerability Alert"
+  },
+  {
+    "abbreviation": "IAW",
+    "value": "In Accordance With"
+  },
+  {
+    "abbreviation": "IBE",
+    "value": "Identity-Based Encryption"
+  },
+  {
+    "abbreviation": "IC",
+    "value": "Intelligence Community"
+  },
+  {
+    "abbreviation": "IDPS",
+    "value": "Intrusion Detection and Prevention System"
+  },
+  {
+    "abbreviation": "IDS",
+    "value": "Intrusion Detection System"
+  },
+  {
+    "abbreviation": "IEEE",
+    "value": "Institute for Electrical and Electronics Engineers"
+  },
+  {
+    "abbreviation": "INFOCONs",
+    "value": "Information Operations Conditions"
+  },
+  {
+    "abbreviation": "INFOSEC",
+    "value": "Information Systems Security"
+  },
+  {
+    "abbreviation": "INFOSYS",
+    "value": "Information Systems"
+  },
+  {
+    "abbreviation": "IO",
+    "value": "Information Operations"
+  },
+  {
+    "abbreviation": "IoC",
+    "value": "Indicator of Compromise"
+  },
+  {
+    "abbreviation": "IoT",
+    "value": "Internet of Things"
+  },
+  {
+    "abbreviation": "IP",
+    "value": "Internet Protocol/Intellectual Property"
+  },
+  {
+    "abbreviation": "IPMO",
+    "value": "INFOSEC Program Management Office"
+  },
+  {
+    "abbreviation": "IPR",
+    "value": "Internet Protocol Router"
+  },
+  {
+    "abbreviation": "IPS",
+    "value": "Intrusion Prevention System"
+  },
+  {
+    "abbreviation": "IPSec",
+    "value": "Internet Protocol Security"
+  },
+  {
+    "abbreviation": "IPTF",
+    "value": "Infrastructure Protection Task Force"
+  },
+  {
+    "abbreviation": "IR",
+    "value": "Incident Response Plan/Incident Response"
+  },
+  {
+    "abbreviation": "IRC",
+    "value": "INFOSEC Research Council"
+  },
+  {
+    "abbreviation": "IRM",
+    "value": "Information Resource Management"
+  },
+  {
+    "abbreviation": "IRP",
+    "value": "Incident Response Plan"
+  },
+  {
+    "abbreviation": "IRS",
+    "value": "Incident Reporting Structure"
+  },
+  {
+    "abbreviation": "IRT",
+    "value": "Incident Response Team"
+  },
+  {
+    "abbreviation": "IS",
+    "value": "Information System"
+  },
+  {
+    "abbreviation": "ISAC",
+    "value": "Information Sharing and Analysis Center"
+  },
+  {
+    "abbreviation": "ISMS",
+    "value": "Information Security Management System"
+  },
+  {
+    "abbreviation": "ISO",
+    "value": "International Organization for Standardization"
+  },
+  {
+    "abbreviation": "ISRMC",
+    "value": "Information Security Risk Management Committee"
+  },
+  {
+    "abbreviation": "ISSM",
+    "value": "Information System Security Manager"
+  },
+  {
+    "abbreviation": "ISSO",
+    "value": "Information System Security Officer"
+  },
+  {
+    "abbreviation": "IT",
+    "value": "Information Technology"
+  },
+  {
+    "abbreviation": "ITAM",
+    "value": "IT Asset Management"
+  },
+  {
+    "abbreviation": "ITIL",
+    "value": "Information Technology Infrastructure Library"
+  },
+  {
+    "abbreviation": "ITMRA",
+    "value": "Information Technology Management Reform Act"
+  },
+  {
+    "abbreviation": "ITSM",
+    "value": "IT Service Management"
+  },
+  {
+    "abbreviation": "IW",
+    "value": "Information Warfare"
+  },
+  {
+    "abbreviation": "IW-D",
+    "value": "Information Warfare � Defensive"
+  },
+  {
+    "abbreviation": "JCCC",
+    "value": "Joint Communications Control Center"
+  },
+  {
+    "abbreviation": "JCIDS",
+    "value": "Joint Capabilities Integration and Development System"
+  },
+  {
+    "abbreviation": "JDIICS",
+    "value": "Joint DII Control Systems"
+  },
+  {
+    "abbreviation": "JID",
+    "value": "Joint Intrusion Detection"
+  },
+  {
+    "abbreviation": "JIE",
+    "value": "Joint Information Environment"
+  },
+  {
+    "abbreviation": "JIEO",
+    "value": "Joint Interoperability Engineering Organization"
+  },
+  {
+    "abbreviation": "JIWG",
+    "value": "Joint IA Operations Working Group"
+  },
+  {
+    "abbreviation": "JPO STC",
+    "value": "Joint Program Office for Special Technical Countermeasures"
+  },
+  {
+    "abbreviation": "JTF-CNO",
+    "value": "Joint Task Force � Computer Network Operations"
+  },
+  {
+    "abbreviation": "JWICS",
+    "value": "Joint Worldwide Intelligence Communications System"
+  },
+  {
+    "abbreviation": "JWID",
+    "value": "Joint Warrior Interoperability Demonstration"
+  },
+  {
+    "abbreviation": "KB",
+    "value": "Knowledge Base"
+  },
+  {
+    "abbreviation": "KMI",
+    "value": "Key Management Infrastructure"
+  },
+  {
+    "abbreviation": "KMS",
+    "value": "Key Management Service"
+  },
+  {
+    "abbreviation": "KS",
+    "value": "Knowledge Service"
+  },
+  {
+    "abbreviation": "LAN",
+    "value": "Local Area Network"
+  },
+  {
+    "abbreviation": "LDAP",
+    "value": "Lightweight Directory Access Protocol"
+  },
+  {
+    "abbreviation": "LE",
+    "value": "Law Enforcement"
+  },
+  {
+    "abbreviation": "LE/CI",
+    "value": "Law Enforcement and Counterintelligence"
+  },
+  {
+    "abbreviation": "LEA",
+    "value": "Law Enforcement Agency"
+  },
+  {
+    "abbreviation": "LMS",
+    "value": "Learning Management System"
+  },
+  {
+    "abbreviation": "MA",
+    "value": "Mission Area"
+  },
+  {
+    "abbreviation": "MCDES",
+    "value": "Malicious Code Detection and Eradication System"
+  },
+  {
+    "abbreviation": "MDR",
+    "value": "Managed Detection and Response"
+  },
+  {
+    "abbreviation": "MFA",
+    "value": "Multi-Factor Authentication"
+  },
+  {
+    "abbreviation": "MITM",
+    "value": "Man In The Middle"
+  },
+  {
+    "abbreviation": "MITRE",
+    "value": "MITRE Corporation (not an acronym but a name)"
+  },
+  {
+    "abbreviation": "MLS WG",
+    "value": "Multilevel Security Working Group"
+  },
+  {
+    "abbreviation": "MOA",
+    "value": "Memorandum of Agreement"
+  },
+  {
+    "abbreviation": "MOU",
+    "value": "Memorandum of Understanding"
+  },
+  {
+    "abbreviation": "MSSP",
+    "value": "Managed Security Service Provider"
+  },
+  {
+    "abbreviation": "MTTR & MTTD",
+    "value": "Mean Time to Detect and Mean Time to Respond"
+  },
+  {
+    "abbreviation": "NA",
+    "value": "Not Applicable"
+  },
+  {
+    "abbreviation": "NAC",
+    "value": "Network Access Control"
+  },
+  {
+    "abbreviation": "NACIC",
+    "value": "National Counterintelligence Center"
+  },
+  {
+    "abbreviation": "NC",
+    "value": "Non-Compliant"
+  },
+  {
+    "abbreviation": "NCIS",
+    "value": "Naval Criminal Investiative Service"
+  },
+  {
+    "abbreviation": "NCSA",
+    "value": "National Cyber Security Alliance"
+  },
+  {
+    "abbreviation": "NCSC",
+    "value": "National Computer Security Center"
+  },
+  {
+    "abbreviation": "NDA",
+    "value": "Non Disclosure Agreement"
+  },
+  {
+    "abbreviation": "NDU",
+    "value": "National Defense University"
+  },
+  {
+    "abbreviation": "NGFW",
+    "value": "Next Generation Firewall"
+  },
+  {
+    "abbreviation": "NIAC",
+    "value": "National Infrastructure Assurance Council"
+  },
+  {
+    "abbreviation": "NID",
+    "value": "Network Intrusion Detector"
+  },
+  {
+    "abbreviation": "NIDS",
+    "value": "Network based Intrusion Detection System"
+  },
+  {
+    "abbreviation": "NII",
+    "value": "National Information Infrastructure"
+  },
+  {
+    "abbreviation": "NIPC",
+    "value": "National Infrastructure Protection Center"
+  },
+  {
+    "abbreviation": "NIPRNet",
+    "value": "Non-Classified Internet Protocol Router Network"
+  },
+  {
+    "abbreviation": "NIPS",
+    "value": "Network based Intrusion Prevention System"
+  },
+  {
+    "abbreviation": "NISP",
+    "value": "National Industrial Security Program"
+  },
+  {
+    "abbreviation": "NIST",
+    "value": "National Institute of Standards and Technology"
+  },
+  {
+    "abbreviation": "NITB",
+    "value": "National INFOSEC Technical baseline"
+  },
+  {
+    "abbreviation": "NOC",
+    "value": "Network Operating Centers"
+  },
+  {
+    "abbreviation": "NOSC",
+    "value": "Network Operation Security Center"
+  },
+  {
+    "abbreviation": "NS/EP",
+    "value": "National Security and Emergency Preparedness"
+  },
+  {
+    "abbreviation": "NSA",
+    "value": "National Security Agency"
+  },
+  {
+    "abbreviation": "NSD",
+    "value": "National Security Directive"
+  },
+  {
+    "abbreviation": "NSIRC",
+    "value": "National Security Incident Response Center"
+  },
+  {
+    "abbreviation": "NSOC",
+    "value": "National Security Operations Center"
+  },
+  {
+    "abbreviation": "NSS",
+    "value": "National Security System"
+  },
+  {
+    "abbreviation": "NSTAC",
+    "value": "National Security Telecommunication Advisory Committee"
+  },
+  {
+    "abbreviation": "NSTISSC",
+    "value": "National Security Telecommunications and Information Systems Security Committee"
+  },
+  {
+    "abbreviation": "NSTISSI",
+    "value": "National Security Telecommunications and Information Systems Security Instruction"
+  },
+  {
+    "abbreviation": "NSU",
+    "value": "Non-Standard Usage"
+  },
+  {
+    "abbreviation": "NTA",
+    "value": "Network Traffic Analysis"
+  },
+  {
+    "abbreviation": "OA",
+    "value": "Organizational Action"
+  },
+  {
+    "abbreviation": "OASD(C3I)",
+    "value": "Office of the Assistant Secretary of Defense (Command, Control, Communications, and Intelligence)"
+  },
+  {
+    "abbreviation": "OIG DoD",
+    "value": "Office of the Inspector General of the Department of Defense"
+  },
+  {
+    "abbreviation": "OMB",
+    "value": "Office of Management and Budget"
+  },
+  {
+    "abbreviation": "OODA",
+    "value": "Observe Orient Decide Act"
+  },
+  {
+    "abbreviation": "OPSEC",
+    "value": "Operations Security"
+  },
+  {
+    "abbreviation": "ORNL",
+    "value": "Oak Ridge National Laboratory"
+  },
+  {
+    "abbreviation": "OSD",
+    "value": "Office of the Secretary of Defense"
+  },
+  {
+    "abbreviation": "OSD/JS",
+    "value": "Office of the Secretary of Defense/Joint Staff"
+  },
+  {
+    "abbreviation": "OSINT",
+    "value": "Open Source intelligence"
+  },
+  {
+    "abbreviation": "OT",
+    "value": "Operational Technology"
+  },
+  {
+    "abbreviation": "OT&E",
+    "value": "Operational Test and Evaluation"
+  },
+  {
+    "abbreviation": "OTP",
+    "value": "One Time Password"
+  },
+  {
+    "abbreviation": "OUSD(P)",
+    "value": "Office of the Under Secretary of Defense (Policy)"
+  },
+  {
+    "abbreviation": "PAM",
+    "value": "Privileged Access Management"
+  },
+  {
+    "abbreviation": "PAO",
+    "value": "Principal Authorizing Official"
+  },
+  {
+    "abbreviation": "PAOBOAU",
+    "value": "Process Acting On Behalf Of an Authorized User"
+  },
+  {
+    "abbreviation": "PCCIP",
+    "value": "President�s Commission on Critical Infrastructure Protection"
+  },
+  {
+    "abbreviation": "PCI DSS",
+    "value": "Payment Card Industry Data Security Standard"
+  },
+  {
+    "abbreviation": "PE",
+    "value": "Physical and Environmental protection"
+  },
+  {
+    "abbreviation": "PFS",
+    "value": "Perfect Forward Secrecy"
+  },
+  {
+    "abbreviation": "PGP",
+    "value": "Pretty Good Privacy"
+  },
+  {
+    "abbreviation": "PHI",
+    "value": "Protected Health Information"
+  },
+  {
+    "abbreviation": "PIA",
+    "value": "Privacy Impact Assessment"
+  },
+  {
+    "abbreviation": "PICERL",
+    "value": "Prepare, Identify, Contain, Eradicate, Recover, Lessons Learned"
+  },
+  {
+    "abbreviation": "PIEE",
+    "value": "Procurement Integrated Enterprise Environment"
+  },
+  {
+    "abbreviation": "PII",
+    "value": "Personally Identifiable Information"
+  },
+  {
+    "abbreviation": "PIN",
+    "value": "Personal Identification Number"
+  },
+  {
+    "abbreviation": "PIT",
+    "value": "Platform Information Technology"
+  },
+  {
+    "abbreviation": "PKI",
+    "value": "Public Key Infrastructure"
+  },
+  {
+    "abbreviation": "PM",
+    "value": "Program Manager"
+  },
+  {
+    "abbreviation": "PM/SM",
+    "value": "Program Manager/System Manager"
+  },
+  {
+    "abbreviation": "POA&M",
+    "value": "Plan of Action and Milestones"
+  },
+  {
+    "abbreviation": "POM",
+    "value": "Program Objective Memorandum"
+  },
+  {
+    "abbreviation": "PPP",
+    "value": "Program Protection Plan"
+  },
+  {
+    "abbreviation": "PPS",
+    "value": "Internet Protocol Suite and Associated Ports"
+  },
+  {
+    "abbreviation": "PPSM",
+    "value": "Ports, Protocols, and Services Management"
+  },
+  {
+    "abbreviation": "PPTP",
+    "value": "Point-to-Point Tunneling Protocol"
+  },
+  {
+    "abbreviation": "PS",
+    "value": "Personnel Security"
+  },
+  {
+    "abbreviation": "PSK",
+    "value": "Pre Shared Key"
+  },
+  {
+    "abbreviation": "PT",
+    "value": "Penetration Testing"
+  },
+  {
+    "abbreviation": "PW",
+    "value": "Password"
+  },
+  {
+    "abbreviation": "RaaS",
+    "value": "Ransomware as a Service"
+  },
+  {
+    "abbreviation": "RAT",
+    "value": "Remote Access Trojan"
+  },
+  {
+    "abbreviation": "RBA",
+    "value": "Risk-Based Authentication"
+  },
+  {
+    "abbreviation": "RBAC",
+    "value": "Role-Based Access Control"
+  },
+  {
+    "abbreviation": "RCERTs",
+    "value": "Regional Computer Emergency Response Teams"
+  },
+  {
+    "abbreviation": "RDP",
+    "value": "Remote Desktop Protocol"
+  },
+  {
+    "abbreviation": "RDT&E",
+    "value": "Research, Development, Test and Evaluation"
+  },
+  {
+    "abbreviation": "RE",
+    "value": "REcovery"
+  },
+  {
+    "abbreviation": "RFI",
+    "value": "Request for Information"
+  },
+  {
+    "abbreviation": "RFP",
+    "value": "Request For Proposal"
+  },
+  {
+    "abbreviation": "RM",
+    "value": "Risk Management"
+  },
+  {
+    "abbreviation": "RMF",
+    "value": "Risk Management Framework"
+  },
+  {
+    "abbreviation": "ROSC",
+    "value": "Regional Operations and Security Center"
+  },
+  {
+    "abbreviation": "RP",
+    "value": "Registered Practitioner"
+  },
+  {
+    "abbreviation": "RPO",
+    "value": "Registered Practitioner Organization (CMMC)/Recovery Point Objective"
+  },
+  {
+    "abbreviation": "RSA",
+    "value": "Rivest Shamir Adleman"
+  },
+  {
+    "abbreviation": "RT&E",
+    "value": "Research, Test, and Evaluation"
+  },
+  {
+    "abbreviation": "RTO",
+    "value": "Recovery Time Objective"
+  },
+  {
+    "abbreviation": "SA",
+    "value": "Situational Awareness"
+  },
+  {
+    "abbreviation": "SABI",
+    "value": "Secret and Below Interoperability"
+  },
+  {
+    "abbreviation": "SABI WG",
+    "value": "Secret and Below Interoperability (Working Group)"
+  },
+  {
+    "abbreviation": "SANS",
+    "value": "SANS Institute"
+  },
+  {
+    "abbreviation": "SAP",
+    "value": "Special Access Program"
+  },
+  {
+    "abbreviation": "SAPCO",
+    "value": "SAP Central Office"
+  },
+  {
+    "abbreviation": "SAR",
+    "value": "Security Assessment Report"
+  },
+  {
+    "abbreviation": "SASE",
+    "value": "Secure Access Service Edge"
+  },
+  {
+    "abbreviation": "SATAN",
+    "value": "Systems Administrators� Tool for Assessing Networks"
+  },
+  {
+    "abbreviation": "SBU",
+    "value": "Sensitive-But-Unclassified"
+  },
+  {
+    "abbreviation": "SC",
+    "value": "System and Communications Protection"
+  },
+  {
+    "abbreviation": "SCA",
+    "value": "Security Control Assessor"
+  },
+  {
+    "abbreviation": "SCADA",
+    "value": "Supervisory Control And Data Acquisition"
+  },
+  {
+    "abbreviation": "SCAO",
+    "value": "SIPRNET Connection Approval Office"
+  },
+  {
+    "abbreviation": "SCAP",
+    "value": "Security Content Automation Protocol"
+  },
+  {
+    "abbreviation": "SCCVI",
+    "value": "Secure Configuaration Compliance Validation Initiative"
+  },
+  {
+    "abbreviation": "SCG",
+    "value": "Security Configuration Guide | Security Classification Guide"
+  },
+  {
+    "abbreviation": "SCI",
+    "value": "Sensitive Compartment Information"
+  },
+  {
+    "abbreviation": "SCIM",
+    "value": "System for Cross-domain Identity Management"
+  },
+  {
+    "abbreviation": "SCRI",
+    "value": "Secure Compliance Remediation Intiative"
+  },
+  {
+    "abbreviation": "SECDEF",
+    "value": "Secretary of Defense"
+  },
+  {
+    "abbreviation": "SEI",
+    "value": "Software Engineering Institute"
+  },
+  {
+    "abbreviation": "SET",
+    "value": "Secure Encrypted Transaction"
+  },
+  {
+    "abbreviation": "SI",
+    "value": "System and Information Integrity"
+  },
+  {
+    "abbreviation": "SIEM",
+    "value": "Security Information and Event Management"
+  },
+  {
+    "abbreviation": "SIO",
+    "value": "Special Information Operations"
+  },
+  {
+    "abbreviation": "SIPRNet",
+    "value": "Secret Internet Protocol Router Network"
+  },
+  {
+    "abbreviation": "SISO",
+    "value": "Senior Information Security Officer"
+  },
+  {
+    "abbreviation": "SITR",
+    "value": "Secret Internet Protocol Router Network Information Technology Registry"
+  },
+  {
+    "abbreviation": "SLA",
+    "value": "Service-Level Agreement"
+  },
+  {
+    "abbreviation": "SM",
+    "value": "System Manager"
+  },
+  {
+    "abbreviation": "SNAP",
+    "value": "Systems/Networks Approval Process"
+  },
+  {
+    "abbreviation": "SOAR",
+    "value": "Security Orchestration, Automation, and Response"
+  },
+  {
+    "abbreviation": "SOC",
+    "value": "Security Operations Center"
+  },
+  {
+    "abbreviation": "SP",
+    "value": "Special Publication"
+  },
+  {
+    "abbreviation": "SPB",
+    "value": "Security Policy Board"
+  },
+  {
+    "abbreviation": "SPRS",
+    "value": "Supplier Performance Risk System"
+  },
+  {
+    "abbreviation": "SQLi",
+    "value": "SQL Injection"
+  },
+  {
+    "abbreviation": "SRG",
+    "value": "Security Requirements Guide"
+  },
+  {
+    "abbreviation": "SSAA",
+    "value": "Systems Security Authorization Agreement"
+  },
+  {
+    "abbreviation": "SSE",
+    "value": "System Security Engineering"
+  },
+  {
+    "abbreviation": "SSH",
+    "value": "Secure Shell"
+  },
+  {
+    "abbreviation": "SSL",
+    "value": "Secure Sockets Layer"
+  },
+  {
+    "abbreviation": "SSO",
+    "value": "Single Sign-On"
+  },
+  {
+    "abbreviation": "SSP",
+    "value": "System Security Plan"
+  },
+  {
+    "abbreviation": "SSRF",
+    "value": "Server-Side Request Forgery"
+  },
+  {
+    "abbreviation": "STIG",
+    "value": "Security Technical Implementation Guide"
+  },
+  {
+    "abbreviation": "T&E",
+    "value": "Test and Evaluation"
+  },
+  {
+    "abbreviation": "TACACS",
+    "value": "Terminal Access Controller Access-Control System"
+  },
+  {
+    "abbreviation": "TAG",
+    "value": "Technical Advisory Group"
+  },
+  {
+    "abbreviation": "TCP",
+    "value": "Transport Control Protocol"
+  },
+  {
+    "abbreviation": "TFA",
+    "value": "Two Factor Authentication"
+  },
+  {
+    "abbreviation": "THREATCON",
+    "value": "Threat Condition"
+  },
+  {
+    "abbreviation": "TLS",
+    "value": "Transport Layer Security"
+  },
+  {
+    "abbreviation": "TPM",
+    "value": "Trusted Platform Module"
+  },
+  {
+    "abbreviation": "TRANSEC",
+    "value": "Transmission Security"
+  },
+  {
+    "abbreviation": "TRMC",
+    "value": "Test Resource Management Center"
+  },
+  {
+    "abbreviation": "TSN",
+    "value": "Trusted Systems and Networks"
+  },
+  {
+    "abbreviation": "TTP",
+    "value": "Tactics, Techniques, and Procedures"
+  },
+  {
+    "abbreviation": "U.S.C.",
+    "value": "United States Code"
+  },
+  {
+    "abbreviation": "UC",
+    "value": "Unified Capabilities"
+  },
+  {
+    "abbreviation": "UCAO",
+    "value": "Unclassified Connection Approval Office"
+  },
+  {
+    "abbreviation": "UCDMO",
+    "value": "Unified Cross Domain Management Office"
+  },
+  {
+    "abbreviation": "UCMJ",
+    "value": "Uniform Code of Military Justice"
+  },
+  {
+    "abbreviation": "UDP",
+    "value": "User Datagram Protocol"
+  },
+  {
+    "abbreviation": "UEBA",
+    "value": "User and Entity Behavior Analytics"
+  },
+  {
+    "abbreviation": "UN",
+    "value": "Username"
+  },
+  {
+    "abbreviation": "UR",
+    "value": "User Representative"
+  },
+  {
+    "abbreviation": "URL",
+    "value": "Uniform Resource Locator (Universal Resource Locator)"
+  },
+  {
+    "abbreviation": "USB",
+    "value": "Universal Serial Bus"
+  },
+  {
+    "abbreviation": "USD(AT&L)",
+    "value": "Under Secretary of Defense for Acquisition, Technology, and Logistics"
+  },
+  {
+    "abbreviation": "USD(I)",
+    "value": "Under Secretary of Defense for Intelligence"
+  },
+  {
+    "abbreviation": "USD(P&R)",
+    "value": "Under Secretary of Defense for Personnel and Readiness"
+  },
+  {
+    "abbreviation": "USD(P)",
+    "value": "Under Secretary of Defense for Policy"
+  },
+  {
+    "abbreviation": "USSTRATCOM",
+    "value": "United States Strategic Command"
+  },
+  {
+    "abbreviation": "VAAP",
+    "value": "Vulnerability and Assessment Program"
+  },
+  {
+    "abbreviation": "VAS",
+    "value": "Vulnerability Assessment System"
+  },
+  {
+    "abbreviation": "VPN",
+    "value": "Virtual Private Network"
+  },
+  {
+    "abbreviation": "VPN",
+    "value": "Virtual Private Network"
+  },
+  {
+    "abbreviation": "WAAP",
+    "value": "Web Application & API Protection"
+  },
+  {
+    "abbreviation": "WAF",
+    "value": "Web Application Firewall"
+  },
+  {
+    "abbreviation": "WAP",
+    "value": "Wireless Access Point"
+  },
+  {
+    "abbreviation": "WEP",
+    "value": "Wired Equivalency Protocol"
+  },
+  {
+    "abbreviation": "WEP",
+    "value": "Wired Equivalent Privacy"
+  },
+  {
+    "abbreviation": "Wi",
+    "value": "Fi Wireless Fidelity"
+  },
+  {
+    "abbreviation": "WMA",
+    "value": "Warfighting Mission Area"
+  },
+  {
+    "abbreviation": "WPA",
+    "value": "WiFi Protected Access"
+  },
+  {
+    "abbreviation": "WPS",
+    "value": "WiFi Protected Setup"
+  },
+  {
+    "abbreviation": "WRT",
+    "value": "With Respect To"
+  },
+  {
+    "abbreviation": "XDR",
+    "value": "Extended Detection and Response"
+  },
+  {
+    "abbreviation": "XSS",
+    "value": "Cross-Site Scripting"
+  },
+  {
+    "abbreviation": "ZTA",
+    "value": "Zero Trust Architecture"
+  },
+  {
+    "abbreviation": "ZTNA",
+    "value": "Zero Trust Network Access"
+  }
+]

@@ -14,6 +14,7 @@
         <link href="./resources/sidebar.css" rel="stylesheet"/>
         <script>
         const dataWiki = [];
+        const dataAbbrv = [];
 
             document.addEventListener('DOMContentLoaded', function () {
 
@@ -85,6 +86,8 @@
                                         fetchPathway(dataset.path);
                                     else if (dataset.name == "Wiki")
                                         fetchWiki(dataset.path)
+                                    else if (dataset.name == "Abbrvs")
+                                        fetchAbbrv(dataset.path);
                                 });
                             });
                         
@@ -161,7 +164,7 @@
 
                 let table = document.createElement("table");
                 table.classList.add('ctable');
-                table.id = "table-wiki";
+                table.id = "table-abbrevs";
                 table.innerHTML += `
                             <thead>
                                 <tr>
@@ -192,12 +195,49 @@
                         
                         table.appendChild(tbody);
                         container.appendChild(table);
-                        // table.innerHTML += `</tbody>`;
-                        // container.appendChild(table)
-                    })
-                    .then(response => {
-                        //debugger;                     
-                    })
+                    });
+            }
+
+            async function fetchAbbrv(url) {
+                const container = document.getElementById('contentPage');
+                container.innerHTML = "";
+
+                const searchBox = document.createElement('div');
+                searchBox.id = "searchBox";
+                searchBox.innerHTML =  `<div class="input-group input-group-sm mb-3 p-4">                                            
+                                            <input type="text" class="form-control bg-dark ccc" onkeydown="searchAbbrv()" max-length="50" />
+                                        </div>`;
+
+                container.appendChild(searchBox);
+
+                let table = document.createElement("table");
+                table.classList.add('ctable');
+                table.id = "table-abbrevs";
+                table.innerHTML += `
+                            <thead>
+                                <tr>
+                                    <th>Abbreviation</th>
+                                    <th>Text</th>
+                                </tr>
+                            </thead>`;
+
+                let tbody = document.createElement("tbody");
+
+                await fetchServer(url)
+                    .then(json => {
+                        json.forEach(item => {
+                            const tr = document.createElement('tr');
+                            tr.innerHTML = `<tr>
+                                    <td>${item.abbreviation}</td>
+                                    <td>${item.value}</td>
+                                </tr>`
+                            tbody.appendChild(tr);
+                            dataAbbrv.push(tr);
+                        });
+                        
+                        table.appendChild(tbody);
+                        container.appendChild(table);
+                    });
             }
 
             async function fetchMain() {
@@ -325,6 +365,7 @@
             }
         
             async function search() {
+                debugger;
                 if (this.event.keyCode == 32) {
                     const criteria = this.event.target.value;
                     const table = document.getElementById("table-wiki");
@@ -352,12 +393,30 @@
                 }
             }
 
+            async function searchAbbrv() {
+                debugger;
+                const criteria = this.event.target.value;
+                const table = document.getElementById("table-abbrevs");
+                await deleteRows(table)
+                .then(_ => {
+                    debugger;
+                    let results = getNewDataAbbrv(criteria);
+                    let tbody = document.createElement("tbody");
+                    results.forEach(tr => tbody.appendChild(tr));
+                    table.appendChild(tbody);
+                })
+            }
+
             function hasItem(x, criteria) {
                return x.includes(criteria) == true;
             }
 
             function getNewDataWiki(index, criteria) {
                 return dataWiki.filter(x => hasItem(x.cells[index].innerText.toLowerCase(), criteria.toLowerCase()));
+            }
+
+            function getNewDataAbbrv(criteria) {
+                return dataAbbrv.filter(x => hasItem(x.cells[0].innerText.toLowerCase(), criteria.toLowerCase()));
             }
 
             function getCheckedValue() {
