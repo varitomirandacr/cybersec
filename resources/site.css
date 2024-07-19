@@ -501,6 +501,7 @@ pre, cite {
     color: #0dcaf0;
     font-family: monospace;
     font-weight: bold;
+    font-size: small;
 }
 .ccc:focus {
     color: #0dcaf0;
@@ -511,4 +512,12 @@ pre, cite {
 .dropdown-menu li a:hover {
     background-color: #0dcaf0;
     color: #1e1e1e !important;
+}
+
+.radio {
+    background-color: #0dcaf0;
+}
+
+.form-check-input:checked {
+    background-color: red;
 }

@@ -8,12 +8,15 @@
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/xml2js@0.6.2/lib/browser/xml2js.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/fast-xml-parser@4.0.12/dist/parser.min.js"></script>
-
+ 
+        </script>
         <link href="./resources/site.css" rel="stylesheet"/>
         <link href="./resources/sidebar.css" rel="stylesheet"/>
         <script>
+        const dataWiki = [];
+
             document.addEventListener('DOMContentLoaded', function () {
-                 
+
                 async function fetchNews() {
                     try {
                         const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity');
@@ -142,26 +145,19 @@
 
                 const searchBox = document.createElement('div');
                 searchBox.id = "searchBox";
-                searchBox.innerHTML = `<div class=\"input-group input-group-sm mb-3 p-4\">
-                        <input type=\"text\" class=\"form-control bg-dark ccc\" aria-label=\"Text input with dropdown button\">
-                        <button class=\"btn btn-outline-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">Dropdown</button>
-                        <ul class=\"dropdown-menu dropdown-menu-end bg-dark\">
-                            <li><a class=\"dropdown-item\" href=\"#\">Activity</a></li>
-                            <li><a class=\"dropdown-item\" href=\"#\">Item</a></li>
-                            <li><a class=\"dropdown-item\" href=\"#\">SubItem</a></li>
-                            <li><a class=\"dropdown-item\" href=\"#\">All</a></li>
-                        </ul>
-                    </div>`;
+                searchBox.innerHTML =  `<div class="input-group input-group-sm mb-3 p-4">
+                                            <div class="input-group bg-dark">
+                                                <div class="input-group-text bg-dark">
+                                                    <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Activity" aria-label="Radio button for following text input"> <label for="Activity" class="p-1 ccc"> Activity </label>
+                                                    <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Item" aria-label="Radio button for following text input"> <label for="Item" class="p-1 ccc"> Item </label>
+                                                    <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="SubItem" aria-label="Radio button for following text input"> <label for="SubItem" class="p-1 ccc"> SubItem </label>
+                                                    <input checked class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Description" aria-label="Radio button for following text input"> <label for="Description" class="p-1 ccc"> Description </label>
+                                                </div>
+                                                <input type="text" class="form-control bg-dark ccc" onkeydown="search()" max-length="50" aria-label="Text input with radio button">
+                                            </div>
+                                        </div>`;
 
                 container.appendChild(searchBox);
-
-                /*const dataContainer = document.createElement('div');
-                dataContainer.id= "data-container";
-                container.appendChild(dataContainer)
-
-                const paginationContainer = document.createElement('div');
-                paginationContainer.id= "pagination-container";
-                container.appendChild(paginationContainer)*/
 
                 let table = document.createElement("table");
                 table.classList.add('ctable');
@@ -179,10 +175,8 @@
 
                 let tbody = document.createElement("tbody");
 
-                const rows= [];
                 await fetchServer(url)
                     .then(json => {
-                        debugger;
                         json.forEach(item => {
                             const tr = document.createElement('tr');
                             tr.innerHTML = `<tr>
@@ -193,10 +187,8 @@
                                     <td>${item.References}</td>
                                 </tr>`
                             tbody.appendChild(tr);
-                            rows.push(tr);
+                            dataWiki.push(tr);
                         });
-
-                        debugger;
                         
                         table.appendChild(tbody);
                         container.appendChild(table);
@@ -332,18 +324,61 @@
                     .catch(error => console.error('Error loading Markdown file:', error));
             }
         
-            async function search(event) {
-                const criteria = event.target;
-                await fetchServer(url)
-                    .then(json => {
-                        const title = `<div class="container"> 
-                                            <h1>${json.title}</h1>
-                                            <p class="pb-3 mb-0 small lh-sm">${json.description}</p>
-                                            <p class="last-updated"> ${new Date()} </p>
-                                        </div><hr/>`;
-                        document.getElementById('contentPage').innerHTML = `${title} ${json.content}`;
+            async function search() {
+                if (this.event.keyCode == 32) {
+                    const criteria = this.event.target.value;
+                    const table = document.getElementById("table-wiki");
+                    await deleteRows(table)
+                    .then(_ => {
+                        debugger;
+                        let results = [];
+                        switch(getCheckedValue()) {
+                            case "Activity":
+                                results = getNewDataWiki(0, criteria);
+                                break;
+                            case "Item":
+                                results = getNewDataWiki(1, criteria);
+                                break;
+                            case "SubItem":
+                                results = getNewDataWiki(2, criteria);
+                                break;
+                            default:
+                                results = getNewDataWiki(3, criteria);
+                        }
+                        let tbody = document.createElement("tbody");
+                        results.forEach(tr => tbody.appendChild(tr));
+                        table.appendChild(tbody);
                     })
+                }
             }
+
+            function hasItem(x, criteria) {
+               return x.includes(criteria) == true;
+            }
+
+            function getNewDataWiki(index, criteria) {
+                return dataWiki.filter(x => hasItem(x.cells[index].innerText.toLowerCase(), criteria.toLowerCase()));
+            }
+
+            function getCheckedValue() {
+                var radios = document.getElementsByName("options");
+                for( i = 0; i < radios.length; i++) {
+                    if(radios[i].checked) {
+                        return radios[i].value;
+                    }
+                }
+                return null;
+            }
+
+            async function deleteRows(table) {
+                debugger;
+                let count = table.rows.length;
+                for (let i = count-1; i > 0; i--) {
+                    table.deleteRow(i);
+                    count = table.rows.length;
+                }
+            }
+
         </script>
     </head>
 <body class="bg-dark" data-bs-theme="dark">
@@ -404,7 +439,7 @@
                 <div class="sidebar bg-dark" data-bs-theme="dark" id="sidebar-nav"></div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-8 mb-3">  
+            <div class="col-sm-12 col-md-6 col-lg-8 mb-5">  
                 <div class="row">
                     <ul class="nav nav-tabs border-top" id="horizontal-tabs"></ul>
                 </div> 
