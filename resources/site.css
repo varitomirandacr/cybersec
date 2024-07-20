@@ -521,3 +521,25 @@ pre, cite {
 .form-check-input:checked {
     background-color: red;
 }
+
+.card-link card-link-2 {
+    font-family: monospace;
+    font-size: smaller;
+}
+
+.card-article {
+    border: 0.5px solid #212529;
+    height:100%;
+    min-width:250px;
+}
+
+.dark-shadow {
+    padding: 20px;
+    border: 1px solid #48b4a5;
+    box-shadow: 0 0 10px #48b4a5;
+    background: #000;
+}
+
+.h250 {
+    height: 25;
+}

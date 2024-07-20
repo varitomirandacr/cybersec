@@ -28,8 +28,7 @@
         "path": "./content/groups/groups.md",
         "click": "",
         "tabs": [
-            { "category": "Organizations", "path": "./content/ethical/practice.json" },
-            { "category": "Social", "path": "./content/ethical/tools.json" },
+            { "category": "Organizations", "path": "./content/groups/organizations.json" },
             { "category": "Youtube Channels", "path": "./content/ethical/tools.json" }
         ]
     },

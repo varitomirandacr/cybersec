@@ -1,0 +1,513 @@
+[
+    {
+      "name": "801 Labs",
+      "url": "https://www.801labs.org/",
+      "description": "",
+      "image": "https://www.801labs.org/images/801labs-cover.jpg",
+      "connect": [
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/c/801LabsSaltLakeCity"
+        },
+        {
+          "tag": "discord",
+          "url": "https://discord.gg/uRSthurdPY"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/801labs"
+        },
+        {
+          "tag": "meetup",
+          "url": "https://www.meetup.com/801labs/"
+        },
+        {
+          "tag": "github",
+          "url": "https://github.com/801labs/"
+        }
+      ],
+      "email": "board@801labs.org"
+    },
+    {
+      "name": "America's Cyber Defense Agency (CISA)",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices/organizations-and-cyber-safety",
+      "description": "",
+      "image": "https://www.cisa.gov/sites/default/files/images/SVG/header_logo_tagline_update.svg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.cisa.gov/topics/cybersecurity-best-practices/organizations-and-cyber-safety"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/cisagov"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/@cisagov"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/CISA/?locale=es_LA"
+        },
+        {
+          "tag": "tw",
+          "url": "https://x.com/cisagov"
+        },
+        {
+          "tag": "subs",
+          "url": "https://www.cisa.gov/subscribe-updates-cisa"
+        }
+      ],
+      "email": "Central@cisa.dhs.gov"
+    },
+    {
+      "name": "Anti Phishing Working Group",
+      "url": "https://apwg.org/",
+      "description": "",
+      "image": "https://s29837.pcdn.co/wp-content/uploads/2018/10/apwg_org.png",
+      "connect": [],
+      "email": "https://apwg.org/contact-us/"
+    },
+    {
+      "name": "Advancing Security Worldwide",
+      "url": "https://www.asisonline.org/",
+      "description": "",
+      "image": "https://www.asisonline.org/globalassets/x---brightfind---diagnostics/asis-logo-487px.jpg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/30614/"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/asisinternational/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/user/ASISInternational"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/ASISInternational"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/ASIS_Intl"
+        }
+      ],
+      "email": "asis@asisonline.org"
+    },
+    {
+      "name": "Australian Information Security Association (AISA)",
+      "url": "https://www.aisa.org.au/",
+      "description": "",
+      "image": "https://media.licdn.com/dms/image/C510BAQGrAeTPuu_XpA/company-logo_200_200/0/1631388643345?e=1729728000&v=beta&t=W6D2Y2K3Cvi44Py-b9qp_0dlYee6H63R0nqyAW_QyWk",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/australian-information-security-association"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/aisa_national/"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/pages/category/Nonprofit-Organization/AISA-National-374353703036376/"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/AISA_National"
+        }
+      ],
+      "email": "info@aisa.org.au"
+    },
+    {
+      "name": "Canadian Center of Cybersecurity",
+      "url": "https://www.cyber.gc.ca/en",
+      "description": "",
+      "image": "",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://ca.linkedin.com/company/cse_cst"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/cse_cst/?hl=en"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/channel/UCJ4AXt7ecSBp2QSsxm9UBdg"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/cybercentre_ca"
+        },
+        {
+          "tag": "rss",
+          "url": "https://www.cyber.gc.ca/en/contact-cyber-centre#stay-connected"
+        }
+      ],
+      "email": "https://www.canada.ca/en/contact.html"
+    },
+    {
+      "name": "Chime Digital Health",
+      "url": "https://chimecentral.org/",
+      "description": "",
+      "image": "https://chimecentral.org/images/chimeLogo.svg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/chime/"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/chime.digitalhealthleaders/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/@CHIMECommunication"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/CIOCHIME"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/CIOCHIME"
+        },
+        {
+          "tag": "threads",
+          "url": "https://www.threads.net/@chime.digitalhealthleaders"
+        }
+      ],
+      "email": ""
+    },
+    {
+      "name": "CISO Exec Net",
+      "url": "https://cisoexecnet.com/",
+      "description": "",
+      "image": "https://cisoexecnet.com/sites/default/files/ciso-logo.png",
+      "connect": [
+        {
+          "tag": "tw",
+          "url": "https://x.com/CISOExecNet"
+        }
+      ],
+      "email": "info@cisoexecnet.com"
+    },
+    {
+      "name": "Cloud Security Alliance",
+      "url": "https://cloudsecurityalliance.org/",
+      "description": "",
+      "image": "https://cloudsecurityalliance.org/assets/CSA-logo-RGB-a0a3855889ad836fa585d60f6caf8d619f241d43904c304c2f64284127fe9bf3.svg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/groups/1864210/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/channel/UCrcG6ZtsBPz3xkUZU6asVhA"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/csacloudfiles"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/cloudsa"
+        }
+      ],
+      "email": "support@cloudsecurityalliance.org"
+    },
+    {
+      "name": "CompTIA Community",
+      "url": "https://www.comptia.org/",
+      "description": "",
+      "image": "https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/logo-comptia-community-top-nav-225x86.png?sfvrsn=4d33a076_2",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/comptia"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/comptiaofficial/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/comptia"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/comptia"
+        },
+        {
+          "tag": "tw",
+          "url": "https://www.twitter.com/comptia"
+        },
+        {
+          "tag": "sptfy",
+          "url": "https://open.spotify.com/user/69zrdapuhgxuofckbsuuzm80k?si=89172934b235442a&nd=1"
+        }
+      ],
+      "email": "https://www.comptia.org/contact-us"
+    },
+    {
+      "name": "Internet Security Alliance",
+      "url": "https://isalliance.org/",
+      "description": "",
+      "image": "https://pbs.twimg.com/profile_images/981219379726639104/TRc6uWEs_400x400.jpg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/internet-security-alliance"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/isalliance?lang=en"
+        },
+        {
+          "tag": "rss",
+          "url": "https://isalliance.org/feed"
+        },
+        {
+          "tag": "events",
+          "url": "https://isalliance.org/events/"
+        }
+      ],
+      "email": "admin@isalliance.org"
+    },
+    {
+      "name": "National Council of ISACs",
+      "url": "https://www.nationalisacs.org/",
+      "description": "",
+      "image": "https://static.wixstatic.com/media/651d24_bf6697256feb46588237ee597001e0d1~mv2.png/v1/fill/w_194,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/651d24_bf6697256feb46588237ee597001e0d1~mv2.png",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/national-council-of-isacs"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/NCI_ISACs"
+        }
+      ],
+      "email": "https://www.nationalisacs.org/contact"
+    },
+    {
+      "name": "NIST fissea",
+      "url": "https://www.nist.gov/",
+      "description": "",
+      "image": "https://www.nist.gov/libraries/nist-component-library/dist/img/logo/NIST-Logo-Brand-White.svg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/nist/"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/nist/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/NIST"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/NIST"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/NIST"
+        },
+        {
+          "tag": "rss",
+          "url": "https://www.nist.gov/news-events/nist-rss-feeds"
+        },
+        {
+          "tag": "subs",
+          "url": "https://public.govdelivery.com/accounts/USNIST/subscriber/new"
+        }
+      ],
+      "email": "fissea@nist.gov"
+    },
+    {
+      "name": "Cyber Florida",
+      "url": "https://cyberflorida.org/",
+      "description": "",
+      "image": "https://b2930553.smushcdn.com/2930553/wp-content/uploads/logo-bars-slant-400x127.png",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/cyberflorida/about/"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/cybersecurityfl/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/channel/UCuyIfcFYbavbezGWb1XGDKg"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/floridacyber"
+        },
+        {
+          "tag": "tw",
+          "url": "https://x.com/i/flow/login?redirect_after_login=%2FCyberSecurityFL"
+        }
+      ],
+      "email": "https://cyberflorida.org/connect/"
+    },
+    {
+      "name": "CyberNB",
+      "url": "https://cybernb.ca/",
+      "description": "",
+      "image": "https://cybernb.ca/wp-content/uploads/2022/08/cybernb-logo.png",
+      "connect": [
+        {
+          "tag": "subs",
+          "url": "https://cybernb.ca/"
+        }
+      ],
+      "email": "info@cybernb.ca"
+    },
+    {
+      "name": "Cyber NYC",
+      "url": "https://edc.nyc/program/cyber-nyc",
+      "description": "",
+      "image": "",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/nycedc/"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/NYCEDC/"
+        },
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/user/NYCEDC"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/NYCEDC"
+        },
+        {
+          "tag": "tw",
+          "url": "https://x.com/nycedc"
+        }
+      ],
+      "email": "cybernyc@edc.nyc"
+    },
+    {
+      "name": "Cybersecurity Advisory Network",
+      "url": "https://apac.cybersecurityadvisors.network/",
+      "description": "",
+      "image": "https://apac.cybersecurityadvisors.network/wp-content/uploads/2019/01/Logo-cyan-final.png",
+      "connect": [],
+      "email": "https://apac.cybersecurityadvisors.network/contact-cyan-apac/"
+    },
+    {
+      "name": "Cybersecurity Association",
+      "url": "https://www.cybersecurityassociation.co.uk/",
+      "description": "",
+      "image": "https://www.cybersecurityassociation.co.uk/wp-content/uploads/2022/09/cyber_logo.png",
+      "connect": [],
+      "email": "https://www.cybersecurityassociation.co.uk/contact-us/"
+    },
+    {
+      "name": "Cyber Security Intelligence",
+      "url": "https://www.cybersecurityintelligence.com/cyber-space-and-intelligence-association-csia-2880.html",
+      "description": "",
+      "image": "https://www.cybersecurityintelligence.com/template/cseci2018_child/images/logo.png",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/5223291?trk=tyah&trkInfo=tarId%3A1412207603518,tas%3Acyber%20security%20intelligence,idx%3A2-1-2"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/CyberSecInt"
+        },
+        {
+          "tag": "subs",
+          "url": "https://cybersecurityintelligence.us3.list-manage.com/subscribe?u=a7a85ac110ceb74440637343f&id=eae4032b75"
+        }
+      ],
+      "email": "info@cybersecurityintelligence.com"
+    },
+    {
+      "name": "Cyber Sicherheits",
+      "url": "https://cybersicherheitsrat.de/en/",
+      "description": "",
+      "image": "https://cybersicherheitsrat.de/wp-content/uploads/thegem-logos/logo_15d0eca2028ce78d59fca26231c309c6_1x.png",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/cyber-sicherheitsrat-deutschland-e.v./"
+        },
+        {
+          "tag": "ig",
+          "url": "https://www.instagram.com/cybersicherheitsrat"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/cybersicherheitsrat/"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/CSRD_eV"
+        },
+        {
+          "tag": "xing",
+          "url": "https://www.xing.com/companies/cyber-sicherheitsratdeutschlande.v."
+        }
+      ],
+      "email": "https://apac.cybersecurityadvisors.network/contact-cyan-apac/"
+    },
+    {
+      "name": "The National Cybersecurity",
+      "url": "https://nationalcybersecuritysociety.org/",
+      "description": "",
+      "image": "https://nationalcybersecuritysociety.org/wp-content/uploads/2018/01/logo-ncss-full-bright.png",
+      "connect": [
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/thencss.org/"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/thencss"
+        }
+      ],
+      "email": "me@nationalcybersecuritysociety.org"
+    },
+    {
+      "name": "National Cybersecurity Alliance",
+      "url": "https://staysafeonline.org/",
+      "description": "",
+      "image": "https://staysafeonline.org/wp-content/uploads/2022/05/logo.svg",
+      "connect": [
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/national-cybersecurity-alliance"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/staysafeonline"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/staysafeonline"
+        }
+      ],
+      "email": ""
+    }
+  ]
