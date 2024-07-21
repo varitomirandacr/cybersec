@@ -478,6 +478,16 @@ img {
     width:100%;
 }
 
+img[alt="ethical hacking"], 
+img[alt="groups"],
+img[alt="latest news"],
+img[alt="industry"] { 
+    max-width:  50%; 
+    display: block;
+    text-align: -webkit-center;
+    margin: 0 auto;
+}
+
 a, h1, h2, h3, h4, p, span, code {
     color: #ccc !important;
 }
@@ -528,9 +538,9 @@ pre, cite {
 }
 
 .card-article {
-    border: 0.5px solid #212529;
+    /*border: 0.5px solid #212529;*/
     height:100%;
-    min-width:250px;
+    /*min-width:250px;*/
 }
 
 .dark-shadow {
@@ -538,8 +548,51 @@ pre, cite {
     border: 1px solid #48b4a5;
     box-shadow: 0 0 10px #48b4a5;
     background: #000;
+
+    &.radius {
+        border-radius: 5px;
+    }
 }
 
+.c-777 {
+    color: #777 !important;
+}
+
+
 .h250 {
-    height: 25;
+    min-height: 250px;
+}
+
+.h500 {
+    min-height: 500px;
+}
+
+.custom-sidebar {
+    margin: 0;
+    padding: 0;
+    /* width: 200px; */
+    background-color: #333;
+    /* position: fixed; */
+    /*height: 70vh;*/
+    overflow: hidden;
+}
+
+.custom-sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.custom-sidebar a:hover {
+    color: black;
+    background-color:  #48b4a5;      
+    box-shadow: 0 0 10px #48b4a5;  
+}
+
+.cs-span {
+    color: #ccc !important;
+}
+.cs-span:hover {
+    color: black !important;
 }

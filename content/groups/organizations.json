@@ -127,7 +127,7 @@
       "name": "Canadian Center of Cybersecurity",
       "url": "https://www.cyber.gc.ca/en",
       "description": "",
-      "image": "",
+      "image": "https://www.cyber.gc.ca/GCWeb/assets/sig-blk-en.svg",
       "connect": [
         {
           "tag": "in",

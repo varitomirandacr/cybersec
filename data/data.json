@@ -29,7 +29,7 @@
         "click": "",
         "tabs": [
             { "category": "Organizations", "path": "./content/groups/organizations.json" },
-            { "category": "Youtube Channels", "path": "./content/ethical/tools.json" }
+            { "category": "Youtube Channels", "path": "./content/groups/channels.json" }
         ]
     },
     {

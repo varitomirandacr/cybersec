@@ -1,0 +1,265 @@
+[
+    {
+      "tag": "yt",
+      "name": "MalwareTechBlog",
+      "image": "https://yt3.googleusercontent.com/FaF8eONKyiW530wtX-Pq7rzrLPGdYrFe7OAW-zx53TklDciW2qTZNCfxRJzqqvyF8NpNcUON=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@MalwareTechBlog",
+      "creator": "Marcus Hutchins"
+    },
+    {
+      "tag": "yt",
+      "name": "PowerDMARC",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mS8B6C3SxuqSr0vlvcTRb8_cBzwu9qDzgiZUtYKknpug=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@powerdmarc",
+      "creator": "Power DMARC"
+    },
+    {
+      "tag": "yt",
+      "name": "NetworkChuck",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mSw0rri2VsHv7XyXcMv931baO8QUfqIMFEGHx-7xumLG0=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@NetworkChuck",
+      "creator": "NetworkChuck"
+    },
+    {
+      "tag": "yt",
+      "name": "Delinea (former ThycoticSW)",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nvCGXZ4j1_e3KY7bCuXfM2GQatl_G8zHpzSG2rpCE4iJk=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@ThycoticSoftware",
+      "creator": "ThycoticSoftware"
+    },
+    {
+      "tag": "yt",
+      "name": "The Cyber Mentor",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k2S4QRjCmlaGb29l-gxIIc-szbkPet220epi2_7igl0w=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@TCMSecurityAcademy",
+      "creator": "TCMSecurityAcademy"
+    },
+    {
+      "tag": "yt",
+      "name": "Hak5",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_m2AwyJGGqSgxlCUhtiNyhmntG_ph_Y5-TZ9Jxf7z4G-5g=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@hak5",
+      "creator": "hak5.org"
+    },
+    {
+      "tag": "yt",
+      "name": "LiveOverflow",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_kBtDJJEl5_NzLvYTlkuAS8q0uPsCj8pUP4IVFJN5wIBTQ=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@LiveOverflow/about",
+      "creator": "liveoverflow.com"
+    },
+    {
+      "tag": "yt",
+      "name": "John Hammond",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_kBtDJJEl5_NzLvYTlkuAS8q0uPsCj8pUP4IVFJN5wIBTQ=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@_JohnHammond",
+      "creator": "jh.live/links"
+    },
+    {
+      "tag": "yt",
+      "name": "IppSec",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mizQndR7_CDVi7SWjZ82AVAUlUm8bO2ySAzIwWbBA_4g=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@ippsec",
+      "creator": "ippsec.rocks"
+    },
+    {
+      "tag": "yt",
+      "name": "Security Weekly - A CRA Resource",
+      "description": "The Security Weekly podcast network: technical segments, interviews with security luminaries, and the latest information security and hacking news! Engaging and informative podcast and video programming that has built awareness on emerging solutions and aligned sponsors with trusted personalities and loyal audiences, delivering robust and actionable content from experienced hosts and guests.",
+      "image": "https://yt3.googleusercontent.com/0hve7IbC6Hka46Wc_DpJQ_HCDYESYVAfmTBat0omHfNccBX2rtuw4yR-R-uBx321oO2gb8zVIA=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@SecurityWeekly",
+      "creator": "securityweekly.com"
+    },
+    {
+      "tag": "yt",
+      "name": "Infosec",
+      "description": "Infosec’s mission is to put people at the center of cybersecurity. We help IT and security professionals advance their careers with skills development and certifications while empowering all employees with security awareness and phishing training to stay cyber safe at work and home. More than 70% of the Fortune 500 have relied on Infosec Skills to develop their security talent, and more than 5 million learners worldwide are more cyber-resilient from Infosec IQ’s security awareness training.",
+      "image": "https://yt3.googleusercontent.com/7n0CeWpWsoqnEjzgGpMvR9xn3nzODrWQS5vOZdbVFCjQzaq8mJhJBqZOrVD3Vy_-Lak5wjmv=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/InfoSecInstitute",
+      "creator": "infosecinstitute.com"
+    },
+    {
+      "tag": "yt",
+      "name": "David Bombal",
+      "description": "Want to learn about IT? Want to get ahead in your career?  Well, this is the right place! On this channel, I discuss Linux, Python, Ethical Hacking, Networking, CCNA, Virtualization and other IT related topics. This YouTube channel has new videos uploaded every week! Subscribe for technical, detailed, no fluff content.",
+      "image": "https://yt3.googleusercontent.com/ZeokXdjeXW_6CpcChqvVBEBcHoJ9TAaLTnQj8yT942LLV8afhmUv6zLtqzbNS1uPnernj3SPshA=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/DavidBombal",
+      "creator": "davidbombal.com"
+    },
+    {
+      "tag": "yt",
+      "name": "infoseclive",
+      "description": "Bursting with leadership content for the cyber security industry and packed with opportunities for our subscribers to engage with our LIVE events. Check out the LIVE tab for ALL of our replays! It isn't just packed with interviews, we have also have some amazing tutorials and walkthroughs, and exciting NEW STREAMs every week! If these are things that interest you, then please hit SUBSCRIBE below to be kept up to date with events and future give aways! If you are looking for more support, access to mentors, learning pathways and much more, make sure you join our FREE community using the link below!",
+      "image": "https://yt3.googleusercontent.com/gCAY5Dy6wXQHRtj-dIlcR9-qL8rVGGWxPx4xOl7OLrDt7Rg-wexp7Y3tYusCyIgWsQGFxrawZA=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/infoseclive",
+      "creator": "info-sec.live"
+    },
+    {
+      "tag": "yt",
+      "name": "Security Onion",
+      "description": "Channel for Security Onion Solutions, makers of Security Onion. Security Onion is a free and open source platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed open source tools such as Suricata, Zeek, Wazuh, the Elastic Stack, among many others.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_l7FoNfGEY8Jka1mHJmwnyU6qWJBRR6eA2DW5fux60j_Bw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/channel/UCNBFTyYCdjT5hnm7uW25vGQ",
+      "creator": "securityonion.net"
+    },
+    {
+      "tag": "yt",
+      "name": "N2K Networks",
+      "description": "N2K Networks provides a continuous spectrum of news to knowledge for professionals and enterprises. Our flagship brands include the CyberWire and CyberVista.",
+      "image": "https://yt3.googleusercontent.com/wKaReh33vN6oNeisn6pmyiDsAjTkDPFARhPsiadRGHjL7tV4gjmO7dvbC7_SdIyEVNgoH7pXTw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/Thecyberwire",
+      "creator": "n2k.com"
+    },
+    {
+      "tag": "yt",
+      "name": "Cyber Security News Podcast",
+      "description": "The fastest growing channel on Youtube on cyber security.    Recently awarded one of the top ten best cyber security podcasts be Feedspot.  The Cyber Chronicle is a weekly video blog of the most shared articles on cyber security across the internet.   We scrub the web so you don't have to.   We look at the top cyber security news shares across Twitter, LinkedIn and You tube.    We discuss cyber security news that impacted our society.       We discussing articles on cyber security hacking, hackers, phishing attacks, ransomware, Russian Hackers, compliance, technology news, and the latest cyber attack breaches.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_naeUdiMYXZpJJ_uMzFJExRsmgi6m4p85sdsvWDzXh6lg=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/TheCyberChronicle",
+      "creator": "thecyberchronicle.com"
+    },
+    {
+      "tag": "yt",
+      "name": "Introduction to Cryptography",
+      "description": "The 24 lectures give a comprehensive introduction to modern applied crypto. Only high school math is required to follow the lectures. The videos are mostly self-contained, i.e., you should be able to follow most of the material without additional resources. However, we recommend the course textbook, Understanding Cryptography by Christof Paar and Jan Pelzl. Please see www.crypto-textbook.com. The English version of the crypto lectures was taught in the 2010/11 academic year at Ruhr University Bochum in Germany. We have  Europe's largest  programs in IT security, with 200+ new bachelor and master students annually. The videos show the two-semester introductory courses for our B.Sc. and the M.Sc. IT security students. There is *no* tution for either program, however, students must pass a German language exam (sorry). More on RUB: www.ruhr-uni-bochum.de/index_en.htm",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_l2D1B97xf0B9C7XEwOCxtfuePcilZqnQmJQj9AHacbRQ=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/channel/UC1usFRN4LCMcfIV7UjHNuQg",
+      "creator": "Christof Paar - crypto-textbook.com"
+    },
+    {
+      "tag": "yt",
+      "name": "Cloud Security Podcast",
+      "description": "Cloud Security Podcast is a community first WEEKLY VIDEO PODCAST, where each week we interview CyberSecurity Leaders and Cloud Security Practitioners from around the world to help you learn How to and What's HOT in Cloud Security.",
+      "image": "https://yt3.googleusercontent.com/e4zAliCJ58xUEKXJLApZrsjkg-AyqIjlJr6wIxiBjvUBIrOX63yOQ459K_u1aBL0uW2J-o4QwKc=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/CloudSecurityPodcast",
+      "creator": "cloudsecuritypodcast.tv"
+    },
+    {
+      "tag": "yt",
+      "name": "Professor Messer",
+      "description": "Professor Messer is the Internet's most comprehensive choice for CompTIA A+, Network+, Security+, and other IT certifications. All of Professor Messer's certification videos are posted online, and you can watch every minute of every video right here on YouTube.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mhD2KiEaSniI1jQ5tmU6DuNY4NG9dTbOJF91gAlbdDRK8=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/professormesser",
+      "creator": "professormesser.com"
+    },
+    {
+      "tag": "yt",
+      "name": "MalwareAnalysisForHedgehogs",
+      "description": "I am Principal Malware Researcher at GDATA and have been reversing malware professionally since 2015. Throw your bat cape over your spikes and get started with malware analysis and reverse engineering.",
+      "image": "https://yt3.googleusercontent.com/C-aPJ4dGv1n00oW2VsUDZHxG4ZcCEKAVrxZJnOSeZYzTT6aQTkbNBAWJ7ZCv2umosgP3-6dnPCw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/MalwareAnalysisForHedgehogs",
+      "creator": "twitter.com/struppigel"
+    },
+    {
+      "tag": "yt",
+      "name": "OWASP Foundation",
+      "description": "Watch recordings from OWASP AppSec conferences and expand your knowledge on application security. This channel was created by the OWASP Media Project to gather, consolidate and promote OWASP content in video format on a central appealing hub. The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software. Our mission is to make software security visible, so that individuals and organizations worldwide can make informed decisions about true software security risks.",
+      "image": "https://yt3.googleusercontent.com/91ESnZUKnuW2dpWk9xHsE2LaoEnPpDCiV8P0VxbFiNM2zdlNuWN_MHkvso3-KY9pnLouR5vhUPo=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/OWASPGLOBAL",
+      "creator": "owasp.org"
+    },
+    {
+      "tag": "yt",
+      "name": "STÖK",
+      "description": "HACKERS GONNA HACK, CREATORS GONNA CREATE. Support my work: Join me on Patreon! https://www.patreon.com/stokfredrik",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_l47wT6zQtlx2NmJ0g38z4BGirGMIxOShB2sbhm5p2olKI=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/c/STOKfredrik",
+      "creator": "twitter.com/stokfredrik"
+    },
+    {
+      "tag": "yt",
+      "name": "Black Hat",
+      "description": "Black Hat is the most technical and relevant information security event series in the world. For more than 25 years, Black Hat Briefings have provided attendees with the very latest in information security research, development, and trends in a strictly vendor-neutral environment. These high-profile global events and Trainings are driven by the needs of the security community, striving to bring together the best minds in the industry. Black Hat inspires professionals at all career levels, encouraging growth and collaboration among academia, world-class researchers, and leaders in the public and private sectors. From its inception in 1997, Black Hat has grown from a single annual conference in Las Vegas to the most respected information security event series internationally. Today, Black Hat Briefings and Trainings are held annually in the United States, Europe and Asia, providing a premier venue for elite security researchers and trainers to find their audience.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mwQESLMp5tK6oTmV2NHuMpu3jnw2292wfNcPJPDnijqNg=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@BlackHatOfficialYT",
+      "creator": "blackhat.com"
+    },
+    {
+      "tag": "yt",
+      "name": "Computerphile",
+      "description": "Videos all about computers and computer stuff. Sister channel of Numberphile.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nfnpUQAbtelNvXbqAadLpu3bef666MarzvosO_Ow9gotY=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/computerphile",
+      "creator": "facebook.com/computerphile"
+    },
+    {
+      "tag": "yt",
+      "name": "Cyberspatial",
+      "description": "Cyberspatial brings you the best cyber security education and training from the brightest minds in the field. Whether you're a working professional or career transitionist, we deliver content designed to build your skills. Our goal is to empower people like you with the ability to visualize, describe, and communicate the world of cyberspace to others. Whatever level you're at, subscribe now for free content published weekly!",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_l1nPPp7luxCXwLr-_7e5Eyxw8inRgFAcHk-_debtD87g=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@Cyberspatial",
+      "creator": "linkedin.com/company/cyberspatial"
+    },
+    {
+      "tag": "yt",
+      "name": "thenewboston",
+      "description": "Tons of sweet computer related tutorials and some other awesome videos too!",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_luVhNF6yTdaq1SHoMmVoBAYcvUZkOBsXfEnuwcGf-G4y8=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@thenewboston",
+      "creator": "thenewboston.com"
+    },
+    {
+      "tag": "yt",
+      "name": "HackerSploit",
+      "description": "HackerSploit is the leading provider of free Infosec and cybersecurity training. Our goal is to make cybersecurity training more effective and accessible to students and professionals. We achieve this by providing essential training on how to attack and defend systems with virtual labs and real-world scenarios. We offer individual and corporate training packages in Penetration Testing & Red Team Operations, Web application penetration testing, and cybersecurity awareness training.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k_J7wNcT5Rol4WmhPhxxZVp838zcB1tDhWH2ywfnIZp-o=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/HackerSploit",
+      "creator": "hackersploit.academy"
+    },
+    {
+      "tag": "yt",
+      "name": "Null Byte",
+      "description": "The official Null Byte channel for video content! We focus on creating videos for aspiring ethical hackers, computer scientists, and the infosec community.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_kUWy2TttVaVORwINwjwbogUlDUe3KaGyKtfKiWpu5SXw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@NullByteWHT",
+      "creator": "twitter.com/nullbyte"
+    },
+    {
+      "tag": "yt",
+      "name": "Pentester Academy TV",
+      "description": "Founded in 2011 by world-renowned security researcher and trainer, Vivek Ramachandran, Pentester Academy is the world’s leading cybersecurity skills platform. In 2021, Pentester Academy was acquired by INE, one of the world’s leading training solutions companies. By adding Pentester Academy’s innovative labs to INE’s courses on Cyber Security, Cloud Computing, Networking and Data Science, this partnership represents a new frontier for both companies. Now, security professionals will have more opportunities than ever to accelerate their career, and put their company in the best position possible to keep products and data secure. Pentester Academy TV, the media arm of Pentester Academy, informs the cyber security community with programs focused on cyber security news, the movers and shakers in the security industry, new gadgets and tools, and research articles and blogs. ",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_kA-x6vT3Ny8jaI4MWNwOfydo2MjGK5E0UYxMq422UGCM5i=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@PentesterAcademyTV",
+      "creator": "pentesteracademy.com"
+    },
+    {
+      "tag": "yt",
+      "name": "GynvaelEN",
+      "description": "Podcasts about CTFs, computer security, programing and similar things. Livestreaming schedule: https://calendar.google.com/calendar/embed?src=pjta7kjkt1ssenq7fi9b6othfg%40group.calendar.google.com&ctz=Europe/Warsaw",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mauRuaGqMkPF1EisLSRxpmP_04BBTHCL6oxF0uhL72GQ=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@GynvaelEN",
+      "creator": "gynvael.coldwind.pl"
+    },
+    {
+      "tag": "yt",
+      "name": "TheSecurityTube",
+      "description": "This is the Official Channel of the SecurityTube.net website http://www.securitytube.netOur Certifications and Courses: http://securitytube-training.com We have students from over 40+ Countries taking our Certification.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nX4ryQwXdwfZk2bkmyi-iQeei-kuuECx60z8wqe4Sh=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@TheSecurityTube",
+      "creator": "TheSecurityTube"
+    },
+    {
+      "tag": "yt",
+      "name": "Cybrary",
+      "description": "Welcome to Cybrary, the world's fastest-growing online IT and cybersecurity training platform. We provide you the training and resources to level up in a dynamic, fast-paced world of complex security challenges. Secure your future and choose your next customizable career path today.Whether you want to be a red teamer, blue teamer, cloud practitioner, or somewhere in between, we invite you to start your next cybersecurity journey with us. Unlock our expansive library of self-paced, online courses that allow you to customize your own education. Learn from leading global cybersecurity experts, prepare for top certifications, and apply your knowledge in virtual lab environments--all without the high training fees.Want to join our conversations with security experts, influencers, and hackers? Don't be anonymous! Come chat with us in the comments of our weekly podcast videos. ",
+      "image": "https://yt3.googleusercontent.com/VKGAg1-eureUmjX1nC-WkQHfiDVelEdVpDxiQx4kkFABs2dtNKSUwMW3R7hAtzckFMIbtezxgw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@CybraryIt",
+      "creator": "cybrary.it"
+    },
+    {
+      "tag": "yt",
+      "name": "Corey Schafer",
+      "description": "Welcome to my Channel. This channel is focused on creating tutorials and walkthroughs for software developers, programmers, and engineers. We cover topics for all different skill levels, so whether you are a beginner or have many years of experience, this channel will have something for you. We've already released a wide variety of videos on topics that include: Python, Git, Development Environments, Terminal Commands, SQL, Programming Terms, JavaScript, Computer Science Fundamentals, and plenty of other tips and tricks which will help you in your career.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lD6K9DGGqWttThktCDttOdlHIHWZQ7Gcdd9WRSEqYUxw=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@coreyms",
+      "creator": "coreyms.com"
+    },
+    {
+      "tag": "yt",
+      "name": "The Hated One",
+      "description": "Because nothing good exists without condition. https://www.patreon.com/thehatedone https://twitter.com/The_HatedOne_https://www.reddit.com/r/thehatedone",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_mcsJX3UDUuOD7G-FOJnsu8Aue5WkKP_e3WRycOYrHfMKU=s160-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@TheHatedOne",
+      "creator": "patreon.com/thehatedone"
+    }
+  ]
