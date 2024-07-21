@@ -481,7 +481,8 @@ img {
 img[alt="ethical hacking"], 
 img[alt="groups"],
 img[alt="latest news"],
-img[alt="industry"] { 
+img[alt="industry"],
+img[alt="troubleshooting"] { 
     max-width:  50%; 
     display: block;
     text-align: -webkit-center;
@@ -490,6 +491,19 @@ img[alt="industry"] {
 
 a, h1, h2, h3, h4, p, span, code {
     color: #ccc !important;
+}
+
+.bg-orange {
+    background-color: #ef800c !important;
+
+    a.nav-link.show:hover {
+        color: #000 !important;
+        border: none;
+    }
+}
+.bg-orange a.nav-link.show:hover {
+    color: #000 !important;
+    border: none;
 }
 
 pre, cite {

@@ -26,9 +26,11 @@
                         }
                         const articles = await response.json();
                         document.getElementById('contentPage').innerHTML = '';
+                        //document.getElementById('contentPage').innerHTML = `<div class="row">`;
+                        const news = [];
                         articles.results.forEach(el => {
                             if (el.language == "english") {
-                                document.getElementById('contentPage').innerHTML += `
+                                news.push(`
                                     <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column p-3 text-white text-shadow-1">
                                         <div class="dark-shadow">
                                             <div>
@@ -42,9 +44,11 @@
                                                 ${el.pubDate}
                                             </div>
                                         </div>
-                                    </div>`;
+                                    </div>`);
                             }
                         });
+                        debugger;
+                        document.getElementById('contentPage').innerHTML = `<div class="row">${news.join('')}</div>`;
                     } catch (error) {
                         console.error('Error fetching news:', error);
                         document.getElementById('news-container').innerText = 'Error fetching news';
@@ -212,7 +216,7 @@
 
                 const searchBox = document.createElement('div');
                 searchBox.id = "searchBox";
-                searchBox.innerHTML =  `<div class="input-group input-group-sm mb-3 p-4">
+                searchBox.innerHTML =  `<div class="input-group input-group-sm mt-4 mb-4">
                                             <div class="input-group bg-dark">
                                                 <div class="input-group-text bg-dark">
                                                     <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Activity" aria-label="Radio button for following text input"> <label for="Activity" class="p-1 ccc"> Activity </label>
@@ -670,7 +674,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-8 mb-5">  
-                <div class="row">
+                <div class="row bg-orange">
                     <ul class="nav nav-tabs border-top" id="horizontal-tabs"></ul>
                 </div> 
                 <div class="row">
