@@ -18,6 +18,8 @@
 
             document.addEventListener('DOMContentLoaded', function () {
 
+                debugger;
+
                 async function fetchNews() {
                     try {
                         const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity');
@@ -281,7 +283,7 @@
 
                 const searchBox = document.createElement('div');
                 searchBox.id = "searchBox";
-                searchBox.innerHTML =  `<div class="input-group input-group-sm mb-3 p-4">                                            
+                searchBox.innerHTML =  `<div class="input-group input-group-sm mt-3 mb-3">                                            
                                             <input type="text" class="form-control bg-dark ccc" onkeydown="searchAbbrv()" max-length="50" />
                                         </div>`;
 
