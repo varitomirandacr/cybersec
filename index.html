@@ -228,8 +228,16 @@
 
                 container.appendChild(searchBox);
 
+                let containerTable = document.createElement("div");
+                containerTable.classList.add('container');
+                containerTable.classList.add('table-responsive');
+
                 let table = document.createElement("table");
                 table.classList.add('ctable');
+                /*table.classList.add('table-responsive');
+                table.classList.add('table-dark');
+                table.classList.add('table-striped');
+                table.classList.add('table-hover');*/
                 table.id = "table-abbrevs";
                 table.innerHTML += `
                             <thead>
@@ -260,7 +268,8 @@
                         });
                         
                         table.appendChild(tbody);
-                        container.appendChild(table);
+                        containerTable.appendChild(table);
+                        container.appendChild(containerTable);
                     });
             }
 
