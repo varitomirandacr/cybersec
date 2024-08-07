@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Active Countermeasures",
+      "url": "https://www.activecountermeasures.com/",
+      "description": "Active Countermeasures is a group of like-minded geeks that believe in giving back to the security community. We do this through free training, thought leadership, and both open source and affordable commercial tools. As a community, we have tools and techniques to help protect our networks (firewalls, AV, log review, etc.). We also have tools and processes to recover when a system is compromised (incident handling and forensics). What’s been missing is the bridge between the two; the ability to quickly identify that our protections have failed and recovery needs to be implemented. There are very few tools in this space and no open standards or attestation requirements.",
+      "image": "https://www.activecountermeasures.com/wp-content/uploads/2021/11/active_countermeasures_logo_360.png",
+      "connect": [
+        {
+          "tag": "yt",
+          "url": "https://www.youtube.com/activecountermeasures"
+        },
+        {
+          "tag": "in",
+          "url": "https://www.linkedin.com/company/active-countermeasures/"
+        },
+        {
+          "tag": "fb",
+          "url": "https://www.facebook.com/ActiveCmeasures"
+        },
+        {
+          "tag": "tw",
+          "url": "https://twitter.com/ActiveCmeasures"
+        }
+      ],
+      "email": "https://www.activecountermeasures.com/subscribe/"
+    }
+]

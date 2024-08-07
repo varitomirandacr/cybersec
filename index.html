@@ -98,6 +98,8 @@
                                         fetchOrgs(dataset.path);
                                     else if (dataset.name == "Youtube Channels")
                                         fetchChannels(dataset.path);
+                                    else if (dataset.name == "Trainings")
+                                        fetchTrainings(dataset.path);
                                 });
                             });
                         
@@ -150,6 +152,37 @@
                 fetchMain();
             });
 
+            async function fetchTrainings(url) {
+                const container = document.getElementById('contentPage');
+                container.innerHTML = "";
+                await fetchServer(url)
+                    .then(json => {
+                        const trainings = [];
+                        
+                        json.forEach(trn => {
+                            debugger;
+                            trainings.push(`<div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                                            <div class="container d-flex flex-column p-4 mt-3 m-1 card-article dark-shadow">
+                                                <div class="row mt-auto">
+                                                    <img style="width: 100px; margin: 0 auto;" src="${trn.image}" />
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <span class="pb-3 mb-0 small lh-sm">${trn.name}</span>  
+                                                    <p class="pb-3 mb-0 small lh-sm card-bottom">${trn.description}</p>                                                                                             
+                                                </div>
+                                                <div class="row mt-auto">${getContentMedia(trn.connect)}</div>
+                                                <div class="row mt-auto">
+                                                    <a class="card-link" href="${trn.url}" target="_blank">
+                                                        <span>view page</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>`);
+                        });
+                        document.getElementById('contentPage').innerHTML = `<div class="row">${trainings.join('')}</div>`;
+                    })
+            }
+
             async function fetchChannels(url) {
                 const container = document.getElementById('contentPage');
                 container.innerHTML = "";
@@ -187,7 +220,7 @@
                                                     <img style="width: 100px; margin: 0 auto;" src="${org.image}" />
                                                 </div>
                                                 <div class="row mt-auto">
-                                                    <span class="pb-3 mb-0 small lh-sm">${org.name}</span>                                                                                             
+                                                    <span class="pb-3 mb-0 small lh-sm">${org.name}</span>                                                                                           
                                                 </div>
                                                 <div class="row mt-auto">${getContentMedia(org.connect)}</div>
                                                 <div class="row mt-auto">
@@ -200,16 +233,6 @@
                         });
                         document.getElementById('contentPage').innerHTML = `<div class="row">${tools.join('')}</div>`;
                     })
-
-                function getContentMedia(connect) {
-                    let btnGroup = `<div class="btn-toolbar">`;
-                    const buttons = [];
-                    connect.forEach(c => {
-                        buttons.push(`${getIcon(c.tag, c.url)}`);
-                    });
-                    btnGroup += `${buttons.join('')} </div>`;
-                    return btnGroup;
-                }
             }
             
             async function fetchWiki(url) {
@@ -479,6 +502,16 @@
                     results.forEach(tr => tbody.appendChild(tr));
                     table.appendChild(tbody);
                 })
+            }
+
+            function getContentMedia(connect) {
+                let btnGroup = `<div class="btn-toolbar">`;
+                const buttons = [];
+                connect.forEach(c => {
+                    buttons.push(`${getIcon(c.tag, c.url)}`);
+                });
+                btnGroup += `${buttons.join('')} </div>`;
+                return btnGroup;
             }
 
             function hasItem(x, criteria) {
