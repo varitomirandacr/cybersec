@@ -62,7 +62,8 @@
         "path": "./content/latest-news/latestnews.md",
         "click": "",
         "tabs": [
-            { "category": "Newsdata.io", "path": "https://varitomirandacr.github.io/cybersec/api/news" }
+            { "category": "Newsdata.io", "path": "https://varitomirandacr.github.io/cybersec/api/news" },
+            { "category": "NIST", "path": "fetchNISTRss" }
         ]
     },
     {

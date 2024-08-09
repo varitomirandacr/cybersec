@@ -20,8 +20,10 @@
 
                 //debugger;
 
-                async function fetchNews() {
+                
+                async function fetchNewsdata() {
                     try {
+                        debugger;
                         const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_48290aed27ff3a224875151ae01fc6a504c03&q=cybersecurity');
                         if (!response.ok) {
                             throw new Error(`HTTP error! status: ${response.status}`);
@@ -49,7 +51,7 @@
                                     </div>`);
                             }
                         });
-                        debugger;
+                        //debugger;
                         document.getElementById('contentPage').innerHTML = `<div class="row">${news.join('')}</div>`;
                     } catch (error) {
                         console.error('Error fetching news:', error);
@@ -80,8 +82,10 @@
                                     event.preventDefault();
                                     const current = event.target;
                                     const dataset = current.dataset;
-                                    if (dataset.parent == "News")
-                                        fetchNews();
+                                    if (dataset.name == "Newsdata.io")
+                                        fetchNewsdata();                                    
+                                    else if (dataset.name == "NIST")
+                                        fetchNISTRss();
                                     else if (dataset.name == "Tools")
                                         fetchTools(dataset.path);
                                     else if (dataset.name == "Practice")
@@ -153,6 +157,44 @@
                 fetchJobs();
                 fetchMain();
             });
+
+            async function fetchNISTRss() {
+                try {
+                    const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.nist.gov%2Fnews-events%2Fnews%2Frss.xml&api_key=locyjfdyybzfdlcaarwtol68ldqmmkb4r96rulz9');
+                    debugger;
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    const articles = [];
+                    if(data.items) {
+                        data.items.forEach(p => {
+                            const nist = `
+                                <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column p-3 text-white text-shadow-1">
+                                    <div class="dark-shadow">
+                                        <div>
+                                            <h5 class="card-title cyan-title">${p.title}</h5>
+                                            <p class="card-text cut-text">
+                                                ${p.description || ''}
+                                            </p>
+                                            <a href="${p.link}" class="card-link">Read more</a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            ${new Date(p.pubDate).toLocaleDateString()}
+                                        </div>
+                                        <div><span class="pb-3 mb-0 small lh-sm c-777">Author: <br/> ${p.author}</span></div>
+                                    </div>
+                                </div>
+                            `;
+                            articles.push(nist);
+                        });
+                        document.getElementById('contentPage').innerHTML = `<div class="row">${articles.join('')}</div>`;
+                    }
+                } catch (error) {
+                    console.error('Error fetching news:', error);
+                    document.getElementById('news-container').innerText = 'Error fetching news';
+                }
+            }
 
             async function fetchDocuments(url) {
                 const container = document.getElementById('contentPage');
@@ -698,6 +740,20 @@
                             </svg>
                         </a>`;
             }
+        
+            window.addEventListener('scroll', function() {
+                let stickyDiv = document.getElementById('stickyDiv');
+
+                if (stickyDiv){
+                    let stickyTop = stickyDiv?.offsetTop;
+
+                    if (window.pageYOffset >= stickyTop - 20) { // Adjust based on `top` value
+                        stickyDiv.classList.add('sticky-active');
+                    } else {
+                        stickyDiv.classList.remove('sticky-active');
+                    }
+                }
+            });
         </script>
     </head>
 <body class="bg-dark" data-bs-theme="dark">
@@ -757,7 +813,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-8 mb-5">  
-                <div class="row bg-orange">
+                <div class="row bg-orange m-1 sticky-div" id="stickyDiv ">
                     <ul class="nav nav-tabs border-top" id="horizontal-tabs"></ul>
                 </div> 
                 <div class="row">

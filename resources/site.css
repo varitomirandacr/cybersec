@@ -618,3 +618,35 @@ pre, cite {
 .text-justify {
     text-align: justify !important;
 }
+
+.sticky-div {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Adjust this value to control the sticky position */
+    z-index: 1000; /* Ensure it stays on top */
+    background-color: #000;
+  }
+
+.sticky-active {
+    background-color: #15b3cf; /* Background color when sticky */
+    color: #000; /* Change text color to be visible on dark background */
+}
+
+.sticky-div ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #15b3cf; /* Initial background color */
+    color: #000; /* Initial text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sticky-active ul li a {
+    background-color: #15b3cf; /* Background color when sticky */
+    color: #000; /* Change text color to be visible on dark background */
+}
+
+.sticky-active ul li a:hover {
+    background-color: #15b3cf; /* Background color when sticky */
+    color: #086374; /* Change text color to be visible on dark background */
+}
