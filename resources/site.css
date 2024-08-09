@@ -494,15 +494,15 @@ a, h1, h2, h3, h4, p, span, code {
 }
 
 .bg-orange {
-    background-color: #ef800c !important;
-
+    /*background-color: #ef800c !important;*/
+    border: 1px solid #15b3cf;
     a.nav-link.show:hover {
-        color: #000 !important;
+        color: #0e7c8f !important;
         border: none;
     }
 }
 .bg-orange a.nav-link.show:hover {
-    color: #000 !important;
+    color: #15b3cf !important;
     border: none;
 }
 
@@ -559,8 +559,10 @@ pre, cite {
 
 .dark-shadow {
     padding: 20px;
-    border: 1px solid #48b4a5;
-    box-shadow: 0 0 10px #48b4a5;
+    /*border: 1px solid #48b4a5;
+    box-shadow: 0 0 10px #48b4a5;*/
+    border: 1px solid #15b3cf;
+    box-shadow: 0 0 10px #15b3cf;
     background: #000;
 
     &.radius {
@@ -600,8 +602,10 @@ pre, cite {
 
 .custom-sidebar a:hover {
     color: black;
-    background-color:  #48b4a5;      
-    box-shadow: 0 0 10px #48b4a5;  
+    /*background-color:  #48b4a5;      
+    box-shadow: 0 0 10px #48b4a5;*/
+    background-color:  #15b3cf;      
+    box-shadow: 0 0 10px #15b3cf;  
 }
 
 .cs-span {

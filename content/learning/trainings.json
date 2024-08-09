@@ -23,5 +23,11 @@
         }
       ],
       "email": "https://www.activecountermeasures.com/subscribe/"
-    }
+    },
+    {
+        "name": "Amazon Cybersecurity Awarness Training",
+        "url": "https://learnsecurity.amazon.com/en/index.html#download",
+        "description": "Fun and impactful cybersecurity training, provided by Amazon.",
+        "image": "resources/images/amazon.svg"
+      }
 ]

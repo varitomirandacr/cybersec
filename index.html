@@ -100,6 +100,8 @@
                                         fetchChannels(dataset.path);
                                     else if (dataset.name == "Trainings")
                                         fetchTrainings(dataset.path);
+                                    else if (dataset.name == "Documents")
+                                        fetchDocuments(dataset.path);
                                 });
                             });
                         
@@ -152,6 +154,47 @@
                 fetchMain();
             });
 
+            async function fetchDocuments(url) {
+                const container = document.getElementById('contentPage');
+                container.innerHTML = "";
+                await fetchServer(url)
+                    .then(json => {
+                        const docs = [];
+                        
+                        json.forEach(doc => {
+                            
+                            docs.push(`<div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                                            <div class="container d-flex flex-column p-4 mt-3 m-1 card-article dark-shadow">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <object type="image/svg+xml" data="${doc.icon}" alt="${doc.name}">
+                                                            Your browser does not support SVG.
+                                                        </object>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <span class="pb-3 mb-0 fs-4 lh-sm">${doc.name}</span>                                      
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <p class="pb-3 mb-0 small lh-sm card-bottom text-justify">${doc.description}</p> 
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                                        <div><span class="pb-3 mb-0 small lh-sm c-777">Created by: <br/> ${doc.creator}</span></div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                                        <a class="card-link" href="${doc.url}" target="_blank">
+                                                            <span>view document</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`);
+                        });
+                        document.getElementById('contentPage').innerHTML = `<div class="row">${docs.join('')}</div>`;
+                    })
+            }
+
             async function fetchTrainings(url) {
                 const container = document.getElementById('contentPage');
                 container.innerHTML = "";
@@ -164,11 +207,11 @@
                             trainings.push(`<div class="col-sm-12 col-md-6 col-lg-6 mb-5">
                                             <div class="container d-flex flex-column p-4 mt-3 m-1 card-article dark-shadow">
                                                 <div class="row">
-                                                    <div class="col-4"
-                                                        <img style="width: 100px; margin: 0 auto;" src="${trn.image}" />
+                                                    <div class="col-4">
+                                                        <img src="${trn.image}" />
                                                     </div>
                                                     <div class="col-8">
-                                                        <span class="pb-3 mb-0 small lh-sm">${trn.name}</span>                                      
+                                                        <span class="pb-3 mb-0 fs-4 lh-sm">${trn.name}</span>                                      
                                                     </div>
                                                 </div>
                                                 <div class="row mt-auto">
@@ -509,6 +552,7 @@
             }
 
             function getContentMedia(connect) {
+                if (!connect) return `<span style="color:#585959 !important">No Media</span>`;
                 let btnGroup = `<div class="btn-toolbar">`;
                 const buttons = [];
                 connect.forEach(c => {

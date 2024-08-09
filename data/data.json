@@ -48,7 +48,7 @@
         "tabs": [
             { "category": "Certifications", "path": "./content/wiki/wiki.json" },
             { "category": "Trainings", "path": "./content/learning/trainings.json" },
-            { "category": "Books", "path": "./content/ethical/tools.json" }
+            { "category": "Documents", "path": "./content/learning/documents.json" }
         ]
     },
     {

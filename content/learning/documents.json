@@ -1,0 +1,16 @@
+[
+    {
+      "name": "ACA - Amazon Cybersecurity Awarness (2022)",
+      "url": "https://learnsecurity.amazon.com/en/downloads/aca_2022_getting-started-guide_en-us.pdf",
+      "description": "Amazon Cybersecurity Awareness training is focused on security best practices.",
+      "icon": "resources/svg/pdf.svg",
+      "creator": "Amazon"
+    },
+    {
+      "name": "Android Kali NetHunter Install 2",
+      "url": "https://www.dropbox.com/scl/fi/irpaebjwlu5v1c3mt4hzi/Android-Kali-NetHunter-Install-2.pdf?rlkey=65gpc275fy6sbkz0i19wlcj06&e=6&dl=0",
+      "description": "Rootless Install of Kali NetHunter in Android devices",
+      "icon": "resources/svg/pdf.svg",
+      "creator": "David Bombal"
+    }
+]
