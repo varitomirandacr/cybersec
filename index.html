@@ -18,7 +18,7 @@
 
             document.addEventListener('DOMContentLoaded', function () {
 
-                debugger;
+                //debugger;
 
                 async function fetchNews() {
                     try {
@@ -160,15 +160,19 @@
                         const trainings = [];
                         
                         json.forEach(trn => {
-                            debugger;
+                            
                             trainings.push(`<div class="col-sm-12 col-md-6 col-lg-6 mb-5">
                                             <div class="container d-flex flex-column p-4 mt-3 m-1 card-article dark-shadow">
-                                                <div class="row mt-auto">
-                                                    <img style="width: 100px; margin: 0 auto;" src="${trn.image}" />
+                                                <div class="row">
+                                                    <div class="col-4"
+                                                        <img style="width: 100px; margin: 0 auto;" src="${trn.image}" />
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <span class="pb-3 mb-0 small lh-sm">${trn.name}</span>                                      
+                                                    </div>
                                                 </div>
                                                 <div class="row mt-auto">
-                                                    <span class="pb-3 mb-0 small lh-sm">${trn.name}</span>  
-                                                    <p class="pb-3 mb-0 small lh-sm card-bottom">${trn.description}</p>                                                                                             
+                                                    <p class="pb-3 mb-0 small lh-sm card-bottom text-justify">${trn.description}</p> 
                                                 </div>
                                                 <div class="row mt-auto">${getContentMedia(trn.connect)}</div>
                                                 <div class="row mt-auto">

@@ -610,3 +610,7 @@ pre, cite {
 .cs-span:hover {
     color: black !important;
 }
+
+.text-justify {
+    text-align: justify !important;
+}
