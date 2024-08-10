@@ -2,5 +2,5 @@
     "title": "Pathway Tool",
     "description": "This is a collection of ethical hacking common tools",
     "last_updated": "",
-    "content": "<iframe class=\"responsive-iframe\" src=\"https://www.cyberseek.org/pathway.html\" style=\"height: 100vh;\"></iframe>"    
+    "content": "<iframe class=\"responsive-iframe\" src=\"https://www.cyberseek.org/pathway.html\" style=\"width:100%; height: 100vh;\"></iframe>"    
 }

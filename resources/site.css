@@ -635,7 +635,7 @@ pre, cite {
 .sticky-div ul li a {
     display: block;
     padding: 10px;
-    background-color: #15b3cf; /* Initial background color */
+    background-color: #000; /* Initial background color */
     color: #000; /* Initial text color */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -650,3 +650,44 @@ pre, cite {
     background-color: #15b3cf; /* Background color when sticky */
     color: #086374; /* Change text color to be visible on dark background */
 }
+
+.svg-background {
+    display: inline-block;
+    padding: 10px 20px;
+    color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+    background-image: url('resources/svg/uparrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust size as needed */
+    background-position: center;
+}
+
+.vc-li {
+    display: flex;
+    align-items: center;
+    height: 50px; /* Set the height of the li */
+
+    &:hover {
+        /*background-color: #15b3cf;*/
+        color:#000;
+    }
+}
+.vc-link {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #333 !important;
+
+    &:hover {
+        background-color: #15b3cf;
+    }
+
+    a {
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+
+.top-link { font-variant: small-caps; }
+.top-link::before { content: '︽'; }
