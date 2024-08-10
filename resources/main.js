@@ -65,39 +65,52 @@ document.addEventListener('DOMContentLoaded', function () {
                         const current = event.target;
                         const dataset = current.dataset;
 
-                        if (dataset.name == "top") {
-                            scrollToTop();
-                            return;
-                        }
+                        addLoader();
+                        new Promise((resolve, reject) => {
+                            if (dataset.name == "top") {
+                                scrollToTop();
+                                return;
+                            }
 
-                        if (dataset.name == "Newsdata.io")
-                            fetchNewsdata();                                    
-                        else if (dataset.name == "NIST")
-                            fetchNISTRss();
-                        else if (dataset.name == "TheHackerNews")
-                            fetchTheHackerNewsRss();
-                        else if (dataset.name == "NCSC")
-                            fetchNCSCRss();
-                        else if (dataset.name == "Tools")
-                            fetchTools(dataset.path);
-                        else if (dataset.name == "Practice")
-                            fetchPractice(dataset.path);
-                        else if (dataset.path.includes('.md'))
-                            fetchMarkdown(dataset.path);
-                        else if (dataset.name == "Pathway")
-                            fetchPathway(dataset.path);
-                        else if (dataset.name == "Wiki")
-                            fetchWiki(dataset.path)
-                        else if (dataset.name == "Abbrvs")
-                            fetchAbbrv(dataset.path);
-                        else if (dataset.name == "Organizations")
-                            fetchOrgs(dataset.path);
-                        else if (dataset.name == "Youtube Channels")
-                            fetchChannels(dataset.path);
-                        else if (dataset.name == "Trainings")
-                            fetchTrainings(dataset.path);
-                        else if (dataset.name == "Documents")
-                            fetchDocuments(dataset.path);
+                            if (dataset.name == "Newsdata.io")
+                                fetchNewsdata();                                    
+                            else if (dataset.name == "NIST")
+                                fetchNISTRss();
+                            else if (dataset.name == "TheHackerNews")
+                                fetchTheHackerNewsRss();
+                            else if (dataset.name == "NCSC")
+                                fetchNCSCRss();
+                            else if (dataset.name == "Tools")
+                                fetchTools(dataset.path);
+                            else if (dataset.name == "Practice")
+                                fetchPractice(dataset.path);
+                            else if (dataset.path.includes('.md'))
+                                fetchMarkdown(dataset.path);
+                            else if (dataset.name == "Pathway")
+                                fetchPathway(dataset.path);
+                            else if (dataset.name == "Wiki")
+                                fetchWiki(dataset.path)
+                            else if (dataset.name == "Abbrvs")
+                                fetchAbbrv(dataset.path);
+                            else if (dataset.name == "Organizations")
+                                fetchOrgs(dataset.path);
+                            else if (dataset.name == "Youtube Channels")
+                                fetchChannels(dataset.path);
+                            else if (dataset.name == "Trainings")
+                                fetchTrainings(dataset.path);
+                            else if (dataset.name == "Documents")
+                                fetchDocuments(dataset.path);
+                            else
+                                reject("Unknown dataset name");
+                        })
+                        .then(() => {
+                            removeLoader();
+                            console.log("Operation completed successfully.");
+                        })
+                        .catch((error) => {
+                            removeLoader();
+                            console.error("An error occurred:", error);
+                        });
                     });
                 });
             
@@ -114,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 tab.classList.replace("show", "hidden");
                         });
 
-                        const _type = current.url.includes('.md') ? 'no-page' : 'page';
+                        const _type = current.url ? current.url.includes('.md') ? 'no-page' : 'page' : 'page';
                         if (_type === 'page') {
                             if(current.target == "Magazines") {
                                 fetchMags(current.url);
@@ -823,6 +836,23 @@ function scrollToTop() {
         top: 0,
         behavior: 'smooth'
     });
+}
+
+function addLoader() {
+    const page = document.getElementById("contentPage");
+    page.innerHTML = '';
+    page.innerHTML = `<div id="loader" class="loading-container">
+                        <div class="lds-hourglass"></div>
+                      </div>`;
+}
+
+function removeLoader() {
+    const page = document.getElementById("contentPage");
+    const hasLoader = page.innerHTML.includes(`<div id="loader" class="lds-hourglass"></div>`) > 0;
+    const loader = document.getElementById("loader");
+    if (hasLoader && loader) {
+        setTimeout(_ => { loader.remove(); }, 3000);
+    }
 }
 
 window.addEventListener('scroll', function() {
