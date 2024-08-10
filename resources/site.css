@@ -691,3 +691,11 @@ pre, cite {
 
 .top-link { font-variant: small-caps; }
 .top-link::before { content: '︽'; }
+
+.simple { border: none;}
+.simple:hover { 
+    border: 1px solid #15b3cf !important;
+    box-shadow: 0 0 10px #15b3cf !important;
+    background: #000 !important;
+    cursor: pointer !important;
+}

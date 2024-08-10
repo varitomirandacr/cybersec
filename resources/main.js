@@ -586,7 +586,7 @@ async function fetchMags(url) {
             </div>`;
             json.magazines.forEach(mag => {
                 mags.push(`<!-- ${mag.name} -->
-                    <div class="col-md-4 mb-4 border-top">
+                    <div class="col-md-4 mb-4 border-top simple">
                         <div class="d-flex text-body-secondary pt-3">
                             <div class="card-container">
                                 <h4 class="card-title">${mag.name}</h4>
@@ -595,8 +595,8 @@ async function fetchMags(url) {
                             </div>
                         </div>
                     </div>`);
-            document.getElementById('contentPage').innerHTML = `<div class="row">${title} ${mags.join('')}</div>`;
         });
+        document.getElementById('contentPage').innerHTML = `<div class="row">${title} ${mags.join('')}</div>`;
     });
 }
 
