@@ -1,1164 +1,1004 @@
 [
   {
-    "Activity": "Monitoring",
-    "Item": "Networking",
-    "SubItem": "Traffic Analysis",
+    "Keywords": "Monitoring | Networking",
+    "Name": "Traffic Analysis",
     "Definition": "Use tools to monitor network traffic for unusual patterns or volumes that might indicate a cyber attack.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Networking",
-    "SubItem": "Intrusion Detection Systems (IDS)",
+    "Keywords": "Monitoring | Networking",
+    "Name": "Intrusion Detection Systems (IDS)",
     "Definition": "Deploy IDS to detect unauthorized access or anomalous behavior in your network",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Endpoint",
-    "SubItem": "Antivirus/Antimalware",
+    "Keywords": "Monitoring | Endpoint",
+    "Name": "Antivirus/Antimalware",
     "Definition": "Ensure all endpoints have up-to-date antivirus and antimalware software.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Endpoint",
-    "SubItem": "Endpoint Detection and Response (EDR)",
+    "Keywords": "Monitoring | Endpoint",
+    "Name": "Endpoint Detection and Response (EDR)",
     "Definition": "Use EDR tools to continuously monitor and respond to threats on endpoints.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Logging",
-    "SubItem": "Centralized Logging",
+    "Keywords": "Monitoring | Logging",
+    "Name": "Centralized Logging",
     "Definition": "Collect logs from all systems, applications, and devices in a central location for easier analysis.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Logging",
-    "SubItem": "Security Information and Event Management (SIEM)",
+    "Keywords": "Monitoring | Logging",
+    "Name": "Security Information and Event Management (SIEM)",
     "Definition": "Implement SIEM solutions to analyze log data in real-time and identify potential security incidents.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "User Activity",
-    "SubItem": "Access Controls",
+    "Keywords": "Monitoring | User Keywords",
+    "Name": "Access Controls",
     "Definition": "Enforce strict access controls to ensure users have only the permissions they need.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "User Activity",
-    "SubItem": "User Behavior Analytics (UBA)",
+    "Keywords": "Monitoring | User Keywords",
+    "Name": "User Behavior Analytics (UBA)",
     "Definition": "Use UBA tools to detect anomalies in user behavior that could indicate compromised accounts.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Vulnerability Management",
-    "SubItem": "Regular Scanning",
+    "Keywords": "Monitoring | Vulnerability Management",
+    "Name": "Regular Scanning",
     "Definition": "Perform regular vulnerability scans to identify and address weaknesses in your systems.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Vulnerability Management",
-    "SubItem": "Patch Management",
+    "Keywords": "Monitoring | Vulnerability Management",
+    "Name": "Patch Management",
     "Definition": "Keep all software and systems up-to-date with the latest security patches.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Incident Response",
-    "SubItem": "Incident Response Plan",
+    "Keywords": "Monitoring | Incident Response",
+    "Name": "Incident Response Plan",
     "Definition": "Develop and maintain an incident response plan to quickly and effectively handle security breaches.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Incident Response",
-    "SubItem": "Training and Drills",
+    "Keywords": "Monitoring | Incident Response",
+    "Name": "Training and Drills",
     "Definition": "Regularly train your team on the incident response plan and conduct drills to ensure readiness.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Threat Intelligence",
-    "SubItem": "Threat Feeds",
+    "Keywords": "Monitoring | Threat Intelligence",
+    "Name": "Threat Feeds",
     "Definition": "Subscribe to threat intelligence feeds to stay informed about the latest threats and vulnerabilities.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Threat Intelligence",
-    "SubItem": "Threat Hunting",
+    "Keywords": "Monitoring | Threat Intelligence",
+    "Name": "Threat Hunting",
     "Definition": "Proactively search for indicators of compromise within your network based on the latest threat intelligence.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Physical Security",
-    "SubItem": "Access Controls",
+    "Keywords": "Monitoring | Physical Security",
+    "Name": "Access Controls",
     "Definition": "Implement physical access controls to protect critical infrastructure and data centers.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Physical Security",
-    "SubItem": "Surveillance",
+    "Keywords": "Monitoring | Physical Security",
+    "Name": "Surveillance",
     "Definition": "Use surveillance cameras and security personnel to monitor physical access points.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Compliance & Audits",
-    "SubItem": "Regulatory Compliance",
+    "Keywords": "Monitoring | Compliance & Audits",
+    "Name": "Regulatory Compliance",
     "Definition": "Ensure compliance with relevant regulations and standards (e.g., GDPR, HIPAA, PCI DSS).",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Compliance & Audits",
-    "SubItem": "Regular Audits",
+    "Keywords": "Monitoring | Compliance & Audits",
+    "Name": "Regular Audits",
     "Definition": "Conduct regular security audits to assess the effectiveness of your security measures and identify areas for improvement.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Employee Awarness",
-    "SubItem": "Training Programs",
+    "Keywords": "Monitoring | Employee Awarness",
+    "Name": "Training Programs",
     "Definition": "Regularly train employees on cybersecurity best practices and awareness.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Employee Awarness",
-    "SubItem": "Phishing Simulations",
+    "Keywords": "Monitoring | Employee Awarness",
+    "Name": "Phishing Simulations",
     "Definition": "Conduct phishing simulations to educate employees about recognizing and responding to phishing attacks.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Employee Awarness",
-    "SubItem": "Tools and Technologies",
-    "Definition": "SIEM Solutions: Splunk, IBM QRadar, LogRhythm\nIDS/IPS: Snort, Suricata, Cisco Firepower\nEDR: CrowdStrike, Carbon Black, SentinelOne\nUBA: Exabeam, Securonix, Splunk UBA",
+    "Keywords": "Monitoring | Employee Awarness",
+    "Name": "Tools and Technologies",
+    "Definition": "SIEM Solutions: Splunk, IBM QRadar, LogRhythm IDS/IPS: Snort, Suricata, Cisco Firepower EDR: CrowdStrike, Carbon Black, SentinelOne UBA: Exabeam, Securonix, Splunk UBA",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Preparation",
-    "SubItem": "Develop Policies and Procedures",
+    "Keywords": "Analysis | Preparation",
+    "Name": "Develop Policies and Procedures",
     "Definition": "Establish and document security policies, procedures, and response plans.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Preparation",
-    "SubItem": "Install and Configure Tools",
+    "Keywords": "Analysis | Preparation",
+    "Name": "Install and Configure Tools",
     "Definition": "Implement and configure intrusion detection systems (IDS), intrusion prevention systems (IPS), firewalls, and other security tools.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Preparation",
-    "SubItem": "Training",
+    "Keywords": "Analysis | Preparation",
+    "Name": "Training",
     "Definition": "Train staff on recognizing and responding to security incidents.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Detection & Identification",
-    "SubItem": "Monitoring",
+    "Keywords": "Analysis | Detection & Identification",
+    "Name": "Monitoring",
     "Definition": "Continuously monitor network traffic, system logs, and other data sources for signs of potential intrusions.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Detection & Identification",
-    "SubItem": "Alerts and Notifications",
+    "Keywords": "Analysis | Detection & Identification",
+    "Name": "Alerts and Notifications",
     "Definition": "Set up alerts for suspicious activities, such as multiple failed login attempts, unusual network traffic, or unauthorized access attempts.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Detection & Identification",
-    "SubItem": "Initial Triage",
+    "Keywords": "Analysis | Detection & Identification",
+    "Name": "Initial Triage",
     "Definition": "When an alert is triggered, perform an initial assessment to determine if it is a false positive or a genuine threat.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Analysis",
-    "SubItem": "Data Collection",
+    "Keywords": "Analysis | Analysis",
+    "Name": "Data Collection",
     "Definition": "Gather all relevant data, including system logs, network traffic data, and any affected files or systems.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Analysis",
-    "SubItem": "Forensic Analysis",
+    "Keywords": "Analysis | Analysis",
+    "Name": "Forensic Analysis",
     "Definition": "Use forensic tools to analyze the collected data and identify the nature, scope, and origin of the intrusion.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Analysis",
-    "SubItem": "Impact Assessment",
+    "Keywords": "Analysis | Analysis",
+    "Name": "Impact Assessment",
     "Definition": "Determine the impact of the intrusion on systems, data, and operations.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Containment",
-    "SubItem": "Short-term Containment",
+    "Keywords": "Analysis | Containment",
+    "Name": "Short-term Containment",
     "Definition": "Implement immediate measures to stop the intrusion and prevent further damage, such as isolating affected systems or blocking malicious IP addresses.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Containment",
-    "SubItem": "Long-term Containment",
+    "Keywords": "Analysis | Containment",
+    "Name": "Long-term Containment",
     "Definition": "Develop and implement strategies to maintain security while remediation efforts are underway.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Eradication",
-    "SubItem": "Remove Malicious Components",
+    "Keywords": "Analysis | Eradication",
+    "Name": "Remove Malicious Components",
     "Definition": "Identify and eliminate any malware, unauthorized accounts, or other malicious artifacts from affected systems.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Eradication",
-    "SubItem": "Patch Vulnerabilities",
+    "Keywords": "Analysis | Eradication",
+    "Name": "Patch Vulnerabilities",
     "Definition": "Apply patches and updates to fix vulnerabilities that were exploited during the intrusion.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Recovery",
-    "SubItem": "Restore Systems",
+    "Keywords": "Analysis | Recovery",
+    "Name": "Restore Systems",
     "Definition": "Restore affected systems and data from backups or clean copies.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Recovery",
-    "SubItem": "Verify Integrity",
+    "Keywords": "Analysis | Recovery",
+    "Name": "Verify Integrity",
     "Definition": "Ensure that all systems are free from malware and operating correctly.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Recovery",
-    "SubItem": "Monitor for Recurrence",
+    "Keywords": "Analysis | Recovery",
+    "Name": "Monitor for Recurrence",
     "Definition": "Continue to monitor systems for signs of the intrusion reoccurring.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Post-Incident Analysis",
-    "SubItem": "Documentation",
+    "Keywords": "Analysis | Post-Incident Analysis",
+    "Name": "Documentation",
     "Definition": "Document all findings, actions taken, and lessons learned during the incident.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Post-Incident Analysis",
-    "SubItem": "Review and Improve",
+    "Keywords": "Analysis | Post-Incident Analysis",
+    "Name": "Review and Improve",
     "Definition": "Review the incident response process and make improvements based on the lessons learned.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Post-Incident Analysis",
-    "SubItem": "Reporting",
+    "Keywords": "Analysis | Post-Incident Analysis",
+    "Name": "Reporting",
     "Definition": "Report the incident to relevant stakeholders, including management, affected customers, and regulatory authorities, if required.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Tools & Techniques",
-    "SubItem": "Intrusion Detection Systems (IDS)",
-    "Definition": "Tools like Snort or Suricata to detect suspicious activity.",
+    "Keywords": "Analysis | Tools & Techniques",
+    "Name": "Intrusion Detection Systems (IDS)",
+    "Definition": "Tools like Snort or Suricata to detect suspicious Keywords.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Tools & Techniques",
-    "SubItem": "Forensic Tools",
+    "Keywords": "Analysis | Tools & Techniques",
+    "Name": "Forensic Tools",
     "Definition": "Tools like EnCase or FTK for detailed forensic analysis.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Tools & Techniques",
-    "SubItem": "Intrusion Prevention Systems (IPS)",
+    "Keywords": "Analysis | Tools & Techniques",
+    "Name": "Intrusion Prevention Systems (IPS)",
     "Definition": "Tools like Cisco IPS to prevent detected threats.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Tools & Techniques",
-    "SubItem": "Security Information and Event Management (SIEM)",
+    "Keywords": "Analysis | Tools & Techniques",
+    "Name": "Security Information and Event Management (SIEM)",
     "Definition": "Solutions like Splunk or IBM QRadar to collect and analyze security data.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Tools & Techniques",
-    "SubItem": "Network Analysis Tools",
+    "Keywords": "Analysis | Tools & Techniques",
+    "Name": "Network Analysis Tools",
     "Definition": "Tools like Wireshark for analyzing network traffic.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Best Practices",
-    "SubItem": "Regular Updates",
+    "Keywords": "Analysis | Best Practices",
+    "Name": "Regular Updates",
     "Definition": "Keep all systems and software up to date with the latest patches and security updates.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Best Practices",
-    "SubItem": "Access Control",
+    "Keywords": "Analysis | Best Practices",
+    "Name": "Access Control",
     "Definition": "Implement strict access controls and ensure that only authorized users have access to critical systems.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Best Practices",
-    "SubItem": "Employee Training",
+    "Keywords": "Analysis | Best Practices",
+    "Name": "Employee Training",
     "Definition": "Regularly train employees on security best practices and how to recognize potential threats.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Best Practices",
-    "SubItem": "Incident Response Plan",
+    "Keywords": "Analysis | Best Practices",
+    "Name": "Incident Response Plan",
     "Definition": "Maintain and regularly update an incident response plan to ensure a swift and effective response to security incidents.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Algorithm Sensitivity",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Algorithm Sensitivity",
+    "Name": "False Positive Noise",
     "Definition": "Over-sensitivity: The algorithm might be too sensitive, flagging normal behavior as suspicious.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Algorithm Sensitivity",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Algorithm Sensitivity",
+    "Name": "False Positive Noise",
     "Definition": "Threshold Settings: Improper threshold settings can cause false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Data Quality",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Data Quality",
+    "Name": "False Positive Noise",
     "Definition": "Poor Data Quality: Noisy, incomplete, or corrupted data can lead to incorrect detections.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Data Quality",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Data Quality",
+    "Name": "False Positive Noise",
     "Definition": "Outdated Data: Using outdated data can cause the system to miss changes and result in false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Environmental Factors",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Environmental Factors",
+    "Name": "False Positive Noise",
     "Definition": "Background Noise: Variations in the environment, such as lighting changes or background noise, can affect detection accuracy.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Environmental Factors",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Environmental Factors",
+    "Name": "False Positive Noise",
     "Definition": "Interference: Other signals or objects interfering with the detection system can cause false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "System Configuration",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | System Configuration",
+    "Name": "False Positive Noise",
     "Definition": "Improper Configuration: Incorrect setup or calibration of the detection system can lead to inaccuracies.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "System Configuration",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | System Configuration",
+    "Name": "False Positive Noise",
     "Definition": "Lack of Customization: Generic configurations might not suit specific use cases, leading to false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Training Data",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Training Data",
+    "Name": "False Positive Noise",
     "Definition": "Imbalanced Training Data: If the training data is not representative of all possible scenarios, the model may struggle with accurate detection.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Training Data",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Training Data",
+    "Name": "False Positive Noise",
     "Definition": "Insufficient Training Data: Not having enough data to train the model can result in poor performance.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Model Overfitting",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Model Overfitting",
+    "Name": "False Positive Noise",
     "Definition": "Overfitting: The model might perform well on training data but poorly on new, unseen data, leading to false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Human Error",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Human Error",
+    "Name": "False Positive Noise",
     "Definition": "Labeling Errors: Incorrectly labeled training data can lead to a model learning incorrect patterns.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Human Error",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Human Error",
+    "Name": "False Positive Noise",
     "Definition": "Operational Errors: Misinterpretation of detection outputs by human operators can also contribute to false positives.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Dynamic Environments",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Dynamic Environments",
+    "Name": "False Positive Noise",
     "Definition": "Changing Conditions: Rapidly changing conditions or new patterns that were not part of the training set can confuse the detection system.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Dynamic Environments",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Detection | Dynamic Environments",
+    "Name": "False Positive Noise",
     "Definition": "Adaptive Adversaries: In security systems, adversaries may adapt their behavior to evade detection, leading to a high number of false positives as the system tries to adapt.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Regularly update and clean data to ensure quality.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Adjust algorithm sensitivity and thresholds based on testing and real-world feedback.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Use robust training data that covers a wide range of scenarios.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Continuously monitor and update the system to adapt to new patterns and changes in the environment.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Implement multi-layer detection to cross-verify detections and reduce false positives.",
     "References": ""
   },
   {
-    "Activity": "Mitigation",
-    "Item": "Strategies",
-    "SubItem": "False Positive Noise",
+    "Keywords": "Mitigation | Strategies",
+    "Name": "False Positive Noise",
     "Definition": "Conduct periodic reviews and audits of the detection system's performance.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "File Hashes",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "File Hashes",
     "Definition": "Unique identifiers of files, used to verify the integrity and origin of files. MD5, SHA-1, and SHA-256 are commonly used hashing algorithms.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "IP Addresses",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "IP Addresses",
     "Definition": "Known malicious IP addresses can indicate an attempted or successful connection from a threat actor.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "Domain Names",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "Domain Names",
     "Definition": "Malicious domains or URLs used for phishing, command and control, or hosting malware.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "Email Addresses",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "Email Addresses",
     "Definition": "Email addresses associated with phishing campaigns or other malicious activities.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "File Names and Paths",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "File Names and Paths",
     "Definition": "Specific filenames or file paths commonly used by malware.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "Registry Keys",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "Registry Keys",
     "Definition": "Modifications or additions to the registry that indicate malware presence or persistence.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "Network Traffic",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "Network Traffic",
     "Definition": "Unusual patterns in network traffic that can indicate data exfiltration, command and control communications, or other malicious activities.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Indicators of Compromise (IOCs)",
-    "SubItem": "Process Activity",
+    "Keywords": "Forensic | Indicators of Compromise (IOCs)",
+    "Name": "Process Keywords",
     "Definition": "Unusual or suspicious processes running on a system.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Tools, Tactics, and Procedures (TTPs)",
-    "SubItem": "Tools",
-    "Definition": "Malware: Viruses, worms, ransomware, spyware, etc.\nExploit Kits: Toolkits used to exploit vulnerabilities in systems or applications.\nCommand and Control (C2) Servers: Infrastructure used by attackers to control compromised systems.\nRemote Access Tools (RATs): Software that allows attackers to remotely control compromised systems.",
+    "Keywords": "Forensic | Tools, Tactics, and Procedures (TTPs)",
+    "Name": "Tools",
+    "Definition": "Malware: Viruses, worms, ransomware, spyware, etc. Exploit Kits: Toolkits used to exploit vulnerabilities in systems or applications. Command and Control (C2) Servers: Infrastructure used by attackers to control compromised systems. Remote Access Tools (RATs): Software that allows attackers to remotely control compromised systems.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Tools, Tactics, and Procedures (TTPs)",
-    "SubItem": "Tactics",
-    "Definition": "Specific sequences of actions taken by attackers to implement their tactics and use their tools. Examples of procedures include:\nPhishing: Sending fraudulent emails to trick users into revealing sensitive information.\nSQL Injection: Injecting malicious SQL queries to manipulate a database.\nWatering Hole Attacks: Compromising websites frequently visited by the target.\nPass-the-Hash: Using hashed credentials to authenticate without needing the plaintext password.Reconnaissance: Gathering information about the target.\nInitial Access: Gaining initial foothold in the target environment.\nExecution: Running malicious code on the target system.\nPersistence: Maintaining access to the target environment over a period of time.\nPrivilege Escalation: Gaining higher-level permissions on the target system.\nDefense Evasion: Avoiding detection by security measures.\nCredential Access: Stealing account names and passwords.\nDiscovery: Identifying details about the target environment.\nLateral Movement: Moving within the target environment to access other systems.\nCollection: Gathering data of interest to the attacker.\nExfiltration: Sending data out of the target environment.\nImpact: Disrupting or destroying systems and data.",
+    "Keywords": "Forensic | Tools, Tactics, and Procedures (TTPs)",
+    "Name": "Tactics",
+    "Definition": "Specific sequences of actions taken by attackers to implement their tactics and use their tools. Examples of procedures include: Phishing: Sending fraudulent emails to trick users into revealing sensitive information. SQL Injection: Injecting malicious SQL queries to manipulate a database. Watering Hole Attacks: Compromising websites frequently visited by the target. Pass-the-Hash: Using hashed credentials to authenticate without needing the plaintext password.Reconnaissance: Gathering information about the target. Initial Access: Gaining initial foothold in the target environment. Execution: Running malicious code on the target system. Persistence: Maintaining access to the target environment over a period of time. Privilege Escalation: Gaining higher-level permissions on the target system. Defense Evasion: Avoiding detection by security measures. Credential Access: Stealing account names and passwords. Discovery: Identifying details about the target environment. Lateral Movement: Moving within the target environment to access other systems. Collection: Gathering data of interest to the attacker. Exfiltration: Sending data out of the target environment. Impact: Disrupting or destroying systems and data.",
     "References": ""
   },
   {
-    "Activity": "Forensic",
-    "Item": "Tools, Tactics, and Procedures (TTPs)",
-    "SubItem": "Procedures",
-    "Definition": "Specific sequences of actions taken by attackers to implement their tactics and use their tools. Examples of procedures include:\nPhishing: Sending fraudulent emails to trick users into revealing sensitive information.\nSQL Injection: Injecting malicious SQL queries to manipulate a database.\nWatering Hole Attacks: Compromising websites frequently visited by the target.\nPass-the-Hash: Using hashed credentials to authenticate without needing the plaintext password.",
+    "Keywords": "Forensic | Tools, Tactics, and Procedures (TTPs)",
+    "Name": "Procedures",
+    "Definition": "Specific sequences of actions taken by attackers to implement their tactics and use their tools. Examples of procedures include: Phishing: Sending fraudulent emails to trick users into revealing sensitive information. SQL Injection: Injecting malicious SQL queries to manipulate a database. Watering Hole Attacks: Compromising websites frequently visited by the target. Pass-the-Hash: Using hashed credentials to authenticate without needing the plaintext password.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Defense building capabilities",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Defense building capabilities",
     "Definition": "Multifaceted approach that includes technology, policies, procedures, and people",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Network Security",
-    "Definition": "Firewalls: Deploy advanced firewalls to filter incoming and outgoing traffic based on predetermined security rules.\nIntrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS): Monitor network traffic for suspicious activity and take action to prevent breaches.\nSegmentation: Divide the network into segments to limit the spread of malware and unauthorized access.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Network Security",
+    "Definition": "Firewalls: Deploy advanced firewalls to filter incoming and outgoing traffic based on predetermined security rules. Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS): Monitor network traffic for suspicious Keywords and take action to prevent breaches. Segmentation: Divide the network into segments to limit the spread of malware and unauthorized access.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Endpoint Security",
-    "Definition": "Antivirus and Anti-malware Software: Use up-to-date antivirus and anti-malware tools to detect and remove malicious software.\nEndpoint Detection and Response (EDR): Implement EDR solutions for continuous monitoring and response to advanced threats.\nPatch Management: Regularly update and patch all software and operating systems to protect against known vulnerabilities.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Endpoint Security",
+    "Definition": "Antivirus and Anti-malware Software: Use up-to-date antivirus and anti-malware tools to detect and remove malicious software. Endpoint Detection and Response (EDR): Implement EDR solutions for continuous monitoring and response to advanced threats. Patch Management: Regularly update and patch all software and operating systems to protect against known vulnerabilities.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Application Security",
-    "Definition": "Secure Development Practices: Incorporate security into the software development lifecycle (SDLC) with practices such as code reviews and static analysis.\nWeb Application Firewalls (WAF): Protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet.\nAPI Security: Secure APIs by implementing authentication, authorization, and input validation.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Application Security",
+    "Definition": "Secure Development Practices: Incorporate security into the software development lifecycle (SDLC) with practices such as code reviews and static analysis. Web Application Firewalls (WAF): Protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet. API Security: Secure APIs by implementing authentication, authorization, and input validation.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Data Protection",
-    "Definition": "Encryption: Use strong encryption for data at rest and in transit to protect sensitive information from unauthorized access.\nData Loss Prevention (DLP): Implement DLP solutions to prevent the unauthorized transfer of sensitive data.\nBackup and Recovery: Regularly back up data and have a recovery plan in place to restore data in case of a breach.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Data Protection",
+    "Definition": "Encryption: Use strong encryption for data at rest and in transit to protect sensitive information from unauthorized access. Data Loss Prevention (DLP): Implement DLP solutions to prevent the unauthorized transfer of sensitive data. Backup and Recovery: Regularly back up data and have a recovery plan in place to restore data in case of a breach.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Identity and Access Management (IAM)",
-    "Definition": "Multi-Factor Authentication (MFA): Require multiple forms of verification to ensure that only authorized users can access sensitive systems.\nRole-Based Access Control (RBAC): Limit access to resources based on the user's role within the organization.\nSingle Sign-On (SSO): Simplify access management by allowing users to log in once and gain access to multiple systems.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Identity and Access Management (IAM)",
+    "Definition": "Multi-Factor Authentication (MFA): Require multiple forms of verification to ensure that only authorized users can access sensitive systems. Role-Based Access Control (RBAC): Limit access to resources based on the user's role within the organization. Single Sign-On (SSO): Simplify access management by allowing users to log in once and gain access to multiple systems.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Security Monitoring and Incident Response",
-    "Definition": "Security Information and Event Management (SIEM): Collect and analyze security-related data from across the network to detect and respond to threats.\nIncident Response Plan: Develop and regularly update an incident response plan to quickly address and mitigate security incidents.\nThreat Intelligence: Use threat intelligence to stay informed about emerging threats and adjust defenses accordingly.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Security Monitoring and Incident Response",
+    "Definition": "Security Information and Event Management (SIEM): Collect and analyze security-related data from across the network to detect and respond to threats. Incident Response Plan: Develop and regularly update an incident response plan to quickly address and mitigate security incidents. Threat Intelligence: Use threat intelligence to stay informed about emerging threats and adjust defenses accordingly.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "User Awareness and Training",
-    "Definition": "Security Training Programs: Educate employees about cybersecurity best practices and how to recognize phishing attacks and other common threats.\nRegular Drills: Conduct regular drills and simulations to test the effectiveness of security protocols and the readiness of the response team.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "User Awareness and Training",
+    "Definition": "Security Training Programs: Educate employees about cybersecurity best practices and how to recognize phishing attacks and other common threats. Regular Drills: Conduct regular drills and simulations to test the effectiveness of security protocols and the readiness of the response tea.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Compliance and Governance",
-    "Definition": "Regulatory Compliance: Ensure compliance with relevant regulations and standards such as GDPR, HIPAA, and PCI-DSS.\nSecurity Policies: Develop and enforce comprehensive security policies and procedures to govern the organization's cybersecurity practices.\nAudits and Assessments: Conduct regular security audits and assessments to identify and address vulnerabilities.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Compliance and Governance",
+    "Definition": "Regulatory Compliance: Ensure compliance with relevant regulations and standards such as GDPR, HIPAA, and PCI-DSS. Security Policies: Develop and enforce comprehensive security policies and procedures to govern the organization's cybersecurity practices. Audits and Assessments: Conduct regular security audits and assessments to identify and address vulnerabilities.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Advanced Threat Protection",
-    "Definition": "Artificial Intelligence and Machine Learning: Use AI and ML to detect and respond to threats in real-time.\nBehavioral Analytics: Analyze user behavior to identify anomalies that may indicate a security threat.\nZero Trust Architecture: Implement a zero-trust security model that requires verification for every user and device attempting to access resources.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Advanced Threat Protection",
+    "Definition": "Artificial Intelligence and Machine Learning: Use AI and ML to detect and respond to threats in real-time. Behavioral Analytics: Analyze user behavior to identify anomalies that may indicate a security threat. Zero Trust Architecture: Implement a zero-trust security model that requires verification for every user and device attempting to access resources.",
     "References": ""
   },
   {
-    "Activity": "Defense",
-    "Item": "Defense building capabilities",
-    "SubItem": "Cloud Security",
-    "Definition": "Cloud Access Security Brokers (CASB): Use CASB to provide visibility and control over data in the cloud.\nCloud Security Posture Management (CSPM): Continuously monitor and manage cloud security configurations.\nSecure DevOps (DevSecOps): Integrate security into the DevOps process to ensure secure application development and deployment in the cloud.",
+    "Keywords": "Defense | Defense building capabilities",
+    "Name": "Cloud Security",
+    "Definition": "Cloud Access Security Brokers (CASB): Use CASB to provide visibility and control over data in the cloud. Cloud Security Posture Management (CSPM): Continuously monitor and manage cloud security configurations. Secure DevOps (DevSecOps): Integrate security into the DevOps process to ensure secure application development and deployment in the cloud.",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Explore and Correlate large data sets",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Explore and Correlate large data sets",
     "Definition": "Exploring and correlating large data sets involves several steps, including data collection, cleaning, transformation, analysis, and visualization",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Data Collection",
-    "Definition": "Databases: SQL, NoSQL\nAPIs: Public and private APIs\nWeb Scraping: Using tools like BeautifulSoup, Scrapy\nFiles: CSV, JSON, Excel, etc.",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Data Collection",
+    "Definition": "Databases: SQL, NoSQL APIs: Public and private APIs Web Scraping: Using tools like BeautifulSoup, Scrapy Files: CSV, JSON, Excel, etc.",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Data Cleaning",
-    "Definition": "Handling Missing Values: Imputation, deletion\nRemoving Duplicates: Identifying and removing duplicate records\nData Transformation: Normalizing data formats, correcting data types",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Data Cleaning",
+    "Definition": "Handling Missing Values: Imputation, deletion Removing Duplicates: Identifying and removing duplicate records Data Transformation: Normalizing data formats, correcting data types",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Data Transformation",
-    "Definition": "Normalization: Scaling data to a standard range\nEncoding: Converting categorical data to numerical (one-hot encoding, label encoding)\nAggregation: Summarizing data by grouping",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Data Transformation",
+    "Definition": "Normalization: Scaling data to a standard range Encoding: Converting categorical data to numerical (one-hot encoding, label encoding) Aggregation: Summarizing data by grouping",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Data Analysis",
-    "Definition": "Descriptive Statistics: Mean, median, mode, standard deviation\nExploratory Data Analysis (EDA): Visualizing data distributions, correlations\nInferential Statistics: Hypothesis testing, confidence intervals\nMachine Learning: Regression, classification, clustering",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Data Analysis",
+    "Definition": "Descriptive Statistics: Mean, median, mode, standard deviation Exploratory Data Analysis (EDA): Visualizing data distributions, correlations Inferential Statistics: Hypothesis testing, confidence intervals Machine Learning: Regression, classification, clustering",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Data Visualization",
-    "Definition": "Matplotlib/Seaborn (Python): For static plots\nPlotly (Python/R): For interactive plots\nTableau/Power BI: For advanced business intelligence dashboards",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Data Visualization",
+    "Definition": "Matplotlib/Seaborn (Python): For static plots Plotly (Python/R): For interactive plots Tableau/Power BI: For advanced business intelligence dashboards",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Correlating Data",
-    "Definition": "Correlation Coefficients: Pearson, Spearman, Kendall\nCross-tabulation: Contingency tables for categorical data\nHeatmaps: Visualizing correlation matrices\nTime Series Analysis: Identifying trends and patterns over time",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Correlating Data",
+    "Definition": "Correlation Coefficients: Pearson, Spearman, KendallCross-tabulation: Contingency tables for categorical dataHeatmaps: Visualizing correlation matricesTime Series Analysis: Identifying trends and patterns over time",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Tools and Libraries",
-    "Definition": "Python Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy\nR Libraries: dplyr, ggplot2, tidyr, caret\nBig Data Tools: Hadoop, Spark",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Tools and Libraries",
+    "Definition": "Python Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipyR Libraries: dplyr, ggplot2, tidyr, caretBig Data Tools: Hadoop, Spark",
     "References": ""
   },
   {
-    "Activity": "Correlation",
-    "Item": "Explore and Correlate large data sets",
-    "SubItem": "Advanced Techniques",
-    "Definition": "Machine Learning Models: Supervised (e.g., Linear Regression, Decision Trees), Unsupervised (e.g., K-Means, PCA)\nDimensionality Reduction: PCA, t-SNE\nData Warehousing: ETL processes, Data Lakes",
+    "Keywords": "Correlation | Explore and Correlate large data sets",
+    "Name": "Advanced Techniques",
+    "Definition": "Machine Learning Models: Supervised (e.g., Linear Regression, Decision Trees), Unsupervised (e.g., K-Means, PCA)Dimensionality Reduction: PCA, t-SNEData Warehousing: ETL processes, Data Lakes",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Phishing",
-    "Definition": "Description: Attackers send fraudulent emails or messages pretending to be from reputable sources to trick individuals into revealing sensitive information such as passwords or credit card numbers.\nExamples: Spear phishing, whaling, smishing (SMS phishing).",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Phishing",
+    "Definition": "Description: Attackers send fraudulent emails or messages pretending to be from reputable sources to trick individuals into revealing sensitive information such as passwords or credit card numbers.Examples: Spear phishing, whaling, smishing (SMS phishing).",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Malware",
-    "Definition": "Description: Malicious software designed to damage, disrupt, or gain unauthorized access to computer systems.\nTypes: Viruses, worms, trojans, ransomware, spyware, adware.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Malware",
+    "Definition": "Description: Malicious software designed to damage, disrupt, or gain unauthorized access to computer systems.Types: Viruses, worms, trojans, ransomware, spyware, adware.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "DoS / DDoS",
-    "Definition": "Description: Attackers overwhelm a target system with a flood of internet traffic, rendering it unusable.\nExamples: SYN flood, ICMP flood, HTTP flood.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "DoS / DDoS",
+    "Definition": "Description: Attackers overwhelm a target system with a flood of internet traffic, rendering it unusable.Examples: SYN flood, ICMP flood, HTTP flood.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "SQL Injection",
-    "Definition": "Description: Attackers insert malicious SQL queries into input fields to manipulate the database and gain unauthorized access to data.\nImpacts: Data theft, data manipulation, administrative access to the database.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "SQL Injection",
+    "Definition": "Description: Attackers insert malicious SQL queries into input fields to manipulate the database and gain unauthorized access to data.Impacts: Data theft, data manipulation, administrative access to the database.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Cross-Site Scripting (XSS)",
-    "Definition": "Description: Attackers inject malicious scripts into web pages viewed by other users, which execute in the user's browser.\nTypes: Stored XSS, reflected XSS, DOM-based XSS.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Cross-Site Scripting (XSS)",
+    "Definition": "Description: Attackers inject malicious scripts into web pages viewed by other users, which execute in the user's browser.Types: Stored XSS, reflected XSS, DOM-based XSS.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Man-in-the-Middle (MitM)",
-    "Definition": "Description: Attackers intercept and potentially alter communication between two parties without their knowledge.\nExamples: Eavesdropping, session hijacking, SSL stripping.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Man-in-the-Middle (MitM)",
+    "Definition": "Description: Attackers intercept and potentially alter communication between two parties without their knowledge.Examples: Eavesdropping, session hijacking, SSL stripping.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Brute Force Attacks",
-    "Definition": "Description: Attackers systematically attempt all possible combinations of passwords or encryption keys to gain unauthorized access.\nVariants: Dictionary attacks, credential stuffing.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Brute Force Attacks",
+    "Definition": "Description: Attackers systematically attempt all possible combinations of passwords or encryption keys to gain unauthorized access.Variants: Dictionary attacks, credential stuffing.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Social Engineering",
-    "Definition": "Description: Attackers manipulate individuals into divulging confidential information through deception and manipulation.\nExamples: Pretexting, baiting, quid pro quo, tailgating.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Social Engineering",
+    "Definition": "Description: Attackers manipulate individuals into divulging confidential information through deception and manipulation.Examples: Pretexting, baiting, quid pro quo, tailgating.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Exploiting Unpatched Vulnerabilities",
-    "Definition": "Description: Attackers exploit known security vulnerabilities in software that have not been patched or updated.\nCommon Targets: Operating systems, applications, firmware.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Exploiting Unpatched Vulnerabilities",
+    "Definition": "Description: Attackers exploit known security vulnerabilities in software that have not been patched or updated.Common Targets: Operating systems, applications, firmware.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Zero-Day Exploits",
-    "Definition": "Description: Attackers gather usernames and passwords through various means such as phishing, malware, or breach databases.\nUsage: Often used for further attacks like account takeover or lateral movement within a network.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Zero-Day Exploits",
+    "Definition": "Description: Attackers gather usernames and passwords through various means such as phishing, malware, or breach databases.Usage: Often used for further attacks like account takeover or lateral movement within a network.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Advanced Persistent Threats (APT)",
-    "Definition": "Description: Long-term, targeted attacks where attackers remain undetected in a network for an extended period.\nCharacteristics: Highly sophisticated, often state-sponsored, focus on espionage or sabotage.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Advanced Persistent Threats (APT)",
+    "Definition": "Description: Long-term, targeted attacks where attackers remain undetected in a network for an extended period.Characteristics: Highly sophisticated, often state-sponsored, focus on espionage or sabotage.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Insider Threats",
-    "Definition": "Description: Attacks or threats originating from within the organization, often by employees or contractors.\nMotivations: Financial gain, revenge, espionage.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Insider Threats",
+    "Definition": "Description: Attacks or threats originating from within the organization, often by employees or contractors.Motivations: Financial gain, revenge, espionage.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Drive-by Downloads",
-    "Definition": "Description: Attackers compromise a website to deliver malware to visitors' devices without their knowledge.\nMechanism: Exploiting browser vulnerabilities or social engineering.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Drive-by Downloads",
+    "Definition": "Description: Attackers compromise a website to deliver malware to visitors' devices without their knowledge.Mechanism: Exploiting browser vulnerabilities or social engineering.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Supply Chain Attacks",
-    "Definition": "Description: Attackers target less secure elements within the supply chain to gain access to the primary target.\nExamples: Compromising third-party software, hardware tampering, service provider breaches.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Supply Chain Attacks",
+    "Definition": "Description: Attackers target less secure elements within the supply chain to gain access to the primary target.Examples: Compromising third-party software, hardware tampering, service provider breaches.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Command and Control (C2)",
-    "Definition": "Description: Attackers establish a command and control channel to remotely control compromised systems.\nUsage: Often part of botnets or APT campaigns.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Command and Control (C2)",
+    "Definition": "Description: Attackers establish a command and control channel to remotely control compromised systems.Usage: Often part of botnets or APT campaigns.",
     "References": ""
   },
   {
-    "Activity": "Attacking",
-    "Item": "Attack Technique",
-    "SubItem": "Session Hijacking",
-    "Definition": "Description: Attackers take over a legitimate session between a user and a service.\nTechniques: Stealing session cookies, exploiting session IDs.",
+    "Keywords": "Attacking | Attack Technique",
+    "Name": "Session Hijacking",
+    "Definition": "Description: Attackers take over a legitimate session between a user and a service.Techniques: Stealing session cookies, exploiting session IDs.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Change Monitoring",
-    "Definition": "Automated Tools: Implement automated tools to monitor changes in real-time. Tools like SIEM (Security Information and Event Management), IDS/IPS (Intrusion Detection/Prevention Systems), and endpoint detection and response (EDR) solutions can help.\nLog Management: Use centralized log management systems to collect and analyze logs from various sources such as firewalls, servers, and applications. This helps in identifying suspicious activities.\nConfiguration Management: Employ configuration management tools (e.g., Ansible, Puppet, Chef) to track and enforce desired configurations.\nNetwork Monitoring: Utilize network monitoring tools to observe traffic patterns and detect anomalies.",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Change Monitoring",
+    "Definition": "Automated Tools: Implement automated tools to monitor changes in real-time. Tools like SIEM (Security Information and Event Management), IDS/IPS (Intrusion Detection/Prevention Systems), and endpoint detection and response (EDR) solutions can help.Log Management: Use centralized log management systems to collect and analyze logs from various sources such as firewalls, servers, and applications. This helps in identifying suspicious activities.Configuration Management: Employ configuration management tools (e.g., Ansible, Puppet, Chef) to track and enforce desired configurations.Network Monitoring: Utilize network monitoring tools to observe traffic patterns and detect anomalies.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Cataloging Changes",
-    "Definition": "Change Management Database (CMDB): Maintain a CMDB to document all hardware and software assets, their configurations, and changes over time.\nVersion Control Systems: Use version control systems like Git to track changes in code and configurations.\nAudit Trails: Ensure that all changes are logged with appropriate details such as who made the change, when, and why.\nRegular Audits: Conduct regular audits to compare current configurations and settings with the documented baseline.",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Cataloging Changes",
+    "Definition": "Change Management Database (CMDB): Maintain a CMDB to document all hardware and software assets, their configurations, and changes over time.Version Control Systems: Use version control systems like Git to track changes in code and configurations.Audit Trails: Ensure that all changes are logged with appropriate details such as who made the change, when, and why.Regular Audits: Conduct regular audits to compare current configurations and settings with the documented baseline.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Best Practices",
-    "Definition": "Access Controls: Implement strict access controls to ensure that only authorized personnel can make changes.\nMulti-Factor Authentication (MFA): Use MFA to secure access to systems and tools used for making changes.\nPatch Management: Regularly apply security patches and updates to all software and systems.\nIncident Response Plan: Develop and maintain an incident response plan to quickly address any security incidents that may arise from changes.",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Best Practices",
+    "Definition": "Access Controls: Implement strict access controls to ensure that only authorized personnel can make changes.Multi-Factor Authentication (MFA): Use MFA to secure access to systems and tools used for making changes.Patch Management: Regularly apply security patches and updates to all software and systems.Incident Response Plan: Develop and maintain an incident response plan to quickly address any security incidents that may arise from changes.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Documentation and Reporting",
-    "Definition": "Change Requests: Document all change requests, approvals, and implementation details.\nReports: Generate regular reports on changes made, incidents detected, and actions taken.\nMetrics: Track key metrics such as the number of changes, incidents, and mean time to detect and resolve issues.",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Documentation and Reporting",
+    "Definition": "Change Requests: Document all change requests, approvals, and implementation details.Reports: Generate regular reports on changes made, incidents detected, and actions taken.Metrics: Track key metrics such as the number of changes, incidents, and mean time to detect and resolve issues.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Training and Awareness",
-    "Definition": "Staff Training: Train staff on change management processes and cybersecurity best practices.\nAwareness Programs: Conduct regular cybersecurity awareness programs to keep everyone informed about the latest threats and how to respond.",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Training and Awareness",
+    "Definition": "Staff Training: Train staff on change management processes and cybersecurity best practices.Awareness Programs: Conduct regular cybersecurity awareness programs to keep everyone informed about the latest threats and how to respond.",
     "References": ""
   },
   {
-    "Activity": "Monitoring",
-    "Item": "Catalog",
-    "SubItem": "Tools and Technologies",
-    "Definition": "SIEM Tools: Splunk, IBM QRadar, ArcSight\nIDS/IPS: Snort, Suricata, Cisco Firepower\nEDR Solutions: CrowdStrike Falcon, Carbon Black, SentinelOne\nConfiguration Management: Ansible, Puppet, Chef\nVersion Control: Git, SVN\nLog Management: ELK Stack (Elasticsearch, Logstash, Kibana), Graylog",
+    "Keywords": "Monitoring | Catalog",
+    "Name": "Tools and Technologies",
+    "Definition": "SIEM Tools: Splunk, IBM QRadar, ArcSightIDS/IPS: Snort, Suricata, Cisco FirepowerEDR Solutions: CrowdStrike Falcon, Carbon Black, SentinelOneConfiguration Management: Ansible, Puppet, ChefVersion Control: Git, SVNLog Management: ELK Stack (Elasticsearch, Logstash, Kibana), Graylog",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Role and Responsibilities",
-    "Definition": "Strategic Planning: Assist in developing, implementing, and maintaining the organization's information security strategy.\nRisk Management: Help identify, assess, and prioritize security risks, and support the implementation of risk mitigation strategies.\nCompliance and Governance: Ensure that the organization complies with relevant regulations, standards, and policies.\nIncident Response: Support the development and execution of incident response plans and playbooks.\nSecurity Awareness: Assist in creating and delivering security awareness training programs for employees.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Role and Responsibilities",
+    "Definition": "Strategic Planning: Assist in developing, implementing, and maintaining the organization's information security strategy.Risk Management: Help identify, assess, and prioritize security risks, and support the implementation of risk mitigation strategies.Compliance and Governance: Ensure that the organization complies with relevant regulations, standards, and policies.Incident Response: Support the development and execution of incident response plans and playbooks.Security Awareness: Assist in creating and delivering security awareness training programs for employees.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Data Analysis and Reporting",
-    "Definition": "Security Metrics: Collect, analyze, and report on security metrics to track the effectiveness of security measures and programs.\nThreat Intelligence: Analyze threat intelligence data to identify potential security threats and provide actionable insights.\nIncident Reports: Prepare detailed reports on security incidents, including root cause analysis and recommendations for improvement.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Data Analysis and Reporting",
+    "Definition": "Security Metrics: Collect, analyze, and report on security metrics to track the effectiveness of security measures and programs.Threat Intelligence: Analyze threat intelligence data to identify potential security threats and provide actionable insights.Incident Reports: Prepare detailed reports on security incidents, including root cause analysis and recommendations for improvement.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Technical Support and Tool Management",
-    "Definition": "Security Tools: Support the implementation, configuration, and management of security tools (e.g., SIEM, DLP, firewalls, endpoint protection).\nVulnerability Management: Assist in conducting vulnerability assessments and penetration testing, and track the remediation of identified vulnerabilities.\nSystem Monitoring: Monitor network traffic, system logs, and other data sources for signs of security breaches or suspicious activity.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Technical Support and Tool Management",
+    "Definition": "Security Tools: Support the implementation, configuration, and management of security tools (e.g., SIEM, DLP, firewalls, endpoint protection).Vulnerability Management: Assist in conducting vulnerability assessments and penetration testing, and track the remediation of identified vulnerabilities.System Monitoring: Monitor network traffic, system logs, and other data sources for signs of security breaches or suspicious Keywords.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Policy and Procedure Development",
-    "Definition": "Security Policies: Help develop, review, and update information security policies and procedures.\nCompliance Audits: Support internal and external audits to ensure compliance with security policies and regulatory requirements.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Policy and Procedure Development",
+    "Definition": "Security Policies: Help develop, review, and update information security policies and procedures.Compliance Audits: Support internal and external audits to ensure compliance with security policies and regulatory requirements.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Communication and Collaboration",
-    "Definition": "Cross-Departmental Collaboration: Work closely with other departments (e.g., IT, legal, HR) to ensure a cohesive approach to information security.\nIncident Coordination: Act as a point of contact during security incidents, coordinating the response efforts across various teams.\nTraining and Education: Assist in educating staff on security best practices and the importance of following security policies.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Communication and Collaboration",
+    "Definition": "Cross-Departmental Collaboration: Work closely with other departments (e.g., IT, legal, HR) to ensure a cohesive approach to information security.Incident Coordination: Act as a point of contact during security incidents, coordinating the response efforts across various teams.Training and Education: Assist in educating staff on security best practices and the importance of following security policies.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Continuous Improvement",
-    "Definition": "Security Trends: Stay updated on the latest security trends, threats, and technologies, and provide recommendations for improving the organization's security posture.\nFeedback Loop: Establish a feedback loop to continuously improve security processes based on lessons learned from incidents and audits.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Continuous Improvement",
+    "Definition": "Security Trends: Stay updated on the latest security trends, threats, and technologies, and provide recommendations for improving the organization's security posture.Feedback Loop: Establish a feedback loop to continuously improve security processes based on lessons learned from incidents and audits.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Chief Information Security Officer (CISO)",
-    "SubItem": "Tools and Resources",
-    "Definition": "Security Information and Event Management (SIEM) Systems: For real-time analysis of security alerts.\nVulnerability Management Tools: For identifying and managing vulnerabilities.\nThreat Intelligence Platforms: For aggregating and analyzing threat data.\nIncident Response Tools: For managing and coordinating incident response efforts.\nCompliance Management Tools: For tracking and ensuring compliance with regulations and standards.",
+    "Keywords": "Analysis | Chief Information Security Officer (CISO)",
+    "Name": "Tools and Resources",
+    "Definition": "Security Information and Event Management (SIEM) Systems: For real-time analysis of security alerts.Vulnerability Management Tools: For identifying and managing vulnerabilities.Threat Intelligence Platforms: For aggregating and analyzing threat data.Incident Response Tools: For managing and coordinating incident response efforts.Compliance Management Tools: For tracking and ensuring compliance with regulations and standards.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Security Operations Center (SOC)",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Security Operations Center (SOC)",
     "Definition": "Centralized unit that deals with security issues on an organizational and technical level",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Monitoring and Detection",
-    "Definition": "Security Information and Event Management (SIEM): Collects and analyzes data from various sources within the network to detect suspicious activities.\nIntrusion Detection Systems (IDS): Monitors network or system activities for malicious activities or policy violations.\nEndpoint Detection and Response (EDR): Provides continuous monitoring and response to advanced threats on endpoints.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Monitoring and Detection",
+    "Definition": "Security Information and Event Management (SIEM): Collects and analyzes data from various sources within the network to detect suspicious activities.Intrusion Detection Systems (IDS): Monitors network or system activities for malicious activities or policy violations.Endpoint Detection and Response (EDR): Provides continuous monitoring and response to advanced threats on endpoints.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Threat Intelligence",
-    "Definition": "External Threat Feeds: Utilize information from external sources to stay updated on current threats.\nInternal Threat Feeds: Analyze historical data within the organization to detect recurring threats.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Threat Intelligence",
+    "Definition": "External Threat Feeds: Utilize information from external sources to stay updated on current threats.Internal Threat Feeds: Analyze historical data within the organization to detect recurring threats.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Behavioral Analysis",
-    "Definition": "User and Entity Behavior Analytics (UEBA): Identifies anomalies by comparing user behaviors to a baseline of normal activities.\nNetwork Traffic Analysis: Monitors network traffic to detect anomalies.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Behavioral Analysis",
+    "Definition": "User and Entity Behavior Analytics (UEBA): Identifies anomalies by comparing user behaviors to a baseline of normal activities.Network Traffic Analysis: Monitors network traffic to detect anomalies.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Incident Response",
-    "Definition": "Automated Response: Using playbooks and scripts to automatically respond to detected threats.\nManual Investigation: Security analysts investigate incidents that cannot be resolved automatically.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Incident Response",
+    "Definition": "Automated Response: Using playbooks and scripts to automatically respond to detected threats.Manual Investigation: Security analysts investigate incidents that cannot be resolved automatically.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Log Management",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Log Management",
     "Definition": "Collecting and storing logs from various sources such as firewalls, servers, applications, and more for analysis and compliance.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Steps in SOC Detection",
-    "Definition": "Data Collection: Gather data from multiple sources like network devices, servers, databases, and applications.\nData Analysis: Use SIEM tools to analyze collected data in real-time.\nAlerting: Generate alerts based on predefined rules and anomaly detection.\nPrioritization: Classify and prioritize alerts based on the severity and potential impact.\nInvestigation: Analysts investigate alerts to determine if they are false positives or genuine threats.\nResponse: Respond to genuine threats using automated tools or manual intervention.\nReporting: Document incidents and responses for compliance and further analysis.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Steps in SOC Detection",
+    "Definition": "Data Collection: Gather data from multiple sources like network devices, servers, databases, and applications.Data Analysis: Use SIEM tools to analyze collected data in real-time.Alerting: Generate alerts based on predefined rules and anomaly detection.Prioritization: Classify and prioritize alerts based on the severity and potential impact.Investigation: Analysts investigate alerts to determine if they are false positives or genuine threats.Response: Respond to genuine threats using automated tools or manual intervention.Reporting: Document incidents and responses for compliance and further analysis.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Tools and Technologies",
-    "Definition": "SIEM: Splunk, IBM QRadar, ArcSight, LogRhythm\nIDS/IPS: Snort, Suricata, Bro (Zeek)\nEDR: CrowdStrike Falcon, Carbon Black, SentinelOne\nUEBA: Exabeam, Securonix, Splunk UBA\nThreat Intelligence: Recorded Future, ThreatConnect, Anomali",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Tools and Technologies",
+    "Definition": "SIEM: Splunk, IBM QRadar, ArcSight, LogRhythmIDS/IPS: Snort, Suricata, Bro (Zeek)EDR: CrowdStrike Falcon, Carbon Black, SentinelOneUEBA: Exabeam, Securonix, Splunk UBAThreat Intelligence: Recorded Future, ThreatConnect, Anomali",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Security Operations Center (SOC)",
-    "SubItem": "Best Practices",
-    "Definition": "Continuous Monitoring: Ensure 24/7 monitoring to detect threats in real-time.\nRegular Updates: Keep all detection tools and threat intelligence updated.\nTraining: Regular training for SOC analysts to stay updated on the latest threats and tools.\nIncident Response Plan: Have a well-defined and tested incident response plan.\nCollaboration: Collaborate with other organizations and share threat intelligence.",
+    "Keywords": "Operations | Security Operations Center (SOC)",
+    "Name": "Best Practices",
+    "Definition": "Continuous Monitoring: Ensure 24/7 monitoring to detect threats in real-time.Regular Updates: Keep all detection tools and threat intelligence updated.Training: Regular training for SOC analysts to stay updated on the latest threats and tools.Incident Response Plan: Have a well-defined and tested incident response plan.Collaboration: Collaborate with other organizations and share threat intelligence.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Threat Analytics",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Threat Analytics",
     "Definition": "Collection, analysis, and interpretation of data related to security threats. It is used to identify, understand, and mitigate potential threats to an organization's IT infrastructure. Threat analytics tools often include features for visualization, anomaly detection, behavioral analysis, and automated response. Popular tools in this space include SIEM (Security Information and Event Management) systems, EDR (Endpoint Detection and Response) solutions, and threat intelligence platforms.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Data Collection",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Data Collection",
     "Definition": "Gathering data from various sources such as network traffic, logs, and endpoint data.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Threat Detection",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Threat Detection",
     "Definition": "Using algorithms, machine learning, and rule-based systems to detect suspicious activities and potential threats.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Threat Intelligence",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Threat Intelligence",
     "Definition": "Integrating external threat intelligence feeds to enhance the understanding of known threats and emerging threats.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Incident Response",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Incident Response",
     "Definition": "Developing and implementing strategies to respond to identified threats, including containment, eradication, and recovery measures.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Reporting and Compliance",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Reporting and Compliance",
     "Definition": "Generating reports and ensuring compliance with industry standards and regulations.",
     "References": ""
   },
   {
-    "Activity": "Analysis",
-    "Item": "Threat Analytics",
-    "SubItem": "Continuous Monitoring",
+    "Keywords": "Analysis | Threat Analytics",
+    "Name": "Continuous Monitoring",
     "Definition": "Constantly monitoring systems to detect and respond to threats in real-time.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Anomally Detection",
-    "SubItem": "Anomally Detection",
+    "Keywords": "Detection | Anomally Detection",
+    "Name": "Anomally Detection",
     "Definition": "Identifying patterns in data that do not conform to expected behavior. It's used across various fields to detect unusual activities, outliers, or deviations that may indicate potential issues, fraud, or interesting phenomena. Techniques for anomaly detection include statistical methods, machine learning algorithms (such as clustering, isolation forests, or autoencoders), and domain-specific rules or heuristics.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Anomally Detection",
-    "SubItem": "Cybersecurity",
+    "Keywords": "Detection | Anomally Detection",
+    "Name": "Cybersecurity",
     "Definition": "Identifying unusual network traffic patterns, unauthorized access attempts, or abnormal user behavior that could indicate a security breach.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Anomally Detection",
-    "SubItem": "Fraud Detection",
+    "Keywords": "Detection | Anomally Detection",
+    "Name": "Fraud Detection",
     "Definition": "Detecting fraudulent transactions, activities, or behaviors in financial transactions, insurance claims, or online transactions.",
     "References": ""
   },
   {
-    "Activity": "Detection",
-    "Item": "Anomally Detection",
-    "SubItem": "Network Monitoring",
+    "Keywords": "Detection | Anomally Detection",
+    "Name": "Network Monitoring",
     "Definition": "Identifying anomalous traffic patterns or network behaviors that could indicate network faults, intrusions, or performance issues.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Operations Incident Response",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Operations Incident Response",
     "Definition": "Process and procedures followed by organizations to address and mitigate incidents that impact their operations",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Detection and Identification",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Detection and Identification",
     "Definition": "The incident is detected through monitoring systems, user reports, or other means. It's then identified to understand its nature and scope.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Containment",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Containment",
     "Definition": "Immediate actions are taken to contain the incident to prevent further damage or impact on operations. This could involve isolating affected systems or networks.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Investigation and Analysis",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Investigation and Analysis",
     "Definition": "A thorough investigation is conducted to determine the root cause of the incident. This may involve forensic analysis, reviewing logs, and examining affected systems.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Mitigation",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Mitigation",
     "Definition": "Once the root cause is identified, steps are taken to mitigate the impact of the incident. This could involve applying patches, restoring backups, or implementing temporary fixes.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Communication",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Communication",
     "Definition": "Throughout the process, clear and timely communication is crucial. Stakeholders, including internal teams, customers, and possibly regulatory bodies or the public, may need to be informed depending on the severity and nature of the incident.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Resolution and Recovery",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Resolution and Recovery",
     "Definition": "After mitigating the incident, efforts focus on fully resolving any remaining issues and restoring normal operations. This often includes validation testing to ensure systems are functioning correctly.",
     "References": ""
   },
   {
-    "Activity": "Operations",
-    "Item": "Operations Incident Response",
-    "SubItem": "Post-Incident Review",
+    "Keywords": "Operations | Operations Incident Response",
+    "Name": "Post-Incident Review",
     "Definition": "A post-incident review is conducted to evaluate the organization's response, identify areas for improvement, and update incident response plans accordingly.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "Certified Information Systems Security Professional",
-    "SubItem": "CISSP",
+    "Keywords": "Certifications | Certified Information Systems Security Professional",
+    "Name": "CISSP",
     "Definition": "Certification is widely recognized in the field of cybersecurity. It covers various domains such as Security and Risk Management, Asset Security, Security Architecture and Engineering, Communication and Network Security, Identity and Access Management (IAM), Security Assessment and Testing, Security Operations, and Software Development Security.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "Certified Information Systems Auditor",
-    "SubItem": "CISA",
+    "Keywords": "Certifications | Certified Information Systems Auditor",
+    "Name": "CISA",
     "Definition": "Professionals who audit, control, monitor, and assess information technology and business systems. It covers areas such as auditing, governance, risk management, information systems acquisition, development and implementation, information systems operations and business resilience, and protection of information assets.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "Certified Information Security Manager",
-    "SubItem": "CISM",
+    "Keywords": "Certifications | Certified Information Security Manager",
+    "Name": "CISM",
     "Definition": "Individuals who manage, design, oversee, and assess an enterprise's information security. It focuses on four domains: Information Security Governance, Information Risk Management, Information Security Program Development and Management, and Information Security Incident Management.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "SysAdmin, Audit, Network, and Security",
-    "SubItem": "SANS",
+    "Keywords": "Certifications | SysAdmin, Audit, Network, and Security",
+    "Name": "SANS",
     "Definition": "Organization that provides cybersecurity training, certifications, and research. They offer a wide range of courses and certifications covering various aspects of cybersecurity, including incident response, network defense, penetration testing, and digital forensics. SANS certifications are highly respected in the cybersecurity industry, and they offer several specialized certifications such as GIAC (Global Information Assurance Certification) which covers specific domains like intrusion detection, forensics, and secure software programming.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "GIAC Certified Intrusion Analyst",
-    "SubItem": "GCIA",
+    "Keywords": "Certifications | GIAC Certified Intrusion Analyst",
+    "Name": "GCIA",
     "Definition": "Offered by SANS Institute and focuses on intrusion detection and incident handling. It validates the skills and knowledge required to configure, manage, and monitor intrusion detection systems (IDS) and respond to network security incidents. GCIA holders are typically proficient in understanding network traffic, identifying and analyzing network-based attacks, and implementing effective intrusion detection and response strategies.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "GIAC Certified Incident Handler",
-    "SubItem": "GCIH",
+    "Keywords": "Certifications | GIAC Certified Incident Handler",
+    "Name": "GCIH",
     "Definition": "Offered by SANS Institute, focuses on incident handling and response. It validates the skills and knowledge necessary to manage security incidents by understanding attack techniques, conducting incident analysis, and implementing effective incident response strategies. GCIH holders are typically skilled in detecting, responding to, and recovering from security incidents, as well as in analyzing incident data to prevent future incidents. This certification is valuable for professionals involved in incident response, security operations, and related roles.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "Offensive Security Certified Professional",
-    "SubItem": "OSCP",
+    "Keywords": "Certifications | Offensive Security Certified Professional",
+    "Name": "OSCP",
     "Definition": "Certification in the field of penetration testing and ethical hacking. It is offered by Offensive Security, a leading provider of information security training and certifications. To earn the OSCP certification, candidates must pass a challenging 24-hour hands-on penetration testing exam in a virtual lab environment. This exam tests practical skills in exploiting vulnerabilities, conducting penetration tests, and effectively documenting findings. OSCP holders are known for their practical expertise in offensive security and penetration testing methodologies. It's a highly respected certification in the cybersecurity industry, particularly for roles such as penetration testers, ethical hackers, and security consultants.",
     "References": ""
   },
   {
-    "Activity": "Certifications",
-    "Item": "CompTIA Security+",
-    "SubItem": "Security+",
+    "Keywords": "Certifications | CompTIA Security+",
+    "Name": "Security+",
     "Definition": "Entry-level certification that covers essential cybersecurity skills and knowledge. It validates the baseline skills required to perform core security functions and pursue a career in IT security. The certification exam covers topics such as threats, attacks, and vulnerabilities; technologies and tools; architecture and design; identity and access management; risk management; and cryptography. Security+ is recognized globally and serves as a foundational certification for cybersecurity professionals. It's suitable for individuals aiming to start a career in cybersecurity or validate their skills in IT security roles.",
+    "References": ""
+  },
+  { 
+    "Keywords": "Cyber Kill Chain / Attack Lifecycle",
+    "Name": "Kill Chain Model / Cyber Kill Chain",
+    "Definition": "The cyber kill chain model, developed by Lockheed Martin, maps the stages of a cyber attack lifecycle. It helps in understanding how cyber attackers operate and provides a structured approach to defending against cyber threats. The model includes stages such as reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives.",
     "References": ""
   }
 ]

@@ -74,6 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             fetchNewsdata();                                    
                         else if (dataset.name == "NIST")
                             fetchNISTRss();
+                        else if (dataset.name == "TheHackerNews")
+                            fetchTheHackerNewsRss();
+                        else if (dataset.name == "NCSC")
+                            fetchNCSCRss();
                         else if (dataset.name == "Tools")
                             fetchTools(dataset.path);
                         else if (dataset.name == "Practice")
@@ -145,6 +149,81 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchJobs();
     fetchMain();
 });
+
+//
+async function fetchNCSCRss() {
+    try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.ncsc.gov.uk%2Fapi%2F1%2Fservices%2Fv1%2Fall-rss-feed.xml&api_key=locyjfdyybzfdlcaarwtol68ldqmmkb4r96rulz9');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const articles = [];
+        if(data.items) {
+            data.items.forEach(p => {
+                const thn = `
+                    <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column p-3 text-white text-shadow-1">
+                        <div class="dark-shadow">
+                            <div>
+                                <h5 class="card-title cyan-title">${p.title}</h5>
+                                <p class="card-text cut-text">
+                                    ${p.description || ''}
+                                </p>
+                                <a href="${p.link}" class="card-link">Read more</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                ${new Date(p.pubDate).toLocaleDateString()}
+                            </div>
+                            <div><span class="pb-3 mb-0 small lh-sm c-777">Author: <br/> ${p.author}</span></div>
+                        </div>
+                    </div>
+                `;
+                articles.push(thn);
+            });
+            document.getElementById('contentPage').innerHTML = `<div class="row">${articles.join('')}</div>`;
+        }
+    } catch (error) {
+        console.error('Error fetching news:', error);
+        document.getElementById('news-container').innerText = 'Error fetching news';
+    }
+}
+
+async function fetchTheHackerNewsRss() {
+    try {
+        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.feedburner.com%2FTheHackersNews&api_key=locyjfdyybzfdlcaarwtol68ldqmmkb4r96rulz9');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const articles = [];
+        if(data.items) {
+            data.items.forEach(p => {
+                const thn = `
+                    <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column p-3 text-white text-shadow-1">
+                        <div class="dark-shadow">
+                            <div>
+                                <h5 class="card-title cyan-title">${p.title}</h5>
+                                <p class="card-text cut-text">
+                                    ${p.description || ''}
+                                </p>
+                                <a href="${p.link}" class="card-link">Read more</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                ${new Date(p.pubDate).toLocaleDateString()}
+                            </div>
+                            <div><span class="pb-3 mb-0 small lh-sm c-777">Author: <br/> ${p.author}</span></div>
+                        </div>
+                    </div>
+                `;
+                articles.push(thn);
+            });
+            document.getElementById('contentPage').innerHTML = `<div class="row">${articles.join('')}</div>`;
+        }
+    } catch (error) {
+        console.error('Error fetching news:', error);
+        document.getElementById('news-container').innerText = 'Error fetching news';
+    }
+}
 
 async function fetchNISTRss() {
     try {
@@ -321,10 +400,9 @@ async function fetchWiki(url) {
     searchBox.innerHTML =  `<div class="input-group input-group-sm mt-4 mb-4">
                                 <div class="input-group bg-dark">
                                     <div class="input-group-text bg-dark">
-                                        <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Activity" aria-label="Radio button for following text input"> <label for="Activity" class="p-1 ccc"> Activity </label>
-                                        <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Item" aria-label="Radio button for following text input"> <label for="Item" class="p-1 ccc"> Item </label>
-                                        <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="SubItem" aria-label="Radio button for following text input"> <label for="SubItem" class="p-1 ccc"> SubItem </label>
-                                        <input checked class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Description" aria-label="Radio button for following text input"> <label for="Description" class="p-1 ccc"> Description </label>
+                                        <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Keywords" aria-label="Radio button for following text input"> <label for="Keywords" class="p-1 ccc"> Keywords </label>
+                                        <input class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Name" aria-label="Radio button for following text input"> <label for="Name" class="p-1 ccc"> Name </label>
+                                        <input checked class="form-check-input mt-0 ccc radio" name="options" type="radio" value="Description" aria-label="Radio button for following text input"> <label for="Definition" class="p-1 ccc"> Definition </label>
                                     </div>
                                     <input type="text" class="form-control bg-dark ccc" onkeydown="search()" max-length="50" aria-label="Text input with radio button">
                                 </div>
@@ -342,13 +420,12 @@ async function fetchWiki(url) {
     table.classList.add('table-dark');
     table.classList.add('table-striped');
     table.classList.add('table-hover');*/
-    table.id = "table-abbrevs";
+    table.id = "table-wiki";
     table.innerHTML += `
                 <thead>
                     <tr>
-                        <th>Activity</th>
-                        <th>Item</th>
-                        <th>SubItem</th>
+                        <th>Keywords</th>
+                        <th>Name</th>
                         <th>Definition</th>
                         <th>References</th>
                     </tr>
@@ -358,18 +435,30 @@ async function fetchWiki(url) {
 
     await fetchServer(url)
         .then(json => {
+            //let newjson = "";
+            json.sort((a, b) => a.Name.localeCompare(b.Name));
             json.forEach(item => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `<tr>
-                        <td>${item.Activity}</td>
-                        <td>${item.Item}</td>
-                        <td>${item.SubItem}</td>
+                        <td>${item.Keywords}</td>
+                        <td>${item.Name}</td>
                         <td>${item.Definition}</td>
                         <td>${item.References}</td>
                     </tr>`
                 tbody.appendChild(tr);
                 dataWiki.push(tr);
+
+                /*newjson += `{
+                                "Keywords": "${item.Keywords} | ${item.second}",
+                                "Name": "${item.Name}",
+                                "Definition": "${item.Definition}",
+                                "References": "${item.Reference || ""}"
+                            },`;*/
             });
+
+            /*debugger;
+            console.log(newjson);
+            localStorage.setItem("data", newjson);*/
             
             table.appendChild(tbody);
             containerTable.appendChild(table);
@@ -543,24 +632,24 @@ async function fetchHtml(url) {
 }
 
 async function search() {
-    if (this.event.keyCode == 32) {
+    debugger
+    if (this.event.keyCode == 13) {
         const criteria = this.event.target.value;
         const table = document.getElementById("table-wiki");
         await deleteRows(table)
         .then(_ => {
             let results = [];
             switch(getCheckedValue()) {
-                case "Activity":
+                case "Keywords":
                     results = getNewDataWiki(0, criteria);
                     break;
-                case "Item":
+                case "Name":
                     results = getNewDataWiki(1, criteria);
                     break;
-                case "SubItem":
+                case "Definition":
+                default:
                     results = getNewDataWiki(2, criteria);
                     break;
-                default:
-                    results = getNewDataWiki(3, criteria);
             }
             let tbody = document.createElement("tbody");
             results.forEach(tr => tbody.appendChild(tr));

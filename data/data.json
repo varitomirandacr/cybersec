@@ -62,6 +62,8 @@
         "path": "./content/latest-news/latestnews.md",
         "click": "",
         "tabs": [
+            { "category": "TheHackerNews", "path": "fetchTheHackerNewsRss" },
+            { "category": "NCSC", "path": "fetchNCSCRss" },
             { "category": "Newsdata.io", "path": "https://varitomirandacr.github.io/cybersec/api/news" },
             { "category": "NIST", "path": "fetchNISTRss" }
         ]
