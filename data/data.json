@@ -69,6 +69,16 @@
         ]
     },
     {
+        "category": "Toolbox",
+        "path": "./content/toolbox/toolbox.md",
+        "click": "",
+        "tabs": [
+            { "category": "Linux", "path": "./content/troubleshooting/linux.md" },
+            { "category": "Networking", "path": "./content/troubleshooting/networking.md" },
+            { "category": "Coding", "path": "./content/troubleshooting/coding.md" }
+        ]
+    },
+    {
         "category": "Troubleshooting",
         "path": "./content/troubleshooting/troubleshooting.md",
         "click": "",
@@ -77,5 +87,5 @@
             { "category": "Networking", "path": "./content/troubleshooting/networking.md" },
             { "category": "Coding", "path": "./content/troubleshooting/coding.md" }
         ]
-    }    
+    }
 ]

@@ -29,5 +29,25 @@
         "url": "https://learnsecurity.amazon.com/en/index.html#download",
         "description": "Fun and impactful cybersecurity training, provided by Amazon.",
         "image": "resources/images/amazon.svg"
-      }
+    },
+    {
+        "name": "Kontra OWASP Top 10 for Web",
+        "url": "https://konradg.application.security/free/owasp-top-10",
+        "description": "KONTRA's developer security training of OWASP Top 10 is inspired by real-world vulnerabilities and case studies, we have created a series of interactive application security training modules to help developers understand, identify and mitigate security vulnerabilities in their applications.",
+        "image": "https://content.application.security/assets/packs/media/landing/assets/images/kontra_logo_mini-af1aeac156f9f31eed6dd88a09d48e72.svg",
+        "connect": [
+          {
+            "tag": "in",
+            "url": "https://www.linkedin.com/company/security-compass"
+          },
+          {
+            "tag": "fb",
+            "url": "https://www.facebook.com/SecCompass"
+          },
+          {
+            "tag": "tw",
+            "url": "https://twitter.com/securitycompass"
+          }
+        ]
+    }
 ]

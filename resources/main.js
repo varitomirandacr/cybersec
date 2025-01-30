@@ -572,7 +572,7 @@ async function fetchTools(url) {
                                 <p class="last-updated"> ${new Date()} </p>
                             </div><hr/>`;
             json.tools.forEach(tool => {
-                tools.push(`<article class="col-md-6 pb-3 pt-3 border-bottom">
+                tools.push(`<article class="col-md-4 pt-3 pb-3 border-bottom">
                                 <div>
                                     <img src="${tool.image}" />
                                     <h3><span class="text-break">${tool.name}</span></h3>                                                                                             
