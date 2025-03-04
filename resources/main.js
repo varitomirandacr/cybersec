@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         event.preventDefault();
                         const current = event.target;
                         const dataset = current.dataset;
-
+                        //adding comment for testing
                         addLoader();
                         new Promise((resolve, reject) => {
                             if (dataset.name == "top") {
